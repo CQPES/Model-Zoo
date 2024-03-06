@@ -1,0 +1,13 @@
+%nproc=1
+%chk=ts-opt-freq.chk
+#p external="python3 -u ../pes/h4o_pes.py" opt=(ts,nomicro,calcall,noeigen)
+
+Title Card Required
+
+0 1
+ H       0.54223800     -0.16895300     -0.27146100
+ H      -1.08207300      0.41492800     -0.58647600
+ H      -1.15095000     -0.40930900      0.12094600
+ H      -2.01790600     -0.24276200     -0.60647700
+ O      -0.17484200      0.28799300      0.19143400
+

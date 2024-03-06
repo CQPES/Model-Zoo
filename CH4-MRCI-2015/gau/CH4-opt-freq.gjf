@@ -1,6 +1,6 @@
 %nproc=1
 %chk=CH4-opt-freq.chk
-#p external="python3 -u ../pes/CH4PES.py" opt=(nomicro,tight)
+#p external="python3 -u ../pes/ch4_pes.py" opt=(nomicro,tight)
 
 Title Card Required
 
@@ -15,6 +15,6 @@ Title Card Required
 --link1--
 %nproc=1
 %chk=CH4-opt-freq.chk
-#p external="python3 -u ../pes/CH4PES.py" freq geom=allcheck
+#p external="python3 -u ../pes/ch4_pes.py" freq geom=allcheck
 
 

@@ -1,0 +1,17 @@
+%nproc=1
+%chk=H2O-opt-freq.chk
+#p external="python3 -u ../pes/h2o_pes.py" opt=nomicro
+
+H2O
+
+0 1
+ H     -0.00000002    0.00000000   -0.00000012
+ H      0.92850569    0.00000000    1.19804603
+ O     -0.00000008    0.00000000    0.95882669
+
+
+--link1--
+%nproc=1
+%chk=H2O-opt-freq.chk
+#p external="python3 -u ../pes/h2o_pes.py" freq geom=allcheck
+
