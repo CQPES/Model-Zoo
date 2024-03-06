@@ -1,0 +1,4 @@
+%nproc=1
+%oldchk=ts1-opt-freq.chk
+#p external="python3 -u ../pes/h5co_pes.py" irc=(calcall,stepsize=3,maxpoint=100) geom=allcheck
+

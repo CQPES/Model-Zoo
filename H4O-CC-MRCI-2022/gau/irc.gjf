@@ -1,4 +1,4 @@
 %nproc=1
 %oldchk=ts-opt-freq.chk
-#p external="python3 -u ../pes/h4o_pes.py" irc=(calcall,stepsize=3,maxpoint=1000) geom=allcheck
+#p external="python3 -u ../pes/h4o_pes.py" irc=(calcall,stepsize=3,maxpoint=100) geom=allcheck
 

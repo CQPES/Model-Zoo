@@ -1,0 +1,9 @@
+%nproc=1
+%chk=H-freq.chk
+#p external="python3 -u ../pes/h_pes.py" freq
+
+H
+
+0 2
+ H
+

@@ -1,0 +1,19 @@
+%nproc=1
+%chk=CH3O-opt-freq.chk
+#p external="python3 -u ../pes/ch3o_pes.py" opt=nomicro
+
+CH3O
+
+0 2
+ H          0.0001793492        1.0575127554        0.9587567996
+ H         -0.9061984573       -0.4549143972        1.0914602192
+ H          0.9060632119       -0.4551919446        1.0914477449
+ C         -0.0000026895       -0.0075814712        0.6704905509
+ O         -0.0000007594       -0.0035948704       -0.7012682718
+
+
+--link1--
+%nproc=1
+%chk=CH3O-opt-freq.chk
+#p external="python3 -u ../pes/ch3o_pes.py" freq geom=allcheck
+

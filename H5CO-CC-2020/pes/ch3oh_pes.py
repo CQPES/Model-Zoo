@@ -1,44 +1,43 @@
 import numpy as np
 from gau_pes import BasePES
-from h4o_pes import H4OPES
+from h5co_pes import H5COPES
 
 # constants
-_NUM_ATOMS = 2
-_EQ_H2O = np.array([
-    [-0.00000002, 0.00000000, -0.00000012],
-    [0.92850569, 0.00000000,  1.19804603],
-    [-0.00000008, 0.00000000,  0.95882669],
+_NUM_ATOMS = 6
+_EQ_H = np.array([
+    [0.0000000000, 0.0000000000, -0.3708705760],  # H
 ])  # Angstrom
 _DISPLACE = 20.0  # Angstrom
 
 
-class H2PES(BasePES):
+class CH3OHPES(BasePES):
     def __init__(self) -> None:
-        self.h4o_pes = H4OPES()
+        self.h5co_pes = H5COPES()
 
     def calc_energy(
         self,
         coords: np.array,
     ) -> float:
-        """Calculate relative potential energy of H2O in H2 + H2O system"""
+        """Calculate relative potenial energy of CH3O in H2 + CH3O channel"""
 
         self._check_coords(_NUM_ATOMS, coords)
 
-        # concat a fixed H2O molecule with input H2
-        # now the order of atoms is H H | H H O
+        # concat a fixed H molecule with input CH3OH
+        # now that order of the atoms is H | H H H H C O
+        _eq_h = _EQ_H + np.ones_like(_EQ_H) * _DISPLACE
         new_coords = np.concatenate((
-            coords,  # H H
-            _EQ_H2O + np.ones_like(_EQ_H2O) * _DISPLACE,  # H H O
+            _eq_h,
+            coords,
         ))
 
-        return self.h4o_pes.calc_energy(new_coords)
+        return self.h5co_pes.calc_energy(new_coords)
 
 
 if __name__ == "__main__":
     from gau_pes import GauDriver
 
     driver = GauDriver()
-    pes = H2PES()
+    pes = CH3OHPES()
 
     driver.write(
         energy=pes.calc_energy(driver.coords),
