@@ -1,21 +1,18 @@
 import numpy as np
 from gau_pes import BasePES
-from h5co_pes import H5COPES
+from h4cfo_pes import H4CFOPES
 
 # constants
-_NUM_ATOMS = 3
-_EQ_CH3 = np.array([
-    [-0.0000000000, -0.0000004806, -1.0777339555],  # H
-    [0.9333449540, -0.0000004806, 0.5388669718],  # H
-    [-0.9333449779, -0.0000004806, 0.5388669408],  # H
-    [0.0000000020, 0.0000000000, 0.0000000036],  # C
+_NUM_ATOMS = 6
+_EQ_F = np.array([
+    [0.0000000000, 0.0000000000, 0.0000000000],  # F
 ])  # Angstrom
 _DISPLACE = 20.0  # Angstrom
 
 
-class H2OPES(BasePES):
+class H4COPES(BasePES):
     def __init__(self) -> None:
-        self.h5co_pes = H5COPES()
+        self.h4cfo_pes = H4CFOPES()
 
     def calc_energy(
         self,
@@ -23,29 +20,31 @@ class H2OPES(BasePES):
     ) -> float:
         """Calculate relative potenial energy of
 
-        1. H2O in H + CH3OH -> H2O + CH3 channel
+        1. CH3OH in F + CH3OH -> HF + CH3O channel
+        2. CH3OH in F + CH3OH -> HF + CH2OH channel
 
-        Order: H H O
+        Order of atoms: H H H H C O
         """
+
         self._check_coords(_NUM_ATOMS, coords)
 
-        # concat a fixed CH3 molecule with input H2O
-        # now that order of the atoms is H H | H H H C | O
-        _eq_ch3 = _EQ_CH3 + np.ones_like(_EQ_CH3) * _DISPLACE
+        # concat the input coords with a fixed F atom
+        # now that order of the atoms is H H H H C | F | O
+        _eq_f = _EQ_F + np.ones_like(_EQ_F) * _DISPLACE
         new_coords = np.concatenate((
-            coords[[0, 1], :],  # H H
-            _eq_ch3,  # H H H C
-            coords[[2, ], :],  # O
+            coords[[0, 1, 2, 3, 4], :],  # H H H H C
+            _eq_f,
+            coords[[5], :],
         ))
 
-        return self.h5co_pes.calc_energy(new_coords)
+        return self.h4cfo_pes.calc_energy(new_coords)
 
 
 if __name__ == "__main__":
     from gau_pes import GauDriver
 
     driver = GauDriver()
-    pes = H2OPES()
+    pes = H4COPES()
 
     driver.write(
         energy=pes.calc_energy(driver.coords),

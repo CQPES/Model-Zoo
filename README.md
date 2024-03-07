@@ -24,30 +24,58 @@ $ pip install .
 
 ## PES
 
-### `CH4-MRCI-2015`
+### [`CH4-MRCI-2015`](https://github.com/CQPES/Model-Zoo/tree/main/CH4-MRCI-2015)
 
-species
+#### Species
 
 - CH<sub>4</sub>
 
-Majumder, M.; Hegger, S. E.; Dawes, R.; Manzhos, S.; Wang, X.-G.; Tucker, C., Jr; Li, J.; Guo, H. Explicitly Correlated MRCI-F12 Potential Energy Surfaces for Methane Fit with Several Permutation Invariant Schemes and Full-Dimensional Vibrational Calculations. Mol. Phys. 2015, 113 (13–14), 1823–1833. https://doi.org/10.1080/00268976.2015.1015642.
+#### Reference
 
-### `H4O-CC-MRCI-2022`
+(1) Majumder, M.; Hegger, S. E.; Dawes, R.; Manzhos, S.; Wang, X.-G.; Tucker, C., Jr; Li, J.; Guo, H. Explicitly Correlated MRCI-F12 Potential Energy Surfaces for Methane Fit with Several Permutation Invariant Schemes and Full-Dimensional Vibrational Calculations. _Mol. Phys._ **2015**, _113_ (13–14), 1823–1833. https://doi.org/10.1080/00268976.2015.1015642.
 
-species
+### [`H4CFO-CC-2019`](https://github.com/CQPES/Model-Zoo/tree/main/H4CFO-CC-2019)
+
+#### Species
+
+- H
+- HF
+- CH<sub>3</sub>O
+- CH<sub>2</sub>OH
+- CH<sub>3</sub>OH
+
+#### Reactions
+
+- F + CH<sub>3</sub>OH → HF + CH<sub>3</sub>O
+- F + CH<sub>3</sub>OH → HF + CH<sub>2</sub>OH
+
+#### Reference
+
+(1) Lu, D.-D.; Xie, C.-J.; Li, J.; Guo, H. Rate Coefficients and Branching Ratio for Multi-Channel Hydrogen Abstractions from CH3OH by F. Chin. _J. Chem. Phys._ **2019**, _32_ (1), 84–88. https://doi.org/10.1063/1674-0068/cjcp1811256.
+
+(2) Lu, D.; Li, J.; Guo, H. Stereodynamical Control of Product Branching in Multi-Channel Barrierless Hydrogen Abstraction of CH3OH by F. _Chem. Sci._ **2019**, _10_ (34), 7994–8001. https://doi.org/10.1039/c9sc02445j.
+
+(3) Weichman, M. L.; DeVine, J. A.; Babin, M. C.; Li, J.; Guo, L.; Ma, J.; Guo, H.; Neumark, D. M. Feshbach Resonances in the Exit Channel of the F + CH3OH → HF + CH3O Reaction Observed Using Transition-State Spectroscopy. _Nat. Chem._ **2017**, _9_ (10), 950–955. https://doi.org/10.1038/nchem.2804.
+
+
+### [`H4O-CC-MRCI-2022`](https://github.com/CQPES/Model-Zoo/tree/main/H4O-CC-MRCI-2022)
+
+#### Species
 
 - H<sub>2</sub>
 - H<sub>2</sub>O
 
-reactions
+#### Reactions
 
 - H<sub>2</sub> + H′<sub>2</sub> → HH′ + HOH′
 
+#### Reference
+
 Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H4O Potential Energy Surface and Dynamics of an Exchange Reaction. Phys. Chem. Chem. Phys. 2022, 24 (44), 27548–27557. https://doi.org/10.1039/d2cp04521d.
 
-### `H5CO-CC-2020`
+### [`H5CO-CC-2020`](https://github.com/CQPES/Model-Zoo/tree/main/H5CO-CC-2020)
 
-species
+#### Species
 
 - H
 - H<sub>2</sub>
@@ -57,10 +85,12 @@ species
 - CH<sub>2</sub>OH
 - CH<sub>3</sub>OH
 
-reactions
+#### Reactions
 
 - H + CH<sub>3</sub>OH → H<sub>2</sub> + CH<sub>3</sub>O
 - H + CH<sub>3</sub>OH → H<sub>2</sub> + CH<sub>2</sub>OH
 - H + CH<sub>3</sub>OH → H<sub>2</sub>O + CH<sub>3</sub>
 
-Lu, D.; Behler, J.; Li, J. Accurate Global Potential Energy Surfaces for the H + CH3OH Reaction by Neural Network Fitting with Permutation Invariance. J. Phys. Chem. A 2020, 124 (28), 5737–5745. https://doi.org/10.1021/acs.jpca.0c04182.
+#### Reference
+
+(1) Lu, D.; Behler, J.; Li, J. Accurate Global Potential Energy Surfaces for the H + CH3OH Reaction by Neural Network Fitting with Permutation Invariance. _J. Phys. Chem. A_ **2020**, _124_ (28), 5737–5745. https://doi.org/10.1021/acs.jpca.0c04182.

@@ -1,0 +1,9 @@
+%nproc=1
+%chk=F-freq.chk
+#p external="python3 -u ../pes/f_pes.py" freq
+
+F
+
+0 2
+ F
+

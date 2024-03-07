@@ -1,25 +1,32 @@
+import libh4cfo
 import numpy as np
 from gau_pes import BasePES
 
-_NUM_ATOMS = 1
+_NUM_ATOMS = 7
 
 
-class HPES(BasePES):
+class H4CFOPES(BasePES):
+    def __init__(self) -> None:
+        libh4cfo.init()
+
     def calc_energy(
         self,
         coords: np.array,
     ) -> float:
-        """Calculate relative potential energy of H atom"""
+        """Calculate potential energy of F + CH3OH system
+
+        Order of atoms: H H H H C F O
+        """
         self._check_coords(_NUM_ATOMS, coords)
 
-        return 0.0
+        return libh4cfo.calc_energy(coords)
 
 
 if __name__ == "__main__":
     from gau_pes import GauDriver
 
     driver = GauDriver()
-    pes = HPES()
+    pes = H4CFOPES()
 
     driver.write(
         energy=pes.calc_energy(driver.coords),

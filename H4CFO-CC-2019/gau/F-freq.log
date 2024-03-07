@@ -1,7 +1,7 @@
  Entering Gaussian System, Link 0=g16
  Initial command:
- /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-703420.inp" -scrdir="/home/jh-li/scratch/g16/"
- Entering Link 1 = /opt/g16/l1.exe PID=    703423.
+ /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-696066.inp" -scrdir="/home/jh-li/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=    696069.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -78,9 +78,9 @@
  ******************************************
  %nproc=1
  Will use up to    1 processors via shared memory.
- %chk=H-freq.chk
+ %chk=F-freq.chk
  ---------------------------------------------
- #p external="python3 -u ../pes/h_pes.py" freq
+ #p external="python3 -u ../pes/f_pes.py" freq
  ---------------------------------------------
  1/10=4,18=10,30=1,38=1/1,3;
  2/12=2,17=6,18=5,40=1/2;
@@ -90,14 +90,14 @@
  7/8=1,25=1,44=-1/16;
  1/10=4,18=10,30=1/3;
  99//99;
- Leave Link    1 at Thu Mar  7 13:53:53 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
+ Leave Link    1 at Thu Mar  7 13:38:49 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l101.exe)
  -
- H
+ F
  -
  Symbolic Z-matrix:
  Charge =  0 Multiplicity = 2
- H
+ F
  
  ITRead=  0
  MicOpt= -1
@@ -108,14 +108,14 @@
   in nuclear magnetons)
 
   Atom         1
- IAtWgt=           1
- AtmWgt=   1.0078250
+ IAtWgt=          19
+ AtmWgt=  18.9984032
  NucSpn=           1
  AtZEff=  -0.0000000
  NQMom=    0.0000000
- NMagM=    2.7928460
- AtZNuc=   1.0000000
- Leave Link  101 at Thu Mar  7 13:53:53 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ NMagM=    2.6288670
+ AtZNuc=   9.0000000
+ Leave Link  101 at Thu Mar  7 13:38:49 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -125,17 +125,17 @@
  Number of steps in this run=      2 maximum allowed number of steps=      2.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Thu Mar  7 13:53:53 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Thu Mar  7 13:38:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
  Center     Atomic      Atomic             Coordinates (Angstroms)
  Number     Number       Type             X           Y           Z
  ---------------------------------------------------------------------
-      1          1           0        0.000000    0.000000    0.000000
+      1          9           0        0.000000    0.000000    0.000000
  ---------------------------------------------------------------------
- Stoichiometry    H(2)
- Framework group  OH[O(H)]
+ Stoichiometry    F(2)
+ Framework group  OH[O(F)]
  Deg. of freedom     0
  Full point group                 OH      NOp  48
  Largest Abelian subgroup         D2H     NOp   8
@@ -145,30 +145,30 @@
  Center     Atomic      Atomic             Coordinates (Angstroms)
  Number     Number       Type             X           Y           Z
  ---------------------------------------------------------------------
-      1          1           0        0.000000    0.000000    0.000000
+      1          9           0        0.000000    0.000000    0.000000
  ---------------------------------------------------------------------
- Leave Link  202 at Thu Mar  7 13:53:53 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Thu Mar  7 13:38:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
- There are     1 symmetry adapted cartesian basis functions of AG  symmetry.
+ There are     2 symmetry adapted cartesian basis functions of AG  symmetry.
  There are     0 symmetry adapted cartesian basis functions of B1G symmetry.
  There are     0 symmetry adapted cartesian basis functions of B2G symmetry.
  There are     0 symmetry adapted cartesian basis functions of B3G symmetry.
  There are     0 symmetry adapted cartesian basis functions of AU  symmetry.
- There are     0 symmetry adapted cartesian basis functions of B1U symmetry.
- There are     0 symmetry adapted cartesian basis functions of B2U symmetry.
- There are     0 symmetry adapted cartesian basis functions of B3U symmetry.
- There are     1 symmetry adapted basis functions of AG  symmetry.
+ There are     1 symmetry adapted cartesian basis functions of B1U symmetry.
+ There are     1 symmetry adapted cartesian basis functions of B2U symmetry.
+ There are     1 symmetry adapted cartesian basis functions of B3U symmetry.
+ There are     2 symmetry adapted basis functions of AG  symmetry.
  There are     0 symmetry adapted basis functions of B1G symmetry.
  There are     0 symmetry adapted basis functions of B2G symmetry.
  There are     0 symmetry adapted basis functions of B3G symmetry.
  There are     0 symmetry adapted basis functions of AU  symmetry.
- There are     0 symmetry adapted basis functions of B1U symmetry.
- There are     0 symmetry adapted basis functions of B2U symmetry.
- There are     0 symmetry adapted basis functions of B3U symmetry.
-     1 basis functions,     3 primitive gaussians,     1 cartesian basis functions
-     1 alpha electrons        0 beta electrons
+ There are     1 symmetry adapted basis functions of B1U symmetry.
+ There are     1 symmetry adapted basis functions of B2U symmetry.
+ There are     1 symmetry adapted basis functions of B3U symmetry.
+     5 basis functions,    15 primitive gaussians,     5 cartesian basis functions
+     5 alpha electrons        4 beta electrons
        nuclear repulsion energy         0.0000000000 Hartrees.
  IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
  ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
@@ -177,21 +177,21 @@
  Integral buffers will be    131072 words long.
  Raffenetti 2 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Thu Mar  7 13:53:54 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ Leave Link  301 at Thu Mar  7 13:38:49 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
  (Enter /opt/g16/l402.exe)
  External calculation of energy, first and second derivatives.
- Running external command "python3 -u ../pes/h_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-703423.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-703423.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-703423.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-703423.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-703423.EUF"
+ Running external command "python3 -u ../pes/f_pes.py R"
+         input file       "/home/jh-li/scratch/g16/Gau-696069.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-696069.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-696069.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-696069.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-696069.EUF"
  Recovered energy=  0.00000000000     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=     0.00000000     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Thu Mar  7 13:53:54 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.2
+ Leave Link  402 at Thu Mar  7 13:38:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
  (Enter /opt/g16/l601.exe)
- Leave Link  601 at Thu Mar  7 13:53:54 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  601 at Thu Mar  7 13:38:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  Full mass-weighted force constant matrix:
@@ -207,8 +207,8 @@
  - Thermochemistry -
  -------------------
  Temperature   298.150 Kelvin.  Pressure   1.00000 Atm.
- Atom     1 has atomic number  1 and mass   1.00783
- Molecular mass:     1.00783 amu.
+ Atom     1 has atomic number  9 and mass  18.99840
+ Molecular mass:    18.99840 amu.
  Zero-point vibrational energy          0.0 (Joules/Mol)
                                     0.00000 (Kcal/Mol)
  Vibrational temperatures: 
@@ -217,33 +217,33 @@
  Zero-point correction=                           0.000000 (Hartree/Particle)
  Thermal correction to Energy=                    0.001416
  Thermal correction to Enthalpy=                  0.002360
- Thermal correction to Gibbs Free Energy=        -0.010654
+ Thermal correction to Gibbs Free Energy=        -0.014813
  Sum of electronic and zero-point Energies=              0.000000
  Sum of electronic and thermal Energies=                 0.001416
  Sum of electronic and thermal Enthalpies=               0.002360
- Sum of electronic and thermal Free Energies=           -0.010654
+ Sum of electronic and thermal Free Energies=           -0.014813
  
                      E (Thermal)             CV                S
                       KCal/Mol        Cal/Mol-Kelvin    Cal/Mol-Kelvin
- Total                    0.889              2.981             27.392
+ Total                    0.889              2.981             36.145
  Electronic               0.000              0.000              1.377
- Translational            0.889              2.981             26.014
+ Translational            0.889              2.981             34.767
  Rotational               0.000              0.000              0.000
  Vibrational              0.000              0.000              0.000
                        Q            Log10(Q)             Ln(Q)
- Total Bot       0.795356D+05          4.900562         11.283960
- Total V=0       0.795356D+05          4.900562         11.283960
+ Total Bot       0.650968D+07          6.813560         15.688801
+ Total V=0       0.650968D+07          6.813560         15.688801
  Vib (Bot)       0.100000D+01          0.000000          0.000000
  Vib (V=0)       0.100000D+01          0.000000          0.000000
  Electronic      0.200000D+01          0.301030          0.693147
- Translational   0.397678D+05          4.599532         10.590813
+ Translational   0.325484D+07          6.512530         14.995653
  Rotational      0.100000D+01          0.000000          0.000000
  ***** Axes restored to original set *****
  -------------------------------------------------------------------
  Center     Atomic                   Forces (Hartrees/Bohr)
  Number     Number              X              Y              Z
  -------------------------------------------------------------------
-      1        1          -0.000000000   -0.000000000   -0.000000000
+      1        9          -0.000000000   -0.000000000   -0.000000000
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.000000000 RMS     0.000000000
  Z-matrix is all fixed cartesians, so copy forces.
@@ -252,7 +252,7 @@
       1  0.000000D+00
       2  0.000000D+00  0.000000D+00
       3  0.000000D+00  0.000000D+00  0.000000D+00
- Leave Link  716 at Thu Mar  7 13:53:54 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Thu Mar  7 13:38:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -289,27 +289,21 @@
     -- Stationary point found.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Thu Mar  7 13:53:54 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Thu Mar  7 13:38:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l9999.exe)
  Unable to Open any file for archive entry.
- 1\1\GINC-DESKTOP-1D9QDE1\Freq\External='python3 -u ../pes/h_pes.py'\ZD
- O\H1(2)\JH-LI\07-Mar-2024\0\\#p external="python3 -u ../pes/h_pes.py" 
- freq\\H\\0,2\H,0.,0.,0.\\Version=ES64L-G16RevC.01\HF=0.\S2=0.\S2-1=0.\
+ 1\1\GINC-DESKTOP-1D9QDE1\Freq\External='python3 -u ../pes/f_pes.py'\ZD
+ O\F1(2)\JH-LI\07-Mar-2024\0\\#p external="python3 -u ../pes/f_pes.py" 
+ freq\\F\\0,2\F,0.,0.,0.\\Version=ES64L-G16RevC.01\HF=0.\S2=0.\S2-1=0.\
  S2A=0.\RMSD=0.000e+00\RMSF=0.000e+00\Thermal=0.0014163\ETot=0.0014163\
- HTot=0.0023605\GTot=-0.0106541\Dipole=0.,0.,0.\PG=OH [O(H1)]\NImag=0\\
+ HTot=0.0023605\GTot=-0.0148131\Dipole=0.,0.,0.\PG=OH [O(F1)]\NImag=0\\
  0.,0.,0.,0.,0.,0.\\0.,0.,0.\\\@
  The archive entry for this job was punched.
 
 
-       THE DEATH-KNELL OF THE ATOM
-
- SO THE ATOMS IN TURN, WE NOW CLEARLY DISCERN,
- FLY TO BITS WITH THE UTMOST FACILITY;
- THEY WEND ON THEIR WAY, AND, IN SPLITTING, DISPLAY
- AN ABSOLUTE LACK OF STABILITY.
-
-          SIR WM. RAMSAY, 1905
+ YOU CAN WIPE THE SLATE CLEAN, BUT YOU'LL STILL
+ HAVE TO EAT A LITTLE CHALK DUST.
  Job cpu time:       0 days  0 hours  0 minutes  0.5 seconds.
  Elapsed time:       0 days  0 hours  0 minutes  0.6 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1
- Normal termination of Gaussian 16 at Thu Mar  7 13:53:54 2024.
+ Normal termination of Gaussian 16 at Thu Mar  7 13:38:49 2024.

@@ -1,0 +1,16 @@
+%nproc=1
+%chk=HF-opt-freq.chk
+#p external="python3 -u ../pes/hf_pes.py" opt=nomicro
+
+HF
+
+0 1
+H          0.0000000000        0.0000000000        0.0406357096
+F          0.0000000000        0.0000000000        0.9593642904
+
+
+--link1--
+%nproc=1
+%chk=HF-opt-freq.chk
+#p external="python3 -u ../pes/hf_pes.py" freq geom=allcheck
+

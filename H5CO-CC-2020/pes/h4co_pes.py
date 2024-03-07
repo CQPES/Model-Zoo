@@ -3,17 +3,14 @@ from gau_pes import BasePES
 from h5co_pes import H5COPES
 
 # constants
-_NUM_ATOMS = 3
-_EQ_CH3 = np.array([
-    [-0.0000000000, -0.0000004806, -1.0777339555],  # H
-    [0.9333449540, -0.0000004806, 0.5388669718],  # H
-    [-0.9333449779, -0.0000004806, 0.5388669408],  # H
-    [0.0000000020, 0.0000000000, 0.0000000036],  # C
+_NUM_ATOMS = 6
+_EQ_H = np.array([
+    [0.0000000000, 0.0000000000, -0.3708705760],  # H
 ])  # Angstrom
 _DISPLACE = 20.0  # Angstrom
 
 
-class H2OPES(BasePES):
+class H4COPES(BasePES):
     def __init__(self) -> None:
         self.h5co_pes = H5COPES()
 
@@ -23,19 +20,19 @@ class H2OPES(BasePES):
     ) -> float:
         """Calculate relative potenial energy of
 
-        1. H2O in H + CH3OH -> H2O + CH3 channel
+        1. CH3OH in H + CH3OH -> H2 + CH3O channel
+        2. CH3OH in H + CH3OH -> H2 + CH2OH channel
 
-        Order: H H O
+        Order: H H H H C O
         """
         self._check_coords(_NUM_ATOMS, coords)
 
-        # concat a fixed CH3 molecule with input H2O
-        # now that order of the atoms is H H | H H H C | O
-        _eq_ch3 = _EQ_CH3 + np.ones_like(_EQ_CH3) * _DISPLACE
+        # concat input coords with a fixed H atom
+        # now that order of the atoms is H | H H H H C O
+        _eq_h = _EQ_H + np.ones_like(_EQ_H) * _DISPLACE
         new_coords = np.concatenate((
-            coords[[0, 1], :],  # H H
-            _eq_ch3,  # H H H C
-            coords[[2, ], :],  # O
+            _eq_h,
+            coords,
         ))
 
         return self.h5co_pes.calc_energy(new_coords)
@@ -45,7 +42,7 @@ if __name__ == "__main__":
     from gau_pes import GauDriver
 
     driver = GauDriver()
-    pes = H2OPES()
+    pes = H4COPES()
 
     driver.write(
         energy=pes.calc_energy(driver.coords),
