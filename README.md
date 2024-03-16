@@ -51,12 +51,30 @@ $ pip install .
 
 #### Reference
 
-(1) Lu, D.-D.; Xie, C.-J.; Li, J.; Guo, H. Rate Coefficients and Branching Ratio for Multi-Channel Hydrogen Abstractions from CH3OH by F. Chin. _J. Chem. Phys._ **2019**, _32_ (1), 84–88. https://doi.org/10.1063/1674-0068/cjcp1811256.
+(1) Lu, D.-D.; Xie, C.-J.; Li, J.; Guo, H. Rate Coefficients and Branching Ratio for Multi-Channel Hydrogen Abstractions from CH<sub>3</sub>OH by F. Chin. _J. Chem. Phys._ **2019**, _32_ (1), 84–88. https://doi.org/10.1063/1674-0068/cjcp1811256.
 
-(2) Lu, D.; Li, J.; Guo, H. Stereodynamical Control of Product Branching in Multi-Channel Barrierless Hydrogen Abstraction of CH3OH by F. _Chem. Sci._ **2019**, _10_ (34), 7994–8001. https://doi.org/10.1039/c9sc02445j.
+(2) Lu, D.; Li, J.; Guo, H. Stereodynamical Control of Product Branching in Multi-Channel Barrierless Hydrogen Abstraction of CH<sub>3</sub>OH by F. _Chem. Sci._ **2019**, _10_ (34), 7994–8001. https://doi.org/10.1039/c9sc02445j.
 
-(3) Weichman, M. L.; DeVine, J. A.; Babin, M. C.; Li, J.; Guo, L.; Ma, J.; Guo, H.; Neumark, D. M. Feshbach Resonances in the Exit Channel of the F + CH3OH → HF + CH3O Reaction Observed Using Transition-State Spectroscopy. _Nat. Chem._ **2017**, _9_ (10), 950–955. https://doi.org/10.1038/nchem.2804.
+(3) Weichman, M. L.; DeVine, J. A.; Babin, M. C.; Li, J.; Guo, L.; Ma, J.; Guo, H.; Neumark, D. M. Feshbach Resonances in the Exit Channel of the F + CH<sub>3</sub>OH → HF + CH<sub>3</sub>O Reaction Observed Using Transition-State Spectroscopy. _Nat. Chem._ **2017**, _9_ (10), 950–955. https://doi.org/10.1038/nchem.2804.
 
+### [`H4CClO-CC-2020`](https://github.com/CQPES/Model-Zoo/tree/main/H4O-CC-MRCI-2022)
+
+#### Species
+
+- H
+- HCl
+- CH<sub>3</sub>O
+- CH<sub>2</sub>OH
+- CH<sub>3</sub>OH
+
+#### Reactions
+
+- Cl + CH<sub>3</sub>OH → HCl + CH<sub>3</sub>O
+- Cl + CH<sub>3</sub>OH → HCl + CH<sub>2</sub>OH
+
+#### Reference
+
+(1) Lu, D.; Li, J.; Guo, H. Comprehensive Investigations of the Cl + CH<sub>3</sub>OH → HCl + CH<sub>3</sub>O/CH<sub>2</sub>OH Reaction: Validation of Experiment and Dynamic Insights. _CCS Chem._ **2020**, _2_ (5), 882–894. https://doi.org/10.31635/ccschem.020.202000195.
 
 ### [`H4O-CC-MRCI-2022`](https://github.com/CQPES/Model-Zoo/tree/main/H4O-CC-MRCI-2022)
 
@@ -67,11 +85,11 @@ $ pip install .
 
 #### Reactions
 
-- H<sub>2</sub> + H′<sub>2</sub> → HH′ + HOH′
+- H<sub>2</sub> + H′<sub>2</sub>O → HH′ + HOH′
 
 #### Reference
 
-Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H4O Potential Energy Surface and Dynamics of an Exchange Reaction. Phys. Chem. Chem. Phys. 2022, 24 (44), 27548–27557. https://doi.org/10.1039/d2cp04521d.
+Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H<sub>4</sub>O Potential Energy Surface and Dynamics of an Exchange Reaction. _Phys. Chem. Chem. Phys._ **2022**, _24_ (44), 27548–27557. https://doi.org/10.1039/d2cp04521d.
 
 ### [`H5CO-CC-2020`](https://github.com/CQPES/Model-Zoo/tree/main/H5CO-CC-2020)
 
@@ -93,4 +111,4 @@ Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H4O Potential Ener
 
 #### Reference
 
-(1) Lu, D.; Behler, J.; Li, J. Accurate Global Potential Energy Surfaces for the H + CH3OH Reaction by Neural Network Fitting with Permutation Invariance. _J. Phys. Chem. A_ **2020**, _124_ (28), 5737–5745. https://doi.org/10.1021/acs.jpca.0c04182.
+(1) Lu, D.; Behler, J.; Li, J. Accurate Global Potential Energy Surfaces for the H + CH<sub>3</sub>OH Reaction by Neural Network Fitting with Permutation Invariance. _J. Phys. Chem. A_ **2020**, _124_ (28), 5737–5745. https://doi.org/10.1021/acs.jpca.0c04182.

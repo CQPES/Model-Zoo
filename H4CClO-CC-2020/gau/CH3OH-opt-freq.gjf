@@ -1,0 +1,20 @@
+%nproc=1
+%chk=CH3OH-opt-freq.chk
+#p external="python3 -u ../pes/h4co_pes.py" opt=nomicro
+
+CH3OH
+
+0 1
+ H         -0.8285346339        0.0000000000       -1.0389638918
+ H          1.0097904917        0.0000000000        1.0974411954
+ H         -0.5202943627        0.8904557870        1.1086598785
+ H         -0.5202943627       -0.8904557870        1.1086598785
+ C         -0.0131620703        0.0000000000        0.7281175260
+ O          0.0640177505        0.0000000000       -0.6899812802
+
+
+--link1--
+%nproc=1
+%chk=CH3OH-opt-freq.chk
+#p external="python3 -u ../pes/h4co_pes.py" freq geom=allcheck
+
