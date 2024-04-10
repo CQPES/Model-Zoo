@@ -1,18 +1,18 @@
 import numpy as np
 from gau_pes import BasePES
-from h4cfo_pes import H4CFOPES
+from h4n_anion_pes import H4NAnionPES
 
 # constants
-_NUM_ATOMS = 6
-_EQ_F = np.array([
-    [0.0000000000, 0.0000000000, 0.0000000000],  # F
+_NUM_ATOMS = 4
+_EQ_H = np.array([
+    [0.0000000000, 0.0000000000, 0.0000000000],  # H
 ])  # Angstrom
 _DISPLACE = 20.0  # Angstrom
 
 
-class H4COPES(BasePES):
+class NH3PES(BasePES):
     def __init__(self) -> None:
-        self.h4cfo_pes = H4CFOPES()
+        self.h4n_anion_pes = H4NAnionPES()
 
     def calc_energy(
         self,
@@ -20,31 +20,29 @@ class H4COPES(BasePES):
     ) -> float:
         """Calculate relative potenial energy of
 
-        1. CH3OH in F + CH3OH -> HF + CH3O channel
-        2. CH3OH in F + CH3OH -> HF + CH2OH channel
+        1. NH3 in H2 + NH2^- -> H^- + NH3 channel
 
-        Order of atoms: H H H H C O
+        Order: H H H N
         """
 
         self._check_coords(_NUM_ATOMS, coords)
 
-        # concat the input coords with a fixed F atom
-        # now that order of the atoms is H H H H C | F | O
-        _eq_f = _EQ_F + np.ones_like(_EQ_F) * _DISPLACE
+        # concat a fixed H atom with input NH3
+        # now the order of atoms is H | H H H N
+        # and the H atom is displaced by _DISPLACE in each axis
         new_coords = np.concatenate((
-            coords[[0, 1, 2, 3, 4], :],  # H H H H C
-            _eq_f,
-            coords[[5], :],
+            _EQ_H + coords.mean(axis=0) + _DISPLACE,  # H
+            coords,  # H H H N
         ))
 
-        return self.h4cfo_pes.calc_energy(new_coords)
+        return self.h4n_anion_pes.calc_energy(new_coords)
 
 
 if __name__ == "__main__":
     from gau_pes import GauDriver
 
     driver = GauDriver()
-    pes = H4COPES()
+    pes = NH3PES()
 
     driver.write(
         energy=pes.calc_energy(driver.coords),

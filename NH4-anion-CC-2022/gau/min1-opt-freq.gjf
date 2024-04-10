@@ -1,0 +1,20 @@
+%nproc=1
+%chk=min1-opt-freq.chk
+#p external="python3 -u ../pes/h4n_anion_pes.py" opt=nomicro
+
+Minimum 1 in H2 + NH2 anion system
+
+-1 1
+ H          0.0000132665        0.8012513544        0.8634061825
+ H          0.0000132669       -0.8012281465        0.8634382810
+ H          0.0000023835       -0.0000019564       -1.9782059780
+ H          0.0000040426       -0.0000021596       -2.7435850731
+ N         -0.0000023718       -0.0000013739        0.2155201770
+
+
+--link1--
+%nproc=1
+%chk=min1-opt-freq.chk
+#p external="python3 -u ../pes/h4n_anion_pes.py" freq geom=allcheck
+
+

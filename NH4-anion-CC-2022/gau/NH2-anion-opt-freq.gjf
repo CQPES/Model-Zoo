@@ -1,0 +1,17 @@
+%nproc=1
+%chk=NH2-anion-opt-freq.chk
+#p external="python3 -u ../pes/nh2_anion_pes.py" opt=nomicro
+
+NH2^-
+
+-1 1
+ H          0.0000000000        0.8004020112        0.5681675516
+ H          0.0000000000       -0.8004020549        0.5681675162
+ N          0.0000000000        0.0000000031       -0.0817721211
+
+
+--link1--
+%nproc=1
+%chk=NH2-anion-opt-freq.chk
+#p external="python3 -u ../pes/nh2_anion_pes.py" freq geom=allcheck
+

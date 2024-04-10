@@ -27,7 +27,7 @@ class H2OPES(BasePES):
         # now the order of atoms is H H | H H O
         # and the H2 molecule is displaced by _DISPLACE in each axis
         new_coords = np.concatenate((
-            _EQ_H2 + np.ones_like(_EQ_H2) * _DISPLACE,  # H H
+            _EQ_H2 + coords.mean(axis=0) + _DISPLACE,  # H H
             coords,  # H H O
         ))
 

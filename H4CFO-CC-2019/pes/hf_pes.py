@@ -34,7 +34,7 @@ class HFPES(BasePES):
 
         # concat the input coords with a fixed F atom
         # now that order of the atoms is H H H | H | C | F | O
-        _eq_ch3o = _EQ_CH3O + np.ones_like(_EQ_CH3O) * _DISPLACE
+        _eq_ch3o = _EQ_CH3O + coords.mean(axis=0) + _DISPLACE
         new_coords = np.concatenate((
             _eq_ch3o[[0, 1, 2], :],  # H H H
             coords[[0], :],  # H in HF

@@ -28,7 +28,7 @@ class H2PES(BasePES):
         # now the order of atoms is H H | H H O
         new_coords = np.concatenate((
             coords,  # H H
-            _EQ_H2O + np.ones_like(_EQ_H2O) * _DISPLACE,  # H H O
+            _EQ_H2O + coords.mean(axis=0) + _DISPLACE,  # H H O
         ))
 
         return self.h4o_pes.calc_energy(new_coords)

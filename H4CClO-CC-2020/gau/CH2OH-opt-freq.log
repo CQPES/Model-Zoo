@@ -1,7 +1,7 @@
  Entering Gaussian System, Link 0=g16
  Initial command:
- /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-46323.inp" -scrdir="/home/jh-li/scratch/g16/"
- Entering Link 1 = /opt/g16/l1.exe PID=     46326.
+ /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-1448911.inp" -scrdir="/home/jh-li/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=   1448914.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -74,7 +74,7 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
-                16-Mar-2024 
+                10-Apr-2024 
  ******************************************
  %nproc=1
  Will use up to    1 processors via shared memory.
@@ -99,7 +99,7 @@
  2/9=110/2;
  6/7=2,8=2,9=2,10=2/1;
  99/9=10/99;
- Leave Link    1 at Sat Mar 16 11:25:46 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
+ Leave Link    1 at Wed Apr 10 09:21:18 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l101.exe)
  -----
  CH2OH
@@ -129,7 +129,7 @@
  NQMom=    0.0000000   0.0000000   0.0000000   0.0000000   0.0000000
  NMagM=    2.7928460   2.7928460   2.7928460   0.0000000   0.0000000
  AtZNuc=   1.0000000   1.0000000   1.0000000   6.0000000   8.0000000
- Leave Link  101 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.2 elap:               0.2
+ Leave Link  101 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.2 elap:               0.2
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -157,7 +157,7 @@
  Number of steps in this run=     21 maximum allowed number of steps=    100.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -195,7 +195,7 @@
       5          8           0        0.670237   -0.125695    0.020703
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         193.4232862          29.9832992          26.1889955
- Leave Link  202 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -211,21 +211,21 @@
  Integral buffers will be    131072 words long.
  Raffenetti 2 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  301 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l402.exe)
  External calculation of energy and first derivatives.
  Running external command "python3 -u ../pes/h3co_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-46326.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-46326.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-46326.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-46326.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-46326.EUF"
+         input file       "/home/jh-li/scratch/g16/Gau-1448914.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1448914.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1448914.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1448914.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1448914.EUF"
  Recovered energy= -575.301839667     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -575.301840     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ Leave Link  402 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
  (Enter /opt/g16/l601.exe)
- Leave Link  601 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  601 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  ***** Axes restored to original set *****
@@ -240,7 +240,7 @@
       5        8          -0.000869688   -0.001321127    0.000991695
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.001660696 RMS     0.000902947
- Leave Link  716 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -305,7 +305,7 @@
  Predicted change in Energy=-3.513007D-05
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -344,7 +344,7 @@
       5          8           0        0.670165   -0.126080    0.017805
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         194.3127257          30.0125812          26.2006454
- Leave Link  202 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -352,7 +352,7 @@
  There are    13 symmetry adapted basis functions of A   symmetry.
     13 basis functions,    39 primitive gaussians,    13 cartesian basis functions
      9 alpha electrons        8 beta electrons
-       nuclear repulsion energy        35.3633062956 Hartrees.
+       nuclear repulsion energy        35.3633062955 Hartrees.
  IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
  ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
  IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
@@ -360,19 +360,19 @@
  Integral buffers will be    131072 words long.
  Raffenetti 2 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  301 at Wed Apr 10 09:21:18 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.0
  (Enter /opt/g16/l402.exe)
  External calculation of energy and first derivatives.
  Running external command "python3 -u ../pes/h3co_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-46326.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-46326.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-46326.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-46326.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-46326.EUF"
+         input file       "/home/jh-li/scratch/g16/Gau-1448914.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1448914.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1448914.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1448914.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1448914.EUF"
  Recovered energy= -575.301892977     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -575.301893     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ Leave Link  402 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  ***** Axes restored to original set *****
@@ -387,7 +387,7 @@
       5        8          -0.000167549   -0.000832518    0.000534900
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.000832518 RMS     0.000404801
- Leave Link  716 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -434,8 +434,8 @@
  RFO step:  Lambda=-6.44676964D-05.
  NNeg= 0 NGDIIS= 2 SimSw=  2.50D-03 Rises=F DC= -5.33D-05 SmlDif=  1.00D-05
  NRisDI= 0 DoIntr=F SqrtH=F CThrHd= 10.0 CDAdj=  3.0
- RMS Error=  0.2714423152D-01 NUsed= 2 OKEnD=T EnDIS=F
- InvSVX:  RCond= 7.04D-04 Info=           0 Equed=N FErr=  1.01D-14 BErr=  1.01D-16
+ RMS Error=  0.2714423154D-01 NUsed= 2 OKEnD=T EnDIS=F
+ InvSVX:  RCond= 7.04D-04 Info=           0 Equed=N FErr=  8.97D-15 BErr=  0.00D+00
  DidBck=F Rises=F RFO-DIIS coefs:    2.68076   -1.68076
  Iteration  1 RMS(Cart)=  0.01631059 RMS(Int)=  0.00056519
  Iteration  2 RMS(Cart)=  0.00053272 RMS(Int)=  0.00017317
@@ -462,7 +462,7 @@
  Predicted change in Energy=-3.252912D-05
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -501,7 +501,7 @@
       5          8           0        0.670091   -0.126162    0.012671
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         194.9053137          30.0731132          26.2197346
- Leave Link  202 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -517,19 +517,19 @@
  Integral buffers will be    131072 words long.
  Raffenetti 2 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  301 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l402.exe)
  External calculation of energy and first derivatives.
  Running external command "python3 -u ../pes/h3co_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-46326.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-46326.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-46326.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-46326.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-46326.EUF"
+         input file       "/home/jh-li/scratch/g16/Gau-1448914.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1448914.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1448914.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1448914.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1448914.EUF"
  Recovered energy= -575.301927395     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -575.301927     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Sat Mar 16 11:25:47 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ Leave Link  402 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  ***** Axes restored to original set *****
@@ -544,7 +544,7 @@
       5        8           0.000112373   -0.000087034   -0.000232387
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.000458026 RMS     0.000206557
- Leave Link  716 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -588,11 +588,11 @@
      Eigenvalues ---    0.00644   0.01589   0.15913   0.16048   0.17377
      Eigenvalues ---    0.36023   0.40564   0.51979   0.55677
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:     3    2    1
- RFO step:  Lambda=-2.85620570D-06.
+ RFO step:  Lambda=-2.85620566D-06.
  NNeg= 0 NGDIIS= 3 SimSw=  2.50D-03 Rises=F DC= -3.44D-05 SmlDif=  1.00D-05
  NRisDI= 0 DoIntr=F SqrtH=F CThrHd= 10.0 CDAdj=  3.0
- RMS Error=  0.4567463892D-02 NUsed= 3 OKEnD=T EnDIS=F
- InvSVX:  RCond= 2.90D-06 Info=           0 Equed=N FErr=  6.45D-13 BErr=  5.92D-17
+ RMS Error=  0.4567463850D-02 NUsed= 3 OKEnD=T EnDIS=F
+ InvSVX:  RCond= 2.90D-06 Info=           0 Equed=N FErr=  6.96D-13 BErr=  9.20D-17
  DidBck=F Rises=F RFO-DIIS coefs:    0.98239    0.29080   -0.27319
  Iteration  1 RMS(Cart)=  0.00221518 RMS(Int)=  0.00004966
  Iteration  2 RMS(Cart)=  0.00000940 RMS(Int)=  0.00004880
@@ -619,7 +619,7 @@
  Predicted change in Energy=-1.392637D-06
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -658,7 +658,7 @@
       5          8           0        0.670188   -0.126183    0.011973
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         194.8825546          30.0640736          26.2060529
- Leave Link  202 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -666,7 +666,7 @@
  There are    13 symmetry adapted basis functions of A   symmetry.
     13 basis functions,    39 primitive gaussians,    13 cartesian basis functions
      9 alpha electrons        8 beta electrons
-       nuclear repulsion energy        35.3853009945 Hartrees.
+       nuclear repulsion energy        35.3853009946 Hartrees.
  IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
  ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
  IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
@@ -674,19 +674,19 @@
  Integral buffers will be    131072 words long.
  Raffenetti 2 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  301 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l402.exe)
  External calculation of energy and first derivatives.
  Running external command "python3 -u ../pes/h3co_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-46326.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-46326.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-46326.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-46326.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-46326.EUF"
+         input file       "/home/jh-li/scratch/g16/Gau-1448914.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1448914.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1448914.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1448914.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1448914.EUF"
  Recovered energy= -575.301928793     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -575.301929     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ Leave Link  402 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  ***** Axes restored to original set *****
@@ -701,7 +701,7 @@
       5        8           0.000103592   -0.000003985   -0.000136744
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.000295976 RMS     0.000122371
- Leave Link  716 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -745,11 +745,11 @@
      Eigenvalues ---    0.00534   0.01615   0.13938   0.16426   0.17993
      Eigenvalues ---    0.35997   0.40281   0.51290   0.55744
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:     4    3    2    1
- RFO step:  Lambda=-1.06809621D-06.
+ RFO step:  Lambda=-1.06809624D-06.
  NNeg= 0 NGDIIS= 4 SimSw=  2.50D-01 Rises=F DC= -1.40D-06 SmlDif=  1.00D-05
  NRisDI= 0 DoIntr=F SqrtH=F CThrHd= 10.0 CDAdj=  3.0
- RMS Error=  0.2880951856D-02 NUsed= 4 OKEnD=F EnDIS=F
- InvSVX:  RCond= 7.33D-07 Info=           0 Equed=N FErr=  2.98D-13 BErr=  6.03D-17
+ RMS Error=  0.2880951958D-02 NUsed= 4 OKEnD=F EnDIS=F
+ InvSVX:  RCond= 7.33D-07 Info=           0 Equed=N FErr=  3.07D-13 BErr=  8.20D-17
  DidBck=F Rises=F RFO-DIIS coefs:    2.53604   -1.66036    0.11847    0.00586
  Iteration  1 RMS(Cart)=  0.00164922 RMS(Int)=  0.00000999
  Iteration  2 RMS(Cart)=  0.00000426 RMS(Int)=  0.00000902
@@ -776,7 +776,7 @@
  Predicted change in Energy=-5.005617D-07
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -815,7 +815,7 @@
       5          8           0        0.670286   -0.126171    0.011597
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         194.7727605          30.0630298          26.1968954
- Leave Link  202 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -831,19 +831,19 @@
  Integral buffers will be    131072 words long.
  Raffenetti 2 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  301 at Wed Apr 10 09:21:19 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l402.exe)
  External calculation of energy and first derivatives.
  Running external command "python3 -u ../pes/h3co_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-46326.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-46326.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-46326.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-46326.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-46326.EUF"
+         input file       "/home/jh-li/scratch/g16/Gau-1448914.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1448914.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1448914.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1448914.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1448914.EUF"
  Recovered energy= -575.301929216     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -575.301929     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ Leave Link  402 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  ***** Axes restored to original set *****
@@ -858,7 +858,7 @@
       5        8          -0.000050584    0.000020630   -0.000024292
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.000097666 RMS     0.000039440
- Leave Link  716 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -901,15 +901,15 @@
      Eigenvalues ---    0.00484   0.01353   0.11865   0.16591   0.17758
      Eigenvalues ---    0.36014   0.43980   0.51923   0.56408
  En-DIIS/RFO-DIIS/Sim-DIIS IScMMF=       -3 using points:     5    4    3    2    1
- RFO step:  Lambda=-1.30578497D-07.
+ RFO step:  Lambda=-1.30578504D-07.
  NNeg= 0 NGDIIS= 5 SimSw=  2.50D-01 Rises=F DC= -4.22D-07 SmlDif=  1.00D-05
  NRisDI= 0 DoIntr=F SqrtH=F CThrHd= 10.0 CDAdj=  3.0
- RMS Error=  0.9195942047D-03 NUsed= 5 OKEnD=F EnDIS=F
- InvSVX:  RCond= 4.83D-08 Info=           0 Equed=N FErr=  4.07D-12 BErr=  6.67D-17
+ RMS Error=  0.9195941934D-03 NUsed= 5 OKEnD=F EnDIS=F
+ InvSVX:  RCond= 4.83D-08 Info=           0 Equed=N FErr=  4.20D-12 BErr=  6.67D-17
  DIIS inversion failure, remove point   5.
- InvSVX:  RCond= 9.26D-08 Info=           0 Equed=N FErr=  5.13D-13 BErr=  1.07D-16
+ InvSVX:  RCond= 9.26D-08 Info=           0 Equed=N FErr=  5.36D-13 BErr=  1.09D-16
  DIIS inversion failure, remove point   4.
- InvSVX:  RCond= 6.32D-07 Info=           0 Equed=N FErr=  7.08D-14 BErr=  7.20D-17
+ InvSVX:  RCond= 6.32D-07 Info=           0 Equed=N FErr=  6.71D-14 BErr=  0.00D+00
  RFO-DIIS uses    3 points instead of    5
  DidBck=F Rises=F RFO-DIIS coefs:    1.68263   -1.09247    0.40985    0.00000    0.00000
  Iteration  1 RMS(Cart)=  0.00078986 RMS(Int)=  0.00000209
@@ -957,7 +957,7 @@
  Largest change from initial coordinates is atom    1       0.009 Angstoms.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -981,7 +981,7 @@
  Framework group  C1[X(CH3O)]
  Deg. of freedom     9
  Full point group                 C1      NOp   1
- RotChk:  IX=0 Diff= 2.88D-15
+ RotChk:  IX=0 Diff= 1.16D-15
  Largest Abelian subgroup         C1      NOp   1
  Largest concise Abelian subgroup C1      NOp   1
                          Standard orientation:                         
@@ -996,38 +996,31 @@
       5          8           0        0.670286   -0.126171    0.011597
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         194.7727605          30.0630298          26.1968954
- Leave Link  202 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l601.exe)
- Leave Link  601 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  601 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l9999.exe)
  Unable to Open any file for archive entry.
  1\1\GINC-DESKTOP-1D9QDE1\FOpt\External='python3 -u ../pes/h3co_pes.py'
- \ZDO\C1H3O1(2)\JH-LI\16-Mar-2024\0\\#p external="python3 -u ../pes/h3c
- o_pes.py" opt=nomicro\\CH2OH\\0,2\H,-0.8189461709,-0.038693358,-1.0024
- 549395\H,0.924606145,0.1414740621,1.2252865449\H,-0.9590658267,0.18933
- 03782,1.197354124\C,-0.0121240304,-0.02585883,0.7253653935\O,0.0666663
- 108,-0.0223025691,-0.6353833907\\Version=ES64L-G16RevC.01\HF=-575.3019
- 292\S2=0.\S2-1=0.\S2A=0.\RMSD=0.000e+00\RMSF=3.944e-05\Dipole=0.,0.,0.
- \PG=C01 [X(C1H3O1)]\\@
+ \ZDO\C1H3O1(2)\JH-LI\10-Apr-2024\0\\#p external="python3 -u ../pes/h3c
+ o_pes.py" opt=nomicro\\CH2OH\\0,2\H,-0.818946171,-0.0386933579,-1.0024
+ 549395\H,0.924606145,0.1414740621,1.225286545\H,-0.9590658267,0.189330
+ 3782,1.197354124\C,-0.0121240303,-0.02585883,0.7253653935\O,0.06666631
+ 08,-0.0223025692,-0.6353833907\\Version=ES64L-G16RevC.01\HF=-575.30192
+ 92\S2=0.\S2-1=0.\S2A=0.\RMSD=0.000e+00\RMSF=3.944e-05\Dipole=0.,0.,0.\
+ PG=C01 [X(C1H3O1)]\\@
  The archive entry for this job was punched.
 
 
- IT WAS A GAME, A VERY INTERESTING GAME ONE COULD
- PLAY.  WHENEVER ONE SOLVED ONE OF THE LITTLE PROBLEMS,
- ONE COULD WRITE A PAPER ABOUT IT.  IT WAS VERY EASY IN
- THOSE DAYS FOR ANY SECOND-RATE PHYSICIST TO DO
- FIRST-RATE WORK.  THERE HAS NOT BEEN SUCH A GLORIOUS
- TIME SINCE.  IT IS VERY DIFFICULT NOW FOR A FIRST-RATE
- PHYSICIST TO DO SECOND-RATE WORK.
-     P.A.M. DIRAC, ON THE EARLY DAYS OF QUANTUM MECHANICS
-                   DIRECTIONS IN PHYSICS, 1978, P. 7
+ SUPPORT THE RIGHT TO ARM BEARS!
+ (ADD A CLAWS TO THE BILL OF RIGHTS)
  Job cpu time:       0 days  0 hours  0 minutes  1.1 seconds.
- Elapsed time:       0 days  0 hours  0 minutes  1.7 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  1.9 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1
- Normal termination of Gaussian 16 at Sat Mar 16 11:25:48 2024.
+ Normal termination of Gaussian 16 at Wed Apr 10 09:21:20 2024.
  Initial command:
- /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-46323.inp" -scrdir="/home/jh-li/scratch/g16/"
- Entering Link 1 = /opt/g16/l1.exe PID=     46362.
+ /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-1448911.inp" -scrdir="/home/jh-li/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=   1448961.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -1100,7 +1093,7 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
-                16-Mar-2024 
+                10-Apr-2024 
  ******************************************
  %nproc=1
  Will use up to    1 processors via shared memory.
@@ -1116,7 +1109,7 @@
  7/8=1,25=1,44=-1/16;
  1/10=4,18=10,30=1/3;
  99//99;
- Leave Link    1 at Sat Mar 16 11:25:48 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
+ Leave Link    1 at Wed Apr 10 09:21:20 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l101.exe)
  Structure from the checkpoint file:  "CH2OH-opt-freq.chk"
  -----
@@ -1124,11 +1117,11 @@
  -----
  Charge =  0 Multiplicity = 2
  Redundant internal coordinates found in file.  (old form).
- H,0,-0.8189461709,-0.038693358,-1.0024549395
- H,0,0.924606145,0.1414740621,1.2252865449
+ H,0,-0.818946171,-0.0386933579,-1.0024549395
+ H,0,0.924606145,0.1414740621,1.225286545
  H,0,-0.9590658267,0.1893303782,1.197354124
- C,0,-0.0121240304,-0.02585883,0.7253653935
- O,0,0.0666663108,-0.0223025691,-0.6353833907
+ C,0,-0.0121240303,-0.02585883,0.7253653935
+ O,0,0.0666663108,-0.0223025692,-0.6353833907
  Recover connectivity data from disk.
  ITRead=  0  0  0  0  0
  MicOpt= -1 -1 -1 -1 -1
@@ -1146,7 +1139,7 @@
  NQMom=    0.0000000   0.0000000   0.0000000   0.0000000   0.0000000
  NMagM=    2.7928460   2.7928460   2.7928460   0.0000000   0.0000000
  AtZNuc=   1.0000000   1.0000000   1.0000000   6.0000000   8.0000000
- Leave Link  101 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ Leave Link  101 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.2 elap:               0.2
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -1156,7 +1149,7 @@
  Number of steps in this run=      2 maximum allowed number of steps=      2.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -1180,7 +1173,7 @@
  Framework group  C1[X(CH3O)]
  Deg. of freedom     9
  Full point group                 C1      NOp   1
- RotChk:  IX=0 Diff= 2.93D-15
+ RotChk:  IX=0 Diff= 1.36D-15
  Largest Abelian subgroup         C1      NOp   1
  Largest concise Abelian subgroup C1      NOp   1
                          Standard orientation:                         
@@ -1195,7 +1188,7 @@
       5          8           0        0.670286   -0.126171    0.011597
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         194.7727605          30.0630298          26.1968954
- Leave Link  202 at Sat Mar 16 11:25:48 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -1211,25 +1204,25 @@
  Integral buffers will be    131072 words long.
  Raffenetti 2 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Sat Mar 16 11:25:49 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ Leave Link  301 at Wed Apr 10 09:21:20 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
  (Enter /opt/g16/l402.exe)
  External calculation of energy, first and second derivatives.
  Running external command "python3 -u ../pes/h3co_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-46362.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-46362.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-46362.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-46362.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-46362.EUF"
+         input file       "/home/jh-li/scratch/g16/Gau-1448961.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1448961.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1448961.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1448961.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1448961.EUF"
  Recovered energy= -575.301929216     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -575.301929     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Sat Mar 16 11:25:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.8
+ Leave Link  402 at Wed Apr 10 09:21:21 2024, MaxMem=   104857600 cpu:               0.0 elap:               1.1
  (Enter /opt/g16/l601.exe)
- Leave Link  601 at Sat Mar 16 11:25:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  601 at Wed Apr 10 09:21:21 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  Full mass-weighted force constant matrix:
- Low frequencies ---  -10.4166   -0.3814   -0.2255    0.2519   12.6253   43.3900
+ Low frequencies ---  -10.4166   -0.3818   -0.2250    0.2521   12.6252   43.3900
  Low frequencies ---  373.0825  476.9188 1071.4025
  Diagonal vibrational polarizability:
         0.0000000       0.0000000       0.0000000
@@ -1348,16 +1341,16 @@
       1  0.468050D+00
       2  0.828133D-02  0.575407D-02
       3  0.175694D+00  0.318882D-02  0.131116D+00
-      4  0.689365D-03 -0.441448D-04  0.329249D-02  0.294514D+00
+      4  0.689365D-03 -0.441449D-04  0.329249D-02  0.294514D+00
       5  0.563491D-03  0.307919D-02  0.102367D-03  0.458023D-01  0.124857D-01
       6 -0.268029D-02 -0.910391D-03 -0.586070D-02  0.127004D+00  0.275342D-01
       7 -0.129671D-02 -0.176244D-03 -0.623842D-03 -0.972037D-02  0.557940D-02
-      8  0.115269D-02 -0.212577D-02 -0.397356D-03 -0.438307D-02  0.461096D-04
+      8  0.115269D-02 -0.212577D-02 -0.397356D-03 -0.438307D-02  0.461097D-04
       9  0.322774D-02 -0.322434D-03  0.350934D-02 -0.986945D-02  0.332636D-02
      10  0.773542D-02  0.494878D-04 -0.463520D-01 -0.296967D+00 -0.534711D-01
-     11 -0.206492D-02 -0.435928D-05 -0.417497D-03 -0.427090D-01 -0.123835D-01
+     11 -0.206492D-02 -0.435927D-05 -0.417497D-03 -0.427090D-01 -0.123835D-01
      12  0.146312D-01  0.116231D-02 -0.286198D-01 -0.122289D+00 -0.297363D-01
-     13 -0.475182D+00 -0.811104D-02 -0.132035D+00  0.114932D-01  0.152445D-02
+     13 -0.475182D+00 -0.811104D-02 -0.132035D+00  0.114932D-01  0.152446D-02
      14 -0.793244D-02 -0.670633D-02 -0.247665D-02  0.133778D-02 -0.323323D-02
      15 -0.190863D+00 -0.311855D-02 -0.100146D+00  0.184645D-02 -0.122939D-02
                 6             7             8             9            10 
@@ -1368,7 +1361,7 @@
      10 -0.108547D+00 -0.290111D+00  0.660650D-01  0.919019D-01  0.690006D+00
      11 -0.240051D-01  0.553264D-01 -0.175650D-01 -0.273196D-01 -0.141200D-01
      12 -0.104888D+00  0.103626D+00 -0.316365D-01 -0.957499D-01  0.223985D-01
-     13 -0.293198D-01  0.959426D-02 -0.379601D-02  0.296953D-01 -0.110692D+00
+     13 -0.293199D-01  0.959426D-02 -0.379601D-02  0.296953D-01 -0.110692D+00
      14 -0.481392D-02 -0.169561D-02  0.324269D-02 -0.648091D-02  0.147912D-02
      15 -0.241518D-01 -0.156200D-02 -0.963504D-03 -0.290686D-01  0.406014D-01
                11            12            13            14            15 
@@ -1377,7 +1370,7 @@
      13  0.356980D-02 -0.183480D-01  0.564797D+00
      14 -0.336125D-02  0.530635D-02  0.681222D-02  0.100571D-01
      15 -0.316047D-02 -0.356180D+00  0.149997D+00  0.846595D-02  0.509510D+00
- Leave Link  716 at Sat Mar 16 11:25:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Wed Apr 10 09:21:21 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -1452,48 +1445,46 @@
  Predicted change in Energy=-1.081164D-07
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Sat Mar 16 11:25:49 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:21:21 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l9999.exe)
  Unable to Open any file for archive entry.
  1\1\GINC-DESKTOP-1D9QDE1\Freq\External='python3 -u ../pes/h3co_pes.py'
- \ZDO\C1H3O1(2)\JH-LI\16-Mar-2024\0\\#p external="python3 -u ../pes/h3c
- o_pes.py" freq geom=allcheck\\CH2OH\\0,2\H,-0.8189461709,-0.038693358,
- -1.0024549395\H,0.924606145,0.1414740621,1.2252865449\H,-0.9590658267,
- 0.1893303782,1.197354124\C,-0.0121240304,-0.02585883,0.7253653935\O,0.
- 0666663108,-0.0223025691,-0.6353833907\\Version=ES64L-G16RevC.01\HF=-5
- 75.3019292\S2=0.\S2-1=0.\S2A=0.\RMSD=0.000e+00\RMSF=3.944e-05\ZeroPoin
- t=0.0371991\Thermal=0.0406666\ETot=-575.2612626\HTot=-575.2603184\GTot
- =-575.2877911\Dipole=0.,0.,0.\PG=C01 [X(C1H3O1)]\NImag=0\\0.46804969,0
- .00828133,0.00575407,0.17569416,0.00318882,0.13111646,0.00068936,-0.00
- 004414,0.00329249,0.29451408,0.00056349,0.00307919,0.00010237,0.045802
- 27,0.01248571,-0.00268029,-0.00091039,-0.00586070,0.12700427,0.0275341
- 6,0.12701801,-0.00129671,-0.00017624,-0.00062384,-0.00972037,0.0055794
- 0,0.01352668,0.29154803,0.00115269,-0.00212577,-0.00039736,-0.00438307
- ,0.00004611,0.00219662,-0.05903977,0.01639561,0.00322774,-0.00032243,0
- .00350934,-0.00986945,0.00332636,0.00787704,-0.11495304,0.03079825,0.1
- 1343085,0.00773542,0.00004949,-0.04635196,-0.29696679,-0.05347114,-0.1
- 0854700,-0.29011119,0.06606502,0.09190195,0.69000559,-0.00206492,-0.00
- 000436,-0.00041750,-0.04270904,-0.01238348,-0.02400514,0.05532637,-0.0
- 1756497,-0.02731956,-0.01412002,0.03333027,0.01463121,0.00116231,-0.02
- 861976,-0.12228940,-0.02973626,-0.10488758,0.10362610,-0.03163652,-0.0
- 9574988,0.02239849,0.05490733,0.58548134,-0.47518227,-0.00811104,-0.13
- 203530,0.01149324,0.00152445,-0.02931985,0.00959426,-0.00379601,0.0296
- 9526,-0.11069193,0.00356980,-0.01834797,0.56479657,-0.00793244,-0.0067
- 0633,-0.00247665,0.00133778,-0.00323323,-0.00481392,-0.00169561,0.0032
- 4269,-0.00648091,0.00147912,-0.00336125,0.00530635,0.00681222,0.010057
- 15,-0.19086265,-0.00311855,-0.10014593,0.00184645,-0.00122939,-0.02415
- 179,-0.00156200,-0.00096350,-0.02906857,0.04060140,-0.00316047,-0.3561
- 8044,0.14999657,0.00846595,0.50950979\\-0.00000624,0.00002286,0.000009
- 69,0.00003109,0.00003357,0.00002891,-0.00002096,0.00000916,0.00002836,
- -0.00005189,-0.00005114,-0.00009767,0.00005058,-0.00002063,0.00002429\
- \\@
+ \ZDO\C1H3O1(2)\JH-LI\10-Apr-2024\0\\#p external="python3 -u ../pes/h3c
+ o_pes.py" freq geom=allcheck\\CH2OH\\0,2\H,-0.818946171,-0.0386933579,
+ -1.0024549395\H,0.924606145,0.1414740621,1.225286545\H,-0.9590658267,0
+ .1893303782,1.197354124\C,-0.0121240303,-0.02585883,0.7253653935\O,0.0
+ 666663108,-0.0223025692,-0.6353833907\\Version=ES64L-G16RevC.01\HF=-57
+ 5.3019292\S2=0.\S2-1=0.\S2A=0.\RMSD=0.000e+00\RMSF=3.944e-05\ZeroPoint
+ =0.0371991\Thermal=0.0406666\ETot=-575.2612626\HTot=-575.2603184\GTot=
+ -575.2877911\Dipole=0.,0.,0.\PG=C01 [X(C1H3O1)]\NImag=0\\0.46804969,0.
+ 00828133,0.00575407,0.17569416,0.00318882,0.13111646,0.00068936,-0.000
+ 04414,0.00329249,0.29451408,0.00056349,0.00307919,0.00010237,0.0458022
+ 7,0.01248571,-0.00268029,-0.00091039,-0.00586070,0.12700427,0.02753416
+ ,0.12701801,-0.00129671,-0.00017624,-0.00062384,-0.00972037,0.00557940
+ ,0.01352668,0.29154803,0.00115269,-0.00212577,-0.00039736,-0.00438307,
+ 0.00004611,0.00219662,-0.05903977,0.01639561,0.00322774,-0.00032243,0.
+ 00350934,-0.00986945,0.00332636,0.00787704,-0.11495304,0.03079825,0.11
+ 343085,0.00773542,0.00004949,-0.04635196,-0.29696679,-0.05347114,-0.10
+ 854700,-0.29011119,0.06606502,0.09190195,0.69000559,-0.00206492,-0.000
+ 00436,-0.00041750,-0.04270904,-0.01238348,-0.02400514,0.05532637,-0.01
+ 756497,-0.02731956,-0.01412002,0.03333027,0.01463121,0.00116231,-0.028
+ 61976,-0.12228940,-0.02973626,-0.10488758,0.10362610,-0.03163652,-0.09
+ 574988,0.02239849,0.05490733,0.58548134,-0.47518227,-0.00811104,-0.132
+ 03530,0.01149324,0.00152446,-0.02931985,0.00959426,-0.00379601,0.02969
+ 526,-0.11069193,0.00356980,-0.01834797,0.56479657,-0.00793244,-0.00670
+ 633,-0.00247665,0.00133778,-0.00323323,-0.00481392,-0.00169561,0.00324
+ 269,-0.00648091,0.00147912,-0.00336125,0.00530635,0.00681222,0.0100571
+ 5,-0.19086265,-0.00311855,-0.10014593,0.00184645,-0.00122939,-0.024151
+ 79,-0.00156200,-0.00096350,-0.02906857,0.04060140,-0.00316047,-0.35618
+ 044,0.14999657,0.00846595,0.50950979\\-0.00000624,0.00002286,0.0000096
+ 9,0.00003109,0.00003357,0.00002891,-0.00002096,0.00000916,0.00002836,-
+ 0.00005189,-0.00005114,-0.00009767,0.00005058,-0.00002063,0.00002429\\
+ \@
  The archive entry for this job was punched.
 
 
- KNOWLEDGE IS CHIMERA - FOR BEYOND IT LIES OTHER KNOWLEDGE,
- AND THE INCOMPLETENESS OF WHAT IS KNOWN RENDERS THE KNOWING FALSE.
-     -- THE THOMAS COVENANT CHRONICLES
+ YOU ARE IN A MAZE OF TWISTY LITTLE PASSAGES.
  Job cpu time:       0 days  0 hours  0 minutes  0.4 seconds.
- Elapsed time:       0 days  0 hours  0 minutes  1.1 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  1.4 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1
- Normal termination of Gaussian 16 at Sat Mar 16 11:25:49 2024.
+ Normal termination of Gaussian 16 at Wed Apr 10 09:21:21 2024.

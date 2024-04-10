@@ -1,7 +1,7 @@
  Entering Gaussian System, Link 0=g16
  Initial command:
- /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-704177.inp" -scrdir="/home/jh-li/scratch/g16/"
- Entering Link 1 = /opt/g16/l1.exe PID=    704180.
+ /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-1454482.inp" -scrdir="/home/jh-li/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=   1454485.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -74,7 +74,7 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
-                 7-Mar-2024 
+                10-Apr-2024 
  ******************************************
  %nproc=1
  Will use up to    1 processors via shared memory.
@@ -99,7 +99,7 @@
  2/9=110/2;
  6/7=2,8=2,9=2,10=2/1;
  99/9=10/99;
- Leave Link    1 at Thu Mar  7 13:55:02 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
+ Leave Link    1 at Wed Apr 10 09:30:23 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l101.exe)
  ---
  H2O
@@ -126,7 +126,7 @@
  NQMom=    0.0000000   0.0000000   0.0000000
  NMagM=    2.7928460   2.7928460   0.0000000
  AtZNuc=   1.0000000   1.0000000   8.0000000
- Leave Link  101 at Thu Mar  7 13:55:02 2024, MaxMem=   104857600 cpu:               0.2 elap:               0.2
+ Leave Link  101 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -146,7 +146,7 @@
  Number of steps in this run=     20 maximum allowed number of steps=    100.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Thu Mar  7 13:55:02 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -178,7 +178,7 @@
       3          8           0        0.000000    0.000000    0.117463
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         818.4809267         436.4706322         284.6666750
- Leave Link  202 at Thu Mar  7 13:55:02 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -200,21 +200,21 @@
  Integral buffers will be    131072 words long.
  Raffenetti 1 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  301 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l402.exe)
  External calculation of energy and first derivatives.
  Running external command "python3 -u ../pes/h2o_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-704180.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-704180.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-704180.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-704180.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-704180.EUF"
+         input file       "/home/jh-li/scratch/g16/Gau-1454485.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1454485.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1454485.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1454485.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1454485.EUF"
  Recovered energy= -116.147292264     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -116.147292     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ Leave Link  402 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.2
  (Enter /opt/g16/l601.exe)
- Leave Link  601 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  601 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  ***** Axes restored to original set *****
@@ -222,12 +222,12 @@
  Center     Atomic                   Forces (Hartrees/Bohr)
  Number     Number              X              Y              Z
  -------------------------------------------------------------------
-      1        1          -0.000000000    0.000096950   -0.000098949
+      1        1           0.000000000    0.000096950   -0.000098949
       2        1           0.000000000   -0.000096950   -0.000098949
-      3        8           0.000000000    0.000000000    0.000194525
+      3        8          -0.000000000    0.000000000    0.000194525
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.000194525 RMS     0.000092027
- Leave Link  716 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -247,12 +247,12 @@
            A1           0.00000   0.00000   0.16000
  ITU=  0
      Eigenvalues ---    0.16000   0.55723   0.55723
- RFO step:  Lambda=-7.35333853D-08 EMin= 1.60000000D-01
+ RFO step:  Lambda=-7.35333849D-08 EMin= 1.60000000D-01
  Linear search not attempted -- first point.
  Iteration  1 RMS(Cart)=  0.00015423 RMS(Int)=  0.00000002
  Iteration  2 RMS(Cart)=  0.00000002 RMS(Int)=  0.00000000
  ITry= 1 IFail=0 DXMaxC= 1.97D-04 DCOld= 1.00D+10 DXMaxT= 3.00D-01 DXLimC= 3.00D+00 Rises=F
- ClnCor:  largest displacement from symmetrization is 2.98D-13 for atom     2.
+ ClnCor:  largest displacement from symmetrization is 1.66D-20 for atom     3.
  Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
                                  (Linear)    (Quad)   (Total)
     R1        1.81195  -0.00014   0.00000  -0.00025  -0.00025   1.81171
@@ -279,7 +279,7 @@
  Largest change from initial coordinates is atom    1       0.000 Angstoms.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -312,11 +312,11 @@
       3          8           0        0.000000    0.000000    0.117463
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         818.4809267         436.4706322         284.6666750
- Leave Link  202 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l9999.exe)
  Unable to Open any file for archive entry.
  1\1\GINC-DESKTOP-1D9QDE1\FOpt\External='python3 -u ../pes/h2o_pes.py'\
- ZDO\H2O1\JH-LI\07-Mar-2024\0\\#p external="python3 -u ../pes/h2o_pes.p
+ ZDO\H2O1\JH-LI\10-Apr-2024\0\\#p external="python3 -u ../pes/h2o_pes.p
  y" opt=nomicro\\H2O\\0,1\H,0.,-0.7579202604,0.5215934515\H,0.,0.757920
  2604,0.5215934515\O,0.,0.,-0.0657193274\\Version=ES64L-G16RevC.01\HF=-
  116.1472923\RMSD=0.000e+00\RMSF=9.203e-05\Dipole=0.,0.,0.\PG=C02V [C2(
@@ -324,18 +324,17 @@
  The archive entry for this job was punched.
 
 
- BETTER TO HUNT IN FIELDS, FOR HEALTH UNBOUGHT
- THAN FEE THE DOCTOR FOR A NAUSEOUS DRAUGHT.
- THE WISE, FOR CURE, ON EXERCISE DEPEND;
- GOD NEVER MADE HIS WORK FOR MAN TO MEND.
-     -- JOHN DRYDEN (1631-1700)
+ I FIND THAT THE THREE TRULY GREAT TIMES FOR THINKING THOUGHTS
+ ARE WHEN I AM STANDING IN THE SHOWER, SITTING ON THE JOHN, OR WALKING.
+
+                                    -- COLIN FLETCHER
  Job cpu time:       0 days  0 hours  0 minutes  0.4 seconds.
  Elapsed time:       0 days  0 hours  0 minutes  0.6 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1
- Normal termination of Gaussian 16 at Thu Mar  7 13:55:03 2024.
+ Normal termination of Gaussian 16 at Wed Apr 10 09:30:23 2024.
  Initial command:
- /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-704177.inp" -scrdir="/home/jh-li/scratch/g16/"
- Entering Link 1 = /opt/g16/l1.exe PID=    704184.
+ /opt/g16/l1.exe "/home/jh-li/scratch/g16/Gau-1454482.inp" -scrdir="/home/jh-li/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=   1454489.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -408,7 +407,7 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
-                 7-Mar-2024 
+                10-Apr-2024 
  ******************************************
  %nproc=1
  Will use up to    1 processors via shared memory.
@@ -424,7 +423,7 @@
  7/8=1,25=1,44=-1/16;
  1/10=4,18=10,30=1/3;
  99//99;
- Leave Link    1 at Thu Mar  7 13:55:03 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
+ Leave Link    1 at Wed Apr 10 09:30:23 2024, MaxMem=           0 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l101.exe)
  Structure from the checkpoint file:  "H2O-opt-freq.chk"
  ---
@@ -452,7 +451,7 @@
  NQMom=    0.0000000   0.0000000   0.0000000
  NMagM=    2.7928460   2.7928460   0.0000000
  AtZNuc=   1.0000000   1.0000000   8.0000000
- Leave Link  101 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ Leave Link  101 at Wed Apr 10 09:30:23 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.1
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -462,7 +461,7 @@
  Number of steps in this run=      2 maximum allowed number of steps=      2.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:30:24 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -495,7 +494,7 @@
       3          8           0        0.000000    0.000000    0.117463
  ---------------------------------------------------------------------
  Rotational constants (GHZ):         818.4809267         436.4706322         284.6666750
- Leave Link  202 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Wed Apr 10 09:30:24 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -517,25 +516,25 @@
  Integral buffers will be    131072 words long.
  Raffenetti 1 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.1 elap:               0.0
+ Leave Link  301 at Wed Apr 10 09:30:24 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l402.exe)
  External calculation of energy, first and second derivatives.
  Running external command "python3 -u ../pes/h2o_pes.py R"
-         input file       "/home/jh-li/scratch/g16/Gau-704184.EIn"
-         output file      "/home/jh-li/scratch/g16/Gau-704184.EOu"
-         message file     "/home/jh-li/scratch/g16/Gau-704184.EMs"
-         fchk file        "/home/jh-li/scratch/g16/Gau-704184.EFC"
-         mat. el file     "/home/jh-li/scratch/g16/Gau-704184.EUF"
+         input file       "/home/jh-li/scratch/g16/Gau-1454489.EIn"
+         output file      "/home/jh-li/scratch/g16/Gau-1454489.EOu"
+         message file     "/home/jh-li/scratch/g16/Gau-1454489.EMs"
+         fchk file        "/home/jh-li/scratch/g16/Gau-1454489.EFC"
+         mat. el file     "/home/jh-li/scratch/g16/Gau-1454489.EUF"
  Recovered energy= -116.147292264     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -116.147292     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.4
+ Leave Link  402 at Wed Apr 10 09:30:24 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.5
  (Enter /opt/g16/l601.exe)
- Leave Link  601 at Thu Mar  7 13:55:03 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  601 at Wed Apr 10 09:30:24 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  Full mass-weighted force constant matrix:
- Low frequencies ---  -53.7972   -0.5778   -0.2230    0.4816   64.7735   68.2467
+ Low frequencies ---  -53.7972   -0.5777   -0.2223    0.4816   64.7735   68.2467
  Low frequencies --- 1626.7683 3804.9506 3961.4717
  Diagonal vibrational polarizability:
         0.0000000       0.0000000       0.0000000
@@ -550,9 +549,9 @@
  Frc consts  --      1.6866                 8.9232                10.0027
  IR Inten    --      0.0000                 0.0000                 0.0000
   Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
-     1   1     0.00   0.43   0.56     0.00   0.58  -0.40     0.00   0.56  -0.43
+     1   1     0.00   0.43   0.56     0.00   0.58  -0.40    -0.00   0.56  -0.43
      2   1     0.00  -0.43   0.56    -0.00  -0.58  -0.40     0.00   0.56   0.43
-     3   8    -0.00   0.00  -0.07     0.00  -0.00   0.05    -0.00  -0.07  -0.00
+     3   8    -0.00  -0.00  -0.07     0.00  -0.00   0.05    -0.00  -0.07  -0.00
 
  -------------------
  - Thermochemistry -
@@ -607,7 +606,7 @@
  Number     Number              X              Y              Z
  -------------------------------------------------------------------
       1        1          -0.000000000    0.000096950   -0.000098949
-      2        1          -0.000000000   -0.000096950   -0.000098949
+      2        1           0.000000000   -0.000096950   -0.000098949
       3        8          -0.000000000    0.000000000    0.000194525
  -------------------------------------------------------------------
  Cartesian Forces:  Max     0.000194525 RMS     0.000092027
@@ -616,7 +615,7 @@
       1  0.158416D-03
       2  0.000000D+00  0.370709D+00
       3  0.000000D+00 -0.235678D+00  0.218756D+00
-      4 -0.160289D-05  0.000000D+00  0.000000D+00  0.158416D-03
+      4 -0.160284D-05  0.000000D+00  0.000000D+00  0.158416D-03
       5  0.000000D+00 -0.240283D-01 -0.330016D-01  0.000000D+00  0.370709D+00
       6  0.000000D+00  0.330016D-01  0.106959D-01  0.000000D+00  0.235678D+00
       7 -0.160990D-03  0.000000D+00  0.000000D+00 -0.160990D-03  0.000000D+00
@@ -627,7 +626,7 @@
       7  0.000000D+00  0.330326D-03
       8 -0.268670D+00  0.000000D+00  0.693292D+00
       9 -0.229449D+00  0.000000D+00  0.000000D+00  0.458894D+00
- Leave Link  716 at Thu Mar  7 13:55:04 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Wed Apr 10 09:30:24 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -639,23 +638,23 @@
  The second derivative matrix:
                           X1        Y1        Z1        X2        Y2
            X1           0.00016
-           Y1           0.00000   0.37071
-           Z1           0.00000  -0.23568   0.21876
-           X2          -0.00000   0.00000  -0.00000   0.00016
-           Y2          -0.00000  -0.02403  -0.03300  -0.00000   0.37071
-           Z2          -0.00000   0.03300   0.01070  -0.00000   0.23568
-           X3          -0.00016   0.00000   0.00000  -0.00016   0.00000
+           Y1          -0.00000   0.37071
+           Z1          -0.00000  -0.23568   0.21876
+           X2          -0.00000   0.00000   0.00000   0.00016
+           Y2          -0.00000  -0.02403  -0.03300   0.00000   0.37071
+           Z2          -0.00000   0.03300   0.01070   0.00000   0.23568
+           X3          -0.00016  -0.00000  -0.00000  -0.00016   0.00000
            Y3           0.00000  -0.34666   0.26867   0.00000  -0.34666
-           Z3           0.00000   0.20269  -0.22945   0.00000  -0.20269
+           Z3          -0.00000   0.20269  -0.22945   0.00000  -0.20269
                           Z2        X3        Y3        Z3
            Z2           0.21876
            X3           0.00000   0.00033
            Y3          -0.26867  -0.00000   0.69329
-           Z3          -0.22945  -0.00000   0.00000   0.45889
+           Z3          -0.22945  -0.00000  -0.00000   0.45889
  ITU=  0
      Eigenvalues ---    0.14752   0.78215   0.99760
  Angle between quadratic step and forces=  32.19 degrees.
- ClnCor:  largest displacement from symmetrization is 6.88D-13 for atom     2.
+ ClnCor:  largest displacement from symmetrization is 9.42D-13 for atom     2.
  Linear search not attempted -- first point.
  ClnCor:  largest displacement from symmetrization is 1.39D-17 for atom     3.
  B after Tr=    -0.000000   -0.000000    0.000098
@@ -665,7 +664,7 @@
     X1        0.00000  -0.00000   0.00000   0.00000   0.00000   0.00000
     Y1       -1.43226   0.00010   0.00000   0.00005   0.00005  -1.43221
     Z1        0.98567  -0.00010   0.00000  -0.00023  -0.00013   0.98554
-    X2       -0.00000  -0.00000   0.00000   0.00000   0.00000  -0.00000
+    X2       -0.00000   0.00000   0.00000   0.00000   0.00000  -0.00000
     Y2        1.43226  -0.00010   0.00000  -0.00005  -0.00005   1.43221
     Z2        0.98567  -0.00010   0.00000  -0.00023  -0.00013   0.98554
     X3        0.00000  -0.00000   0.00000  -0.00000  -0.00000   0.00000
@@ -681,11 +680,11 @@
     -- Stationary point found.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Thu Mar  7 13:55:04 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Wed Apr 10 09:30:24 2024, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l9999.exe)
  Unable to Open any file for archive entry.
  1\1\GINC-DESKTOP-1D9QDE1\Freq\External='python3 -u ../pes/h2o_pes.py'\
- ZDO\H2O1\JH-LI\07-Mar-2024\0\\#p external="python3 -u ../pes/h2o_pes.p
+ ZDO\H2O1\JH-LI\10-Apr-2024\0\\#p external="python3 -u ../pes/h2o_pes.p
  y" freq geom=allcheck\\H2O\\0,1\H,0.,-0.7579202604,0.5215934515\H,0.,0
  .7579202604,0.5215934515\O,0.,0.,-0.0657193274\\Version=ES64L-G16RevC.
  01\HF=-116.1472923\RMSD=0.000e+00\RMSF=9.203e-05\ZeroPoint=0.0213993\T
@@ -700,8 +699,10 @@
  The archive entry for this job was punched.
 
 
- REALITY IS FOR PEOPLE WHO CAN'T FACE SCIENCE FICTION.
+ ABSOLUTISM, OBSOLETISM -- IF IT WORKS, IT'S OUT OF DATE
+
+                          -- STAFFORD BEER
  Job cpu time:       0 days  0 hours  0 minutes  0.4 seconds.
- Elapsed time:       0 days  0 hours  0 minutes  0.7 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  0.8 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1
- Normal termination of Gaussian 16 at Thu Mar  7 13:55:04 2024.
+ Normal termination of Gaussian 16 at Wed Apr 10 09:30:24 2024.

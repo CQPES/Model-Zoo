@@ -1,0 +1,9 @@
+%nproc=1
+%chk=H-anion-freq.chk
+#p external="python3 -u ../pes/h_anion_pes.py" freq
+
+H^-
+
+-1 1
+ H
+

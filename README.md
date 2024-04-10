@@ -76,21 +76,6 @@ $ pip install .
 
 (1) Lu, D.; Li, J.; Guo, H. Comprehensive Investigations of the Cl + CH<sub>3</sub>OH → HCl + CH<sub>3</sub>O/CH<sub>2</sub>OH Reaction: Validation of Experiment and Dynamic Insights. _CCS Chem._ **2020**, _2_ (5), 882–894. https://doi.org/10.31635/ccschem.020.202000195.
 
-### [`H4O-CC-MRCI-2022`](https://github.com/CQPES/Model-Zoo/tree/main/H4O-CC-MRCI-2022)
-
-#### Species
-
-- H<sub>2</sub>
-- H<sub>2</sub>O
-
-#### Reactions
-
-- H<sub>2</sub> + H′<sub>2</sub>O → HH′ + HOH′
-
-#### Reference
-
-Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H<sub>4</sub>O Potential Energy Surface and Dynamics of an Exchange Reaction. _Phys. Chem. Chem. Phys._ **2022**, _24_ (44), 27548–27557. https://doi.org/10.1039/d2cp04521d.
-
 ### [`H5CO-CC-2020`](https://github.com/CQPES/Model-Zoo/tree/main/H5CO-CC-2020)
 
 #### Species
@@ -112,3 +97,37 @@ Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H<sub>4</sub>O Pot
 #### Reference
 
 (1) Lu, D.; Behler, J.; Li, J. Accurate Global Potential Energy Surfaces for the H + CH<sub>3</sub>OH Reaction by Neural Network Fitting with Permutation Invariance. _J. Phys. Chem. A_ **2020**, _124_ (28), 5737–5745. https://doi.org/10.1021/acs.jpca.0c04182.
+
+### [`NH4-anion-CC-2022`](https://github.com/CQPES/Model-Zoo/tree/main/NH4-anion-CC-2022)
+
+#### Species
+
+- H<sup>-</sub>
+- H<sub>2</sub>
+- NH<sub>2</sub><sup>-</sup>
+- NH<sub>3</sub>
+
+#### Reactions
+
+- H<sub>2</sub> + NH<sub>2</sub><sup>-</sup> → H<sup>-</sup> + NH<sub>3</sub>
+
+
+#### Reference
+
+(1) Song, K.; Song, H.; Li, J. Validating Experiments for the Reaction H<sub>2</sub> + NH<sub>2</sub><sup>−</sup> by Dynamical Calculations on an Accurate Full-Dimensional Potential Energy Surface. Phys. Chem. Chem. Phys. 2022, 24 (17), 10160–10167. https://doi.org/10.1039/d2cp00870j.
+
+### [`H4O-CC-MRCI-2022`](https://github.com/CQPES/Model-Zoo/tree/main/H4O-CC-MRCI-2022)
+
+#### Species
+
+- H<sub>2</sub>
+- H<sub>2</sub>O
+
+#### Reactions
+
+- H<sub>2</sub> + H′<sub>2</sub>O → HH′ + HOH′
+
+#### Reference
+
+Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H<sub>4</sub>O Potential Energy Surface and Dynamics of an Exchange Reaction. _Phys. Chem. Chem. Phys._ **2022**, _24_ (44), 27548–27557. https://doi.org/10.1039/d2cp04521d.
+

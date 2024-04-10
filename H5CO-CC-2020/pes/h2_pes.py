@@ -34,7 +34,7 @@ class H2PES(BasePES):
 
         # concat input coords with a fixed CH3O molecule
         # now that order of the atoms is H H | H H H C O
-        _eq_ch3o = _EQ_CH3O + np.ones_like(_EQ_CH3O) * _DISPLACE
+        _eq_ch3o = _EQ_CH3O + coords.mean(axis=0) + _DISPLACE
         new_coords = np.concatenate((
             coords,
             _eq_ch3o,

@@ -1,6 +1,6 @@
 %nproc=1
 %chk=CH3-opt-freq.chk
-#p external="python3 -u ../pes/h3c_pes.py" opt=nomicro
+#p external="python3 -u ../pes/ch3_pes.py" opt=nomicro
 
 CH3
 
@@ -14,5 +14,5 @@ CH3
 --link1--
 %nproc=1
 %chk=CH3-opt-freq.chk
-#p external="python3 -u ../pes/h3c_pes.py" freq geom=allcheck
+#p external="python3 -u ../pes/ch3_pes.py" freq geom=allcheck
 

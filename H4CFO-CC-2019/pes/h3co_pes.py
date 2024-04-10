@@ -31,7 +31,7 @@ class H3COPES(BasePES):
 
         # concat input coords with a fixed HF molecule
         # now that order of the atoms is H H H | H | C | F | O
-        _eq_hf = _EQ_HF + np.ones_like(_EQ_HF) * _DISPLACE
+        _eq_hf = _EQ_HF + coords.mean(axis=0) + _DISPLACE
         new_coords = np.concatenate((
             coords[[0, 1, 2], :],  # H H H
             _eq_hf[[0], :],  # H in HF

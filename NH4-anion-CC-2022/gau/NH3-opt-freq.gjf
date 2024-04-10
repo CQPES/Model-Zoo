@@ -1,0 +1,18 @@
+%nproc=1
+%chk=NH3-opt-freq.chk
+#p external="python3 -u ../pes/nh3_pes.py" opt=nomicro
+
+NH3
+
+0 1
+ H         -0.4666072984        0.3179729369       -0.8141342995
+ H          0.9383636559        0.3179779432        0.0029798949
+ H         -0.4717685981        0.3179728633        0.8111545206
+ N          0.0000008809       -0.0686455695       -0.0000000083
+
+
+--link1--
+%nproc=1
+%chk=NH3-opt-freq.chk
+#p external="python3 -u ../pes/nh3_pes.py" freq geom=allcheck
+

@@ -1,6 +1,6 @@
 %nproc=1
 %chk=CH3OH-opt-freq.chk
-#p external="python3 -u ../pes/h4co_pes.py" opt=nomicro
+#p external="python3 -u ../pes/ch3oh_pes.py" opt=nomicro
 
 CH3OH
 
@@ -16,5 +16,5 @@ CH3OH
 --link1--
 %nproc=1
 %chk=CH3OH-opt-freq.chk
-#p external="python3 -u ../pes/h4co_pes.py" freq geom=allcheck
+#p external="python3 -u ../pes/ch3oh_pes.py" freq geom=allcheck
 
