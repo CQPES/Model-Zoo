@@ -114,7 +114,7 @@ $ pip install .
 
 #### Reference
 
-(1) Song, K.; Song, H.; Li, J. Validating Experiments for the Reaction H<sub>2</sub> + NH<sub>2</sub><sup>−</sup> by Dynamical Calculations on an Accurate Full-Dimensional Potential Energy Surface. Phys. Chem. Chem. Phys. 2022, 24 (17), 10160–10167. https://doi.org/10.1039/d2cp00870j.
+(1) Song, K.; Song, H.; Li, J. Validating Experiments for the Reaction H<sub>2</sub> + NH<sub>2</sub><sup>−</sup> by Dynamical Calculations on an Accurate Full-Dimensional Potential Energy Surface. _Phys. Chem. Chem. Phys._ **2022**, _24_ (17), 10160–10167. https://doi.org/10.1039/d2cp00870j.
 
 ### [`H4O-CC-MRCI-2022`](https://github.com/CQPES/Model-Zoo/tree/main/H4O-CC-MRCI-2022)
 
