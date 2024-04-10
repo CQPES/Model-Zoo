@@ -44,7 +44,7 @@ $ pip install .
 - CH<sub>2</sub>OH
 - CH<sub>3</sub>OH
 
-#### Reactions
+#### Channels
 
 - F + CH<sub>3</sub>OH → HF + CH<sub>3</sub>O
 - F + CH<sub>3</sub>OH → HF + CH<sub>2</sub>OH
@@ -67,7 +67,7 @@ $ pip install .
 - CH<sub>2</sub>OH
 - CH<sub>3</sub>OH
 
-#### Reactions
+#### Channels
 
 - Cl + CH<sub>3</sub>OH → HCl + CH<sub>3</sub>O
 - Cl + CH<sub>3</sub>OH → HCl + CH<sub>2</sub>OH
@@ -88,7 +88,7 @@ $ pip install .
 - CH<sub>2</sub>OH
 - CH<sub>3</sub>OH
 
-#### Reactions
+#### Channels
 
 - H + CH<sub>3</sub>OH → H<sub>2</sub> + CH<sub>3</sub>O
 - H + CH<sub>3</sub>OH → H<sub>2</sub> + CH<sub>2</sub>OH
@@ -107,10 +107,11 @@ $ pip install .
 - NH<sub>2</sub><sup>-</sup>
 - NH<sub>3</sub>
 
-#### Reactions
+#### Channels
 
 - H<sub>2</sub> + NH<sub>2</sub><sup>-</sup> → H<sup>-</sup> + NH<sub>3</sub>
-
+- H<sup>-</sup> + NH<sub>3</sub> → H<sup>-</sup> + NH<sub>3</sub>
+- H<sup>-</sup> + NH<sub>3</sub> → NH<sub>4</sub><sup>-</sup>
 
 #### Reference
 
@@ -123,7 +124,7 @@ $ pip install .
 - H<sub>2</sub>
 - H<sub>2</sub>O
 
-#### Reactions
+#### Channels
 
 - H<sub>2</sub> + H′<sub>2</sub>O → HH′ + HOH′
 
