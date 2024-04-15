@@ -4,12 +4,12 @@ from gau_pes import BasePES
 _NUM_ATOMS = 1
 
 
-class ClPES(BasePES):
+class HPES(BasePES):
     def calc_energy(
         self,
         coords: np.array,
     ) -> float:
-        """Calculate relative potential energy of Cl atom"""
+        """Calculate relative potential energy of H atom"""
         self._check_coords(_NUM_ATOMS, coords)
 
         return 0.0
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     from gau_pes import GauDriver
 
     driver = GauDriver()
-    pes = ClPES()
+    pes = HPES()
 
     driver.write(
         energy=pes.calc_energy(driver.coords),

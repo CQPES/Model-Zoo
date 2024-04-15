@@ -1,0 +1,9 @@
+%nproc=1
+%chk=Cl-freq.chk
+#p external="python3 -u ../pes/cl_pes.py" freq
+
+Cl
+
+0 2
+ Cl
+

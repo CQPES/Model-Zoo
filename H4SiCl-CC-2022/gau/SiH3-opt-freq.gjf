@@ -1,0 +1,19 @@
+%nproc=1
+%chk=SiH3-opt-freq.chk
+#p external="python3 -u ../pes/sih3_pes.py" opt=(nomicro,tight)
+
+Title Card Required
+
+0 2
+ H                  0.00000000    0.00000000    0.00000000
+ H                  0.00000000    0.00000000    2.44333497
+ H                 -0.59852386   -2.02958446    1.22162557
+ Si                 0.23057783   -0.80338150    1.22163849
+
+
+--link1--
+%nproc=1
+%chk=SiH3-opt-freq.chk
+#p external="python3 -u ../pes/sih3_pes.py" freq geom=allcheck
+
+

@@ -1,0 +1,20 @@
+%nproc=1
+%chk=SiH3Cl-opt-freq.chk
+#p external="python3 -u ../pes/sih3cl_pes.py" opt=(nomicro,tight)
+
+Title Card Required
+
+0 1
+ H           0.0949947348       -1.3956830044       -1.5418665969
+ H          -1.2561922938        0.6155908958       -1.5418251891
+ H           1.1611970562        0.7801281735       -1.5418316418
+ Si         -0.0000022266        0.0000151289       -1.0763110255
+ Cl         -0.0000019646       -0.0000090709        0.9808851754
+
+
+--link1--
+%nproc=1
+%chk=SiH3Cl-opt-freq.chk
+#p external="python3 -u ../pes/sih3cl_pes.py" freq geom=allcheck
+
+

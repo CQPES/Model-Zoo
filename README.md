@@ -117,6 +117,29 @@ $ pip install .
 
 (1) Song, K.; Song, H.; Li, J. Validating Experiments for the Reaction H<sub>2</sub> + NH<sub>2</sub><sup>−</sup> by Dynamical Calculations on an Accurate Full-Dimensional Potential Energy Surface. _Phys. Chem. Chem. Phys._ **2022**, _24_ (17), 10160–10167. https://doi.org/10.1039/d2cp00870j.
 
+### [`H4SiCl-CC-2022`](https://github.com/CQPES/Model-Zoo/tree/main/H4SiCl-CC-2022)
+
+#### Species
+
+- H
+- Cl
+- H<sub>2</sub>
+- HCl
+- SiH<sub>3</sub>
+- SiH<sub>2</sub>Cl
+- SiH<sub>4</sub>
+- SiH<sub>3</sub>Cl
+
+#### Channels
+
+- Cl + SiH<sub>4</sub> → HCl + SiH<sub>3</sub>
+- H + SiH<sub>3</sub>Cl → H<sub>2</sub> + SiH<sub>2</sub>Cl
+- HCl + SiH<sub>3</sub> → H + SiH<sub>3</sub>Cl
+
+#### Reference
+
+(1) Xu, X.; Li, J. Deciphering Dynamics of the Cl + SiH<sub>4</sub> → H + SiH<sub>3</sub>Cl Reaction on a Machine Learning Made Globally Accurate Full-Dimensional Potential Energy Surface. _J. Phys. Chem. A_ **2022**, _126_ (37), 6456–6466. https://doi.org/10.1021/acs.jpca.2c05417.
+
 ### [`H4O-CC-MRCI-2022`](https://github.com/CQPES/Model-Zoo/tree/main/H4O-CC-MRCI-2022)
 
 #### Species
@@ -130,5 +153,5 @@ $ pip install .
 
 #### Reference
 
-Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H<sub>4</sub>O Potential Energy Surface and Dynamics of an Exchange Reaction. _Phys. Chem. Chem. Phys._ **2022**, _24_ (44), 27548–27557. https://doi.org/10.1039/d2cp04521d.
+(1) Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H<sub>4</sub>O Potential Energy Surface and Dynamics of an Exchange Reaction. _Phys. Chem. Chem. Phys._ **2022**, _24_ (44), 27548–27557. https://doi.org/10.1039/d2cp04521d.
 

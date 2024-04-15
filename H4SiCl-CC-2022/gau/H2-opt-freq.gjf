@@ -1,0 +1,16 @@
+%nproc=1
+%chk=H2-opt-freq.chk
+#p external="python3 -u ../pes/h2_pes.py" opt=nomicro
+
+H2
+
+0 1
+ H          0.0000000000        0.0000000000       -0.3708705760
+ H          0.0000000000        0.0000000000        0.3708705760
+
+
+--link1--
+%nproc=1
+%chk=H2-opt-freq.chk
+#p external="python3 -u ../pes/h2_pes.py" freq geom=allcheck
+
