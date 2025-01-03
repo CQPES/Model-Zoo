@@ -1,0 +1,3024 @@
+ Entering Gaussian System, Link 0=g16
+ Initial command:
+ /opt/g16/l1.exe "/home/jhli/scratch/g16/Gau-116379.inp" -scrdir="/home/jhli/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=    116389.
+  
+ Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision C.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2019.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
+                 3-Jan-2025 
+ ******************************************
+ %nproc=1
+ Will use up to    1 processors via shared memory.
+ %oldchk=ts-1-opt-freq.chk
+ Copying data from "ts-1-opt-freq.chk" to current chk file "/home/jhli/scratch/g16/Gau-116389.chk"
+ IOpt=  2 FromEx=T IUOpen= 4 IOptOp= 5 NList=   0 IFRang= 0 IUIn= 4 IUOut= 2.
+ ----------------------------------------------------------------------
+ #p external="python3 -u ../pes/h4s2_pes.py" irc=(calcall,stepsize=10,m
+ axpoint=100,lqa) geom=allcheck
+ ----------------------------------------------------------------------
+ 1/10=4,18=10,26=1,29=7,38=1,39=10,42=100,44=3,45=2,71=1,172=1/1,23;
+ 2/12=2,29=1,40=1/2;
+ 3/11=9,14=-4,25=1,30=1,41=9900000,43=2,71=2,140=1/1;
+ 4/20=17,22=2,24=3,113=1,114=1/2;
+ 6/7=2,8=2,9=2,10=2,18=1/1;
+ 7/25=1,44=-1/16;
+ 1/10=4,18=10,26=1,39=10,42=100,44=3,45=2,71=1/23(2);
+ 2/29=1/2;
+ 99/5=20/99;
+ 2/29=1/2;
+ 3/11=9,14=-2,25=1,30=1,41=9900000,43=2,71=2,140=1/1;
+ 4/16=2,20=17,22=2,24=3,113=1,114=1/2;
+ 7/25=1,44=-1/16;
+ 1/10=4,18=10,26=1,39=10,42=100,44=3,45=2,71=1/23(-4);
+ 2/29=1/2;
+ 6/7=2,8=2,9=2,10=2,18=1/1;
+ 99/5=20/99;
+ Leave Link    1 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l101.exe)
+ Structure from the checkpoint file:  "/home/jhli/scratch/g16/Gau-116389.chk"
+ ----
+ ts-1
+ ----
+ Charge =  0 Multiplicity = 1
+ Redundant internal coordinates found in file.  (old form).
+ H,0,-0.9431184801,2.8985256977,0.
+ H,0,-0.8382276209,0.9572662117,0.
+ H,0,0.7844941259,-1.5181112556,0.966240787
+ H,0,0.7844941259,-1.5181112556,-0.966240787
+ S,0,0.0293013708,1.9779374247,0.
+ S,0,-0.0296341592,-1.9632104488,0.
+ Recover connectivity data from disk.
+ ITRead=  0  0  0  0  0  0
+ MicOpt= -1 -1 -1 -1 -1 -1
+ NAtoms=      6 NQM=        6 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1           2           3           4           5           6
+ IAtWgt=           1           1           1           1          32          32
+ AtmWgt=   1.0078250   1.0078250   1.0078250   1.0078250  31.9720718  31.9720718
+ NucSpn=           1           1           1           1           0           0
+ AtZEff=   1.0000000   1.0000000   1.0000000   1.0000000  13.6000000  13.6000000
+ NQMom=    0.0000000   0.0000000   0.0000000   0.0000000   0.0000000   0.0000000
+ NMagM=    2.7928460   2.7928460   2.7928460   2.7928460   0.0000000   0.0000000
+ AtZNuc=   1.0000000   1.0000000   1.0000000   1.0000000  16.0000000  16.0000000
+ Leave Link  101 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ ------------------------------------------------------------------------
+ INPUT DATA FOR L123
+ ------------------------------------------------------------------------
+ GENERAL PARAMETERS:
+ Follow reaction path in both directions.
+ Maximum points per path      = 100
+ Step size                    =   0.100 bohr
+ Integration scheme           = LQA                                 
+ Initial Hessian              = CalcFC
+ Hessian evaluation           = Analytic at all predictor steps
+                              = Update at all corrector steps
+ Hessian updating method      = Bofill                              
+ ------------------------------------------------------------------------
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.943118    2.898526    0.000000
+      2          1           0       -0.838228    0.957266    0.000000
+      3          1           0        0.784494   -1.518111    0.966241
+      4          1           0        0.784494   -1.518111   -0.966241
+      5         16           0        0.029301    1.977937    0.000000
+      6         16           0       -0.029634   -1.963210    0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944091   0.000000
+     3  H    4.839933   3.113574   0.000000
+     4  H    4.839933   3.113574   1.932482   0.000000
+     5  S    1.339061   1.339543   3.704901   3.704901   0.000000
+     6  S    4.946810   3.030348   1.339604   1.339604   3.941589
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  CS[SG(H2S2),X(H2)]
+ Deg. of freedom     8
+ Full point group                 CS      NOp   2
+ Rotational constants (GHZ):         106.1223698           1.9127089           1.9055078
+ Leave Link  202 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.8345080414 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920071212     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920071     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000001914    0.000001044   -0.000000000
+      2        1           0.000000035    0.000001150   -0.000000000
+      3        1           0.000000175   -0.000000116    0.000000057
+      4        1           0.000000175   -0.000000116   -0.000000057
+      5       16           0.000000713   -0.000001334    0.000000000
+      6       16          -0.000001082    0.000000024    0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000001914 RMS     0.000000731
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.153916D+00
+      2 -0.124057D+00  0.147753D+00
+      3  0.000000D+00  0.000000D+00  0.185123D-03
+      4  0.101239D-01  0.159155D-01  0.000000D+00  0.128806D+00
+      5 -0.122878D-01 -0.153718D-01  0.000000D+00  0.121836D+00  0.172670D+00
+      6  0.000000D+00  0.000000D+00 -0.371346D-03  0.000000D+00  0.000000D+00
+      7 -0.509158D-04 -0.168271D-03  0.918741D-04 -0.340787D-03  0.366996D-04
+      8  0.491676D-05  0.804116D-04 -0.177448D-03  0.349512D-03  0.174805D-03
+      9  0.122050D-05 -0.554472D-04  0.162433D-04 -0.303402D-04  0.146977D-03
+     10 -0.509185D-04 -0.168272D-03 -0.918746D-04 -0.340786D-03  0.367004D-04
+     11  0.491740D-05  0.804123D-04  0.177450D-03  0.349512D-03  0.174804D-03
+     12 -0.122081D-05  0.554481D-04  0.162414D-04  0.303387D-04 -0.146978D-03
+     13 -0.164050D+00  0.108240D+00  0.000000D+00 -0.138441D+00 -0.109279D+00
+     14  0.136800D+00 -0.131556D+00  0.000000D+00 -0.137334D+00 -0.156679D+00
+     15  0.000000D+00  0.000000D+00 -0.403665D-04  0.000000D+00  0.000000D+00
+     16  0.109786D-03  0.239288D-03  0.000000D+00  0.192175D-03 -0.344234D-03
+     17 -0.465219D-03 -0.986213D-03  0.000000D+00 -0.111595D-02 -0.969099D-03
+     18  0.000000D+00  0.000000D+00  0.192827D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.121821D-02
+      7 -0.365164D-03  0.109452D+00
+      8  0.434362D-03  0.593392D-01  0.327768D-01
+      9 -0.387058D-04  0.108263D+00  0.590356D-01  0.159582D+00
+     10  0.365164D-03  0.748040D-02  0.411750D-02 -0.125533D-01  0.109452D+00
+     11 -0.434361D-03  0.411750D-02  0.214107D-02 -0.674653D-02  0.593392D-01
+     12 -0.387048D-04  0.125533D-01  0.674653D-02 -0.162493D-01 -0.108263D+00
+     13  0.000000D+00  0.248289D-03 -0.273036D-03  0.000000D+00  0.248289D-03
+     14  0.000000D+00  0.105237D-03 -0.117746D-03  0.100101D-04  0.105236D-03
+     15 -0.230566D-03  0.564880D-04 -0.198416D-04 -0.525767D-04 -0.564881D-04
+     16  0.000000D+00 -0.116788D+00 -0.635396D-01 -0.956809D-01 -0.116788D+00
+     17  0.000000D+00 -0.634286D-01 -0.350543D-01 -0.523917D-01 -0.634286D-01
+     18 -0.540299D-03 -0.120599D+00 -0.660192D-01 -0.143257D+00  0.120599D+00
+               11            12            13            14            15 
+     11  0.327768D-01
+     12 -0.590356D-01  0.159582D+00
+     13 -0.273036D-03  0.000000D+00  0.302120D+00
+     14 -0.117745D-03 -0.100108D-04 -0.709490D-04  0.289348D+00
+     15  0.198428D-04 -0.525763D-04  0.000000D+00  0.000000D+00  0.226786D-03
+     16 -0.635396D-01  0.956809D-01 -0.122451D-03  0.394882D-03  0.000000D+00
+     17 -0.350543D-01  0.523917D-01  0.165592D-02 -0.877585D-03  0.000000D+00
+     18  0.660192D-01 -0.143257D+00  0.000000D+00  0.000000D+00  0.151925D-03
+               16            17            18 
+     16  0.233394D+00
+     17  0.126786D+00  0.729400D-01
+     18  0.000000D+00  0.000000D+00  0.286709D+00
+ Leave Link  716 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+          ******** Start new reaction path calculation ********
+ Current Structure is TS -> form Hessian eigenvectors.
+                            Diagonalizing Hessian.
+ Supplied step size of   0.1000 bohr.
+    Integration on MW PES will use step size of   0.1238 sqrt(amu)*bohr.
+ Point Number:   0          Path Number:   1
+ Calculating another point on the path.
+ Point Number  1 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.914609    2.900763   -0.000000
+      2          1           0       -0.863651    0.956599   -0.000000
+      3          1           0        0.782535   -1.522298    0.966217
+      4          1           0        0.782535   -1.522298   -0.966217
+      5         16           0        0.032167    1.953068    0.000000
+      6         16           0       -0.025447   -1.978688    0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944832   0.000000
+     3  H    4.835011   3.128647   0.000000
+     4  H    4.835011   3.128647   1.932434   0.000000
+     5  S    1.339593   1.339941   3.684399   3.684399   0.000000
+     6  S    4.959803   3.052621   1.339665   1.339665   3.932179
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         106.5221908           1.9207929           1.9136591
+ Leave Link  202 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.9108426565 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920072415     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920072     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000190796   -0.000191680    0.000000000
+      2        1           0.000168255    0.000206614    0.000000000
+      3        1          -0.000023173   -0.000009481   -0.000018508
+      4        1          -0.000023172   -0.000009480    0.000018507
+      5       16          -0.000357551   -0.000045996   -0.000000000
+      6       16           0.000046869    0.000050686    0.000000001
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000357551 RMS     0.000124901
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.146676D+00
+      2 -0.123598D+00  0.154331D+00
+      3  0.000000D+00  0.000000D+00  0.310285D-03
+      4  0.101853D-01  0.151734D-01  0.000000D+00  0.135345D+00
+      5 -0.129844D-01 -0.154226D-01  0.000000D+00  0.122609D+00  0.165636D+00
+      6  0.000000D+00  0.000000D+00 -0.387542D-03  0.000000D+00  0.000000D+00
+      7 -0.559261D-04 -0.167636D-03  0.976504D-04 -0.338566D-03  0.358663D-04
+      8  0.000000D+00  0.729341D-04 -0.183218D-03  0.332209D-03  0.173815D-03
+      9  0.354600D-05 -0.512420D-04  0.173106D-04 -0.223887D-04  0.142632D-03
+     10 -0.559251D-04 -0.167635D-03 -0.976502D-04 -0.338565D-03  0.358654D-04
+     11  0.000000D+00  0.729334D-04  0.183218D-03  0.332208D-03  0.173816D-03
+     12 -0.354672D-05  0.512415D-04  0.173106D-04  0.223889D-04 -0.142633D-03
+     13 -0.156882D+00  0.108508D+00  0.000000D+00 -0.145066D+00 -0.109364D+00
+     14  0.137058D+00 -0.138088D+00  0.000000D+00 -0.137346D+00 -0.149616D+00
+     15  0.000000D+00  0.000000D+00 -0.160086D-03  0.000000D+00  0.000000D+00
+     16  0.130853D-03  0.253743D-03  0.000000D+00  0.211622D-03 -0.334007D-03
+     17 -0.473869D-03 -0.965602D-03  0.000000D+00 -0.109998D-02 -0.945331D-03
+     18  0.000000D+00  0.000000D+00  0.201442D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.127816D-02
+      7 -0.361643D-03  0.107774D+00
+      8  0.414399D-03  0.603693D-01  0.344258D-01
+      9 -0.383055D-04  0.107398D+00  0.605078D-01  0.159534D+00
+     10  0.361641D-03  0.735834D-02  0.418558D-02 -0.124550D-01  0.107774D+00
+     11 -0.414399D-03  0.418558D-02  0.225956D-02 -0.691720D-02  0.603693D-01
+     12 -0.383044D-04  0.124550D-01  0.691719D-02 -0.162501D-01 -0.107398D+00
+     13  0.000000D+00  0.254393D-03 -0.257813D-03 -0.111482D-04  0.254394D-03
+     14  0.000000D+00  0.105679D-03 -0.112961D-03  0.695734D-05  0.105679D-03
+     15 -0.295703D-03  0.486917D-04 -0.453983D-05 -0.557615D-04 -0.486932D-04
+     16  0.000000D+00 -0.114991D+00 -0.646299D-01 -0.949144D-01 -0.114991D+00
+     17  0.000000D+00 -0.645271D-01 -0.368179D-01 -0.536900D-01 -0.645271D-01
+     18 -0.519717D-03 -0.119637D+00 -0.676515D-01 -0.143207D+00  0.119638D+00
+               11            12            13            14            15 
+     11  0.344258D-01
+     12 -0.605077D-01  0.159534D+00
+     13 -0.257813D-03  0.111464D-04  0.301611D+00
+     14 -0.112962D-03 -0.695750D-05 -0.295701D-03  0.288780D+00
+     15  0.453983D-05 -0.557632D-04  0.000000D+00  0.000000D+00  0.439521D-03
+     16 -0.646299D-01  0.949144D-01 -0.168844D-03  0.372681D-03  0.000000D+00
+     17 -0.368179D-01  0.536899D-01  0.166719D-02 -0.849753D-03  0.000000D+00
+     18  0.676515D-01 -0.143207D+00  0.000000D+00  0.000000D+00  0.130417D-03
+               16            17            18 
+     16  0.229806D+00
+     17  0.128964D+00  0.763949D-01
+     18  0.000000D+00  0.000000D+00  0.286601D+00
+ Leave Link  716 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  1 Step number   1 out of a maximum of  20
+ Point Number:   1          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.914609    2.900763   -0.000000
+      2          1                   -0.863651    0.956599   -0.000000
+      3          1                    0.782535   -1.522298    0.966217
+      4          1                    0.782535   -1.522298   -0.966217
+      5         16                    0.032167    1.953068    0.000000
+      6         16                   -0.025447   -1.978688    0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12380
+   NET REACTION COORDINATE UP TO THIS POINT =    0.12380
+  # OF POINTS ALONG THE PATH =   1
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  2 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    3 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.890038    2.918165    0.000000
+      2          1           0       -0.888403    0.973500   -0.000000
+      3          1           0        0.776932   -1.507280    0.966192
+      4          1           0        0.776932   -1.507280   -0.966193
+      5         16           0        0.032291    1.946768   -0.000000
+      6         16           0       -0.024957   -1.974333    0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944665   0.000000
+     3  H    4.826684   3.140245   0.000000
+     4  H    4.826684   3.140246   1.932385   0.000000
+     5  S    1.339515   1.339749   3.663123   3.663123   0.000000
+     6  S    4.968390   3.071687   1.339661   1.339661   3.921519
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         106.9480360           1.9302806           1.9232131
+ Leave Link  202 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        70.0114926236 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:33 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920075147     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920075     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000159766   -0.000158147   -0.000000000
+      2        1           0.000137419    0.000172714    0.000000000
+      3        1          -0.000021889   -0.000006767   -0.000016984
+      4        1          -0.000021889   -0.000006767    0.000016984
+      5       16          -0.000298615   -0.000065899   -0.000000000
+      6       16           0.000047320    0.000065534    0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000298615 RMS     0.000105653
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.140453D+00
+      2 -0.123289D+00  0.160680D+00
+      3  0.000000D+00  0.000000D+00  0.310909D-03
+      4  0.102171D-01  0.145137D-01  0.000000D+00  0.141661D+00
+      5 -0.136389D-01 -0.154596D-01  0.000000D+00  0.123412D+00  0.159590D+00
+      6  0.000000D+00  0.000000D+00 -0.398980D-03  0.000000D+00  0.000000D+00
+      7 -0.602050D-04 -0.167863D-03  0.103294D-03 -0.337069D-03  0.369056D-04
+      8 -0.647559D-05  0.662003D-04 -0.188548D-03  0.317778D-03  0.172789D-03
+      9  0.632246D-05 -0.478304D-04  0.185113D-04 -0.150563D-04  0.139244D-03
+     10 -0.602041D-04 -0.167863D-03 -0.103294D-03 -0.337069D-03  0.369044D-04
+     11 -0.647575D-05  0.661998D-04  0.188547D-03  0.317775D-03  0.172788D-03
+     12 -0.632326D-05  0.478282D-04  0.185102D-04  0.150570D-04 -0.139242D-03
+     13 -0.150701D+00  0.108846D+00  0.000000D+00 -0.151434D+00 -0.109523D+00
+     14  0.137421D+00 -0.144405D+00  0.000000D+00 -0.137475D+00 -0.143549D+00
+     15  0.000000D+00  0.000000D+00 -0.159740D-03  0.000000D+00  0.000000D+00
+     16  0.149933D-03  0.267136D-03  0.000000D+00  0.227867D-03 -0.325793D-03
+     17 -0.480678D-03 -0.947586D-03  0.000000D+00 -0.108659D-02 -0.927708D-03
+     18  0.000000D+00  0.000000D+00  0.209507D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.122265D-02
+      7 -0.359167D-03  0.106164D+00
+      8  0.397373D-03  0.613267D-01  0.360269D-01
+      9 -0.380311D-04  0.106595D+00  0.619260D-01  0.159539D+00
+     10  0.359166D-03  0.724234D-02  0.424934D-02 -0.123614D-01  0.106164D+00
+     11 -0.397372D-03  0.424935D-02  0.237257D-02 -0.708025D-02  0.613266D-01
+     12 -0.380299D-04  0.123614D-01  0.708024D-02 -0.162505D-01 -0.106595D+00
+     13  0.000000D+00  0.259641D-03 -0.243822D-03 -0.216953D-04  0.259643D-03
+     14  0.000000D+00  0.105438D-03 -0.109711D-03  0.376169D-05  0.105438D-03
+     15 -0.246701D-03  0.415331D-04  0.946615D-05 -0.589612D-04 -0.415335D-04
+     16  0.000000D+00 -0.113267D+00 -0.656449D-01 -0.942043D-01 -0.113267D+00
+     17  0.000000D+00 -0.655489D-01 -0.385274D-01 -0.549420D-01 -0.655488D-01
+     18 -0.502322D-03 -0.118742D+00 -0.692245D-01 -0.143210D+00  0.118742D+00
+               11            12            13            14            15 
+     11  0.360268D-01
+     12 -0.619260D-01  0.159539D+00
+     13 -0.243824D-03  0.216968D-04  0.301827D+00
+     14 -0.109709D-03 -0.375986D-05 -0.511888D-03  0.289012D+00
+     15 -0.946638D-05 -0.589602D-04  0.000000D+00  0.000000D+00  0.415000D-03
+     16 -0.656449D-01  0.942043D-01 -0.209037D-03  0.354070D-03  0.000000D+00
+     17 -0.385274D-01  0.549419D-01  0.167693D-02 -0.839445D-03  0.000000D+00
+     18  0.692244D-01 -0.143210D+00  0.000000D+00  0.000000D+00  0.111987D-03
+               16            17            18 
+     16  0.226363D+00
+     17  0.130991D+00  0.797677D-01
+     18  0.000000D+00  0.000000D+00  0.286599D+00
+ Leave Link  716 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  2 Step number   1 out of a maximum of  20
+ Point Number:   2          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.890038    2.918165    0.000000
+      2          1                   -0.888403    0.973500   -0.000000
+      3          1                    0.776932   -1.507280    0.966192
+      4          1                    0.776932   -1.507280   -0.966193
+      5         16                    0.032291    1.946768   -0.000000
+      6         16                   -0.024957   -1.974333    0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12277
+   NET REACTION COORDINATE UP TO THIS POINT =    0.24657
+  # OF POINTS ALONG THE PATH =   2
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  3 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    7 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.863734    2.936650    0.000000
+      2          1           0       -0.914355    0.992635   -0.000000
+      3          1           0        0.771671   -1.493306    0.966167
+      4          1           0        0.771671   -1.493306   -0.966168
+      5         16           0        0.032162    1.940735   -0.000000
+      6         16           0       -0.024352   -1.970317   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944674   0.000000
+     3  H    4.820014   3.155323   0.000000
+     4  H    4.820014   3.155323   1.932335   0.000000
+     5  S    1.339580   1.339698   3.643212   3.643212   0.000000
+     6  S    4.978242   3.093734   1.339654   1.339654   3.911461
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         107.3379321           1.9391222           1.9321152
+ Leave Link  202 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        70.1012704476 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920078867     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920079     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000176814   -0.000180065   -0.000000000
+      2        1           0.000156785    0.000191641    0.000000000
+      3        1          -0.000020364   -0.000003309   -0.000015050
+      4        1          -0.000020365   -0.000003309    0.000015050
+      5       16          -0.000336541   -0.000089748   -0.000000000
+      6       16           0.000045858    0.000085462   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000336541 RMS     0.000119494
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.133807D+00
+      2 -0.122497D+00  0.167268D+00
+      3  0.000000D+00  0.000000D+00  0.342479D-03
+      4  0.102087D-01  0.138091D-01  0.000000D+00  0.148300D+00
+      5 -0.143304D-01 -0.154579D-01  0.000000D+00  0.123799D+00  0.153036D+00
+      6  0.000000D+00  0.000000D+00 -0.411399D-03  0.000000D+00  0.000000D+00
+      7 -0.638663D-04 -0.166717D-03  0.109105D-03 -0.333821D-03  0.382220D-04
+      8 -0.131816D-04  0.591835D-04 -0.193880D-03  0.301841D-03  0.171633D-03
+      9  0.981045D-05 -0.436952D-04  0.197543D-04 -0.633376D-05  0.136144D-03
+     10 -0.638663D-04 -0.166717D-03 -0.109104D-03 -0.333822D-03  0.382211D-04
+     11 -0.131829D-04  0.591845D-04  0.193881D-03  0.301839D-03  0.171633D-03
+     12 -0.981053D-05  0.436957D-04  0.197548D-04  0.633488D-05 -0.136144D-03
+     13 -0.144059D+00  0.108745D+00  0.000000D+00 -0.158086D+00 -0.109228D+00
+     14  0.137337D+00 -0.151003D+00  0.000000D+00 -0.137140D+00 -0.137021D+00
+     15  0.000000D+00  0.000000D+00 -0.189720D-03  0.000000D+00  0.000000D+00
+     16  0.169479D-03  0.278493D-03  0.000000D+00  0.242878D-03 -0.317643D-03
+     17 -0.482916D-03 -0.924964D-03  0.000000D+00 -0.107069D-02 -0.900950D-03
+     18  0.000000D+00  0.000000D+00  0.217853D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.119327D-02
+      7 -0.355271D-03  0.104627D+00
+      8  0.379174D-03  0.621906D-01  0.375552D-01
+      9 -0.377859D-04  0.105825D+00  0.632530D-01  0.159547D+00
+     10  0.355271D-03  0.713049D-02  0.430574D-02 -0.122716D-01  0.104627D+00
+     11 -0.379173D-03  0.430574D-02  0.248041D-02 -0.723299D-02  0.621906D-01
+     12 -0.377867D-04  0.122716D-01  0.723299D-02 -0.162506D-01 -0.105825D+00
+     13  0.000000D+00  0.262754D-03 -0.227501D-03 -0.345304D-04  0.262753D-03
+     14  0.000000D+00  0.104133D-03 -0.106807D-03  0.000000D+00  0.104132D-03
+     15 -0.223871D-03  0.335152D-04  0.241754D-04 -0.621058D-04 -0.335155D-04
+     16  0.000000D+00 -0.111621D+00 -0.665589D-01 -0.935232D-01 -0.111621D+00
+     17  0.000000D+00 -0.664704D-01 -0.401582D-01 -0.561132D-01 -0.664704D-01
+     18 -0.483844D-03 -0.117883D+00 -0.706954D-01 -0.143216D+00  0.117883D+00
+               11            12            13            14            15 
+     11  0.375551D-01
+     12 -0.632529D-01  0.159547D+00
+     13 -0.227501D-03  0.345324D-04  0.301872D+00
+     14 -0.106808D-03  0.000000D+00 -0.738637D-03  0.289064D+00
+     15 -0.241763D-04 -0.621038D-04  0.000000D+00  0.000000D+00  0.448877D-03
+     16 -0.665588D-01  0.935232D-01 -0.249938D-03  0.333525D-03  0.000000D+00
+     17 -0.401582D-01  0.561131D-01  0.167718D-02 -0.827417D-03  0.000000D+00
+     18  0.706953D-01 -0.143216D+00  0.000000D+00  0.000000D+00  0.915482D-04
+               16            17            18 
+     16  0.223077D+00
+     17  0.132820D+00  0.829678D-01
+     18  0.000000D+00  0.000000D+00  0.286606D+00
+ Leave Link  716 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  3 Step number   1 out of a maximum of  20
+ Point Number:   3          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.863734    2.936650    0.000000
+      2          1                   -0.914355    0.992635   -0.000000
+      3          1                    0.771671   -1.493306    0.966167
+      4          1                    0.771671   -1.493306   -0.966168
+      5         16                    0.032162    1.940735   -0.000000
+      6         16                   -0.024352   -1.970317   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12291
+   NET REACTION COORDINATE UP TO THIS POINT =    0.36948
+  # OF POINTS ALONG THE PATH =   3
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  4 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    6 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.837277    2.953854   -0.000000
+      2          1           0       -0.939265    1.011969   -0.000000
+      3          1           0        0.766368   -1.479367    0.966142
+      4          1           0        0.766368   -1.479367   -0.966142
+      5         16           0        0.031953    1.934587    0.000000
+      6         16           0       -0.023738   -1.966163   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944561   0.000000
+     3  H    4.812334   3.170074   0.000000
+     4  H    4.812334   3.170074   1.932284   0.000000
+     5  S    1.339577   1.339586   3.623242   3.623242   0.000000
+     6  S    4.986824   3.115680   1.339652   1.339652   3.901148
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         107.7241906           1.9482933           1.9413445
+ Leave Link  202 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        70.1956102326 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920083645     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920084     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000170300   -0.000175365    0.000000000
+      2        1           0.000152613    0.000184331   -0.000000000
+      3        1          -0.000020590   -0.000001427   -0.000014749
+      4        1          -0.000020590   -0.000001427    0.000014749
+      5       16          -0.000327341   -0.000111597   -0.000000000
+      6       16           0.000047860    0.000106155    0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000327341 RMS     0.000118199
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.127361D+00
+      2 -0.121425D+00  0.173743D+00
+      3  0.000000D+00  0.000000D+00  0.360733D-03
+      4  0.101636D-01  0.131196D-01  0.000000D+00  0.154888D+00
+      5 -0.150125D-01 -0.154239D-01  0.000000D+00  0.123876D+00  0.146610D+00
+      6  0.000000D+00  0.000000D+00 -0.422675D-03  0.000000D+00  0.000000D+00
+      7 -0.669138D-04 -0.165336D-03  0.114974D-03 -0.330559D-03  0.402769D-04
+      8 -0.203162D-04  0.524682D-04 -0.198949D-03  0.286410D-03  0.170148D-03
+      9  0.138978D-04 -0.395477D-04  0.210806D-04  0.242189D-05  0.133107D-03
+     10 -0.669124D-04 -0.165336D-03 -0.114973D-03 -0.330560D-03  0.402764D-04
+     11 -0.203172D-04  0.524672D-04  0.198950D-03  0.286411D-03  0.170149D-03
+     12 -0.138966D-04  0.395492D-04  0.210812D-04 -0.242189D-05 -0.133108D-03
+     13 -0.137580D+00  0.108350D+00  0.000000D+00 -0.164648D+00 -0.108636D+00
+     14  0.136960D+00 -0.157522D+00  0.000000D+00 -0.136514D+00 -0.130655D+00
+     15  0.000000D+00  0.000000D+00 -0.207458D-03  0.000000D+00  0.000000D+00
+     16  0.188262D-03  0.288323D-03  0.000000D+00  0.256558D-03 -0.309977D-03
+     17 -0.481895D-03 -0.901655D-03  0.000000D+00 -0.105438D-02 -0.871850D-03
+     18  0.000000D+00  0.000000D+00  0.225958D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.115221D-02
+      7 -0.351422D-03  0.103084D+00
+      8  0.361697D-03  0.630053D-01  0.390891D-01
+      9 -0.376077D-04  0.105042D+00  0.645538D-01  0.159550D+00
+     10  0.351422D-03  0.701833D-02  0.435813D-02 -0.121809D-01  0.103084D+00
+     11 -0.361697D-03  0.435813D-02  0.258794D-02 -0.738295D-02  0.630053D-01
+     12 -0.376077D-04  0.121809D-01  0.738295D-02 -0.162514D-01 -0.105042D+00
+     13  0.000000D+00  0.264789D-03 -0.210506D-03 -0.482005D-04  0.264788D-03
+     14  0.000000D+00  0.102189D-03 -0.104767D-03 -0.447115D-05  0.102189D-03
+     15 -0.189390D-03  0.254273D-04  0.386619D-04 -0.652638D-04 -0.254266D-04
+     16  0.000000D+00 -0.109968D+00 -0.674203D-01 -0.928309D-01 -0.109968D+00
+     17  0.000000D+00 -0.673391D-01 -0.417934D-01 -0.572610D-01 -0.673390D-01
+     18 -0.466337D-03 -0.117012D+00 -0.721381D-01 -0.143217D+00  0.117012D+00
+               11            12            13            14            15 
+     11  0.390890D-01
+     12 -0.645538D-01  0.159550D+00
+     13 -0.210505D-03  0.482023D-04  0.301991D+00
+     14 -0.104767D-03  0.447107D-05 -0.964669D-03  0.289210D+00
+     15 -0.386644D-04 -0.652631D-04  0.000000D+00  0.000000D+00  0.458248D-03
+     16 -0.674203D-01  0.928309D-01 -0.288823D-03  0.313590D-03  0.000000D+00
+     17 -0.417934D-01  0.572609D-01  0.167153D-02 -0.823518D-03  0.000000D+00
+     18  0.721381D-01 -0.143217D+00  0.000000D+00  0.000000D+00  0.717492D-04
+               16            17            18 
+     16  0.219777D+00
+     17  0.134546D+00  0.861817D-01
+     18  0.000000D+00  0.000000D+00  0.286602D+00
+ Leave Link  716 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  4 Step number   1 out of a maximum of  20
+ Point Number:   4          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.837277    2.953854   -0.000000
+      2          1                   -0.939265    1.011969   -0.000000
+      3          1                    0.766368   -1.479367    0.966142
+      4          1                    0.766368   -1.479367   -0.966142
+      5         16                    0.031953    1.934587    0.000000
+      6         16                   -0.023738   -1.966163   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12287
+   NET REACTION COORDINATE UP TO THIS POINT =    0.49235
+  # OF POINTS ALONG THE PATH =   4
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  5 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    6 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.810429    2.970175   -0.000000
+      2          1           0       -0.963461    1.031758   -0.000000
+      3          1           0        0.761117   -1.465687    0.966116
+      4          1           0        0.761117   -1.465687   -0.966116
+      5         16           0        0.031681    1.928378   -0.000000
+      6         16           0       -0.023119   -1.961926    0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944449   0.000000
+     3  H    4.804166   3.185087   0.000000
+     4  H    4.804166   3.185087   1.932232   0.000000
+     5  S    1.339585   1.339491   3.603489   3.603490   0.000000
+     6  S    4.994545   3.137895   1.339649   1.339649   3.890690
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         108.0960506           1.9576665           1.9507707
+ Leave Link  202 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        70.2919676911 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920089281     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920089     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000167147   -0.000175638    0.000000000
+      2        1           0.000152948    0.000180835    0.000000000
+      3        1          -0.000020206    0.000000599   -0.000013965
+      4        1          -0.000020206    0.000000599    0.000013965
+      5       16          -0.000325567   -0.000130675   -0.000000000
+      6       16           0.000048197    0.000124943   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000325567 RMS     0.000119511
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.121009D+00
+      2 -0.120011D+00  0.180108D+00
+      3  0.000000D+00  0.000000D+00  0.382276D-03
+      4  0.100810D-01  0.124365D-01  0.000000D+00  0.161432D+00
+      5 -0.156885D-01 -0.153547D-01  0.000000D+00  0.123594D+00  0.140203D+00
+      6  0.000000D+00  0.000000D+00 -0.433540D-03  0.000000D+00  0.000000D+00
+      7 -0.692919D-04 -0.163520D-03  0.120906D-03 -0.327081D-03  0.428420D-04
+      8 -0.279275D-04  0.460447D-04 -0.203791D-03  0.271181D-03  0.168451D-03
+      9  0.186115D-04 -0.353149D-04  0.224839D-04  0.113335D-04  0.130069D-03
+     10 -0.692936D-04 -0.163520D-03 -0.120904D-03 -0.327082D-03  0.428407D-04
+     11 -0.279272D-04  0.460450D-04  0.203793D-03  0.271182D-03  0.168449D-03
+     12 -0.186124D-04  0.353146D-04  0.224830D-04 -0.113343D-04 -0.130066D-03
+     13 -0.131159D+00  0.107608D+00  0.000000D+00 -0.171130D+00 -0.107690D+00
+     14  0.136233D+00 -0.163968D+00  0.000000D+00 -0.135536D+00 -0.124346D+00
+     15  0.000000D+00  0.000000D+00 -0.228921D-03  0.000000D+00  0.000000D+00
+     16  0.206319D-03  0.296439D-03  0.000000D+00  0.269100D-03 -0.302668D-03
+     17 -0.477414D-03 -0.877575D-03  0.000000D+00 -0.103745D-02 -0.839946D-03
+     18  0.000000D+00  0.000000D+00  0.233940D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.111496D-02
+      7 -0.347436D-03  0.101565D+00
+      8  0.344714D-03  0.637613D-01  0.406001D-01
+      9 -0.374979D-04  0.104267D+00  0.658101D-01  0.159555D+00
+     10  0.347436D-03  0.690790D-02  0.440597D-02 -0.120910D-01  0.101565D+00
+     11 -0.344714D-03  0.440598D-02  0.269321D-02 -0.752781D-02  0.637613D-01
+     12 -0.374972D-04  0.120910D-01  0.752781D-02 -0.162527D-01 -0.104267D+00
+     13  0.000000D+00  0.265555D-03 -0.192640D-03 -0.628468D-04  0.265555D-03
+     14  0.000000D+00  0.995552D-04 -0.103638D-03 -0.883819D-05  0.995556D-04
+     15 -0.158284D-03  0.171753D-04  0.530587D-04 -0.684086D-04 -0.171744D-04
+     16  0.000000D+00 -0.108340D+00 -0.682191D-01 -0.921448D-01 -0.108340D+00
+     17  0.000000D+00 -0.681447D-01 -0.434027D-01 -0.583693D-01 -0.681447D-01
+     18 -0.449558D-03 -0.116149D+00 -0.735319D-01 -0.143219D+00  0.116149D+00
+               11            12            13            14            15 
+     11  0.406001D-01
+     12 -0.658101D-01  0.159555D+00
+     13 -0.192638D-03  0.628476D-04  0.302086D+00
+     14 -0.103639D-03  0.883747D-05 -0.119153D-02  0.289346D+00
+     15 -0.530594D-04 -0.684116D-04  0.000000D+00  0.000000D+00  0.474419D-03
+     16 -0.682191D-01  0.921449D-01 -0.325899D-03  0.294077D-03  0.000000D+00
+     17 -0.434027D-01  0.583692D-01  0.165946D-02 -0.826413D-03  0.000000D+00
+     18  0.735318D-01 -0.143219D+00  0.000000D+00  0.000000D+00  0.522297D-04
+               16            17            18 
+     16  0.216528D+00
+     17  0.136147D+00  0.893470D-01
+     18  0.000000D+00  0.000000D+00  0.286601D+00
+ Leave Link  716 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  5 Step number   1 out of a maximum of  20
+ Point Number:   5          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.810429    2.970175   -0.000000
+      2          1                   -0.963461    1.031758   -0.000000
+      3          1                    0.761117   -1.465687    0.966116
+      4          1                    0.761117   -1.465687   -0.966116
+      5         16                    0.031681    1.928378   -0.000000
+      6         16                   -0.023119   -1.961926    0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12296
+   NET REACTION COORDINATE UP TO THIS POINT =    0.61531
+  # OF POINTS ALONG THE PATH =   5
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  6 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+   Warning:  LQA convergence difficult!  Criteria decreased to 1.d-3.
+   LQA: T_Est iteration completed in   51 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.783342    2.985454    0.000000
+      2          1           0       -0.986771    1.051810   -0.000000
+      3          1           0        0.755856   -1.452126    0.966089
+      4          1           0        0.755856   -1.452127   -0.966089
+      5         16           0        0.031367    1.922087   -0.000000
+      6         16           0       -0.022505   -1.957578   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944315   0.000000
+     3  H    4.795266   3.199964   0.000000
+     4  H    4.795266   3.199965   1.932179   0.000000
+     5  S    1.339589   1.339398   3.583787   3.583787   0.000000
+     6  S    5.001243   3.160099   1.339647   1.339647   3.880039
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         108.4586526           1.9673080           1.9604616
+ Leave Link  202 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        70.3914850968 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:34 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920095644     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920096     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000161935   -0.000174106   -0.000000000
+      2        1           0.000151786    0.000175106    0.000000000
+      3        1          -0.000020123    0.000002120   -0.000013508
+      4        1          -0.000020123    0.000002120    0.000013508
+      5       16          -0.000319833   -0.000146834   -0.000000000
+      6       16           0.000048720    0.000142250   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000319833 RMS     0.000119695
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.114812D+00
+      2 -0.118289D+00  0.186324D+00
+      3  0.000000D+00  0.000000D+00  0.403526D-03
+      4  0.996282D-02  0.117659D-01  0.000000D+00  0.167889D+00
+      5 -0.163533D-01 -0.152522D-01  0.000000D+00  0.122976D+00  0.133880D+00
+      6  0.000000D+00  0.000000D+00 -0.443822D-03  0.000000D+00  0.000000D+00
+      7 -0.709995D-04 -0.161447D-03  0.126893D-03 -0.323593D-03  0.459281D-04
+      8 -0.358819D-04  0.399710D-04 -0.208384D-03  0.256312D-03  0.166562D-03
+      9  0.239647D-04 -0.311177D-04  0.239652D-04  0.201969D-04  0.126933D-03
+     10 -0.709994D-04 -0.161447D-03 -0.126891D-03 -0.323594D-03  0.459274D-04
+     11 -0.358821D-04  0.399711D-04  0.208385D-03  0.256312D-03  0.166562D-03
+     12 -0.239651D-04  0.311174D-04  0.239648D-04 -0.201964D-04 -0.126932D-03
+     13 -0.124857D+00  0.106545D+00  0.000000D+00 -0.177487D+00 -0.106420D+00
+     14  0.135184D+00 -0.170298D+00  0.000000D+00 -0.134234D+00 -0.118156D+00
+     15  0.000000D+00  0.000000D+00 -0.250655D-03  0.000000D+00  0.000000D+00
+     16  0.223433D-03  0.303022D-03  0.000000D+00  0.280652D-03 -0.295808D-03
+     17 -0.469729D-03 -0.853259D-03  0.000000D+00 -0.102006D-02 -0.805936D-03
+     18  0.000000D+00  0.000000D+00  0.241745D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.107852D-02
+      7 -0.343477D-03  0.100055D+00
+      8  0.328334D-03  0.644680D-01  0.421036D-01
+      9 -0.374474D-04  0.103490D+00  0.670352D-01  0.159560D+00
+     10  0.343479D-03  0.679823D-02  0.444997D-02 -0.120010D-01  0.100055D+00
+     11 -0.328336D-03  0.444997D-02  0.279723D-02 -0.766912D-02  0.644680D-01
+     12 -0.374483D-04  0.120010D-01  0.766912D-02 -0.162548D-01 -0.103490D+00
+     13  0.000000D+00  0.265177D-03 -0.174130D-03 -0.782712D-04  0.265175D-03
+     14  0.000000D+00  0.963230D-04 -0.103547D-03 -0.132327D-04  0.963242D-04
+     15 -0.127586D-03  0.884694D-05  0.673169D-04 -0.715550D-04 -0.884710D-05
+     16  0.000000D+00 -0.106722D+00 -0.689654D-01 -0.914566D-01 -0.106722D+00
+     17  0.000000D+00 -0.688973D-01 -0.450022D-01 -0.594497D-01 -0.688973D-01
+     18 -0.433633D-03 -0.115284D+00 -0.748916D-01 -0.143220D+00  0.115284D+00
+               11            12            13            14            15 
+     11  0.421035D-01
+     12 -0.670352D-01  0.159560D+00
+     13 -0.174131D-03  0.782708D-04  0.302177D+00
+     14 -0.103547D-03  0.132320D-04 -0.141864D-02  0.289497D+00
+     15 -0.673171D-04 -0.715537D-04  0.000000D+00  0.000000D+00  0.490740D-03
+     16 -0.689654D-01  0.914566D-01 -0.360871D-03  0.275198D-03  0.000000D+00
+     17 -0.450022D-01  0.594497D-01  0.164143D-02 -0.836687D-03  0.000000D+00
+     18  0.748915D-01 -0.143220D+00  0.000000D+00  0.000000D+00  0.332282D-04
+               16            17            18 
+     16  0.213297D+00
+     17  0.137645D+00  0.924978D-01
+     18  0.000000D+00  0.000000D+00  0.286597D+00
+ Leave Link  716 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  6 Step number   1 out of a maximum of  20
+ Point Number:   6          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.783342    2.985454    0.000000
+      2          1                   -0.986771    1.051810   -0.000000
+      3          1                    0.755856   -1.452126    0.966089
+      4          1                    0.755856   -1.452127   -0.966089
+      5         16                    0.031367    1.922087   -0.000000
+      6         16                   -0.022505   -1.957578   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12304
+   NET REACTION COORDINATE UP TO THIS POINT =    0.73835
+  # OF POINTS ALONG THE PATH =   6
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  7 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    5 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.756108    2.999654    0.000000
+      2          1           0       -1.009137    1.072020   -0.000000
+      3          1           0        0.750556   -1.438641    0.966062
+      4          1           0        0.750557   -1.438641   -0.966062
+      5         16           0        0.031024    1.915713   -0.000000
+      6         16           0       -0.021900   -1.953116   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944169   0.000000
+     3  H    4.785579   3.214532   0.000000
+     4  H    4.785579   3.214532   1.932123   0.000000
+     5  S    1.339591   1.339310   3.564083   3.564083   0.000000
+     6  S    5.006894   3.182151   1.339645   1.339645   3.869191
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         108.8138577           1.9772340           1.9704337
+ Leave Link  202 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        70.4944191687 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920102566     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920103     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000155697   -0.000172049   -0.000000000
+      2        1           0.000150263    0.000168314   -0.000000000
+      3        1          -0.000020104    0.000003278   -0.000013175
+      4        1          -0.000020104    0.000003278    0.000013175
+      5       16          -0.000312253   -0.000159477   -0.000000000
+      6       16           0.000048908    0.000157298   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000312253 RMS     0.000119256
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.108795D+00
+      2 -0.116277D+00  0.192360D+00
+      3  0.000000D+00  0.000000D+00  0.425046D-03
+      4  0.981111D-02  0.111110D-01  0.000000D+00  0.174223D+00
+      5 -0.170036D-01 -0.151179D-01  0.000000D+00  0.122034D+00  0.127673D+00
+      6  0.000000D+00  0.000000D+00 -0.453545D-03  0.000000D+00  0.000000D+00
+      7 -0.720324D-04 -0.159218D-03  0.132926D-03 -0.320198D-03  0.494839D-04
+      8 -0.440845D-04  0.342677D-04 -0.212715D-03  0.241844D-03  0.164549D-03
+      9  0.299558D-04 -0.270452D-04  0.255234D-04  0.288787D-04  0.123630D-03
+     10 -0.720315D-04 -0.159220D-03 -0.132927D-03 -0.320197D-03  0.494833D-04
+     11 -0.440835D-04  0.342688D-04  0.212716D-03  0.241844D-03  0.164550D-03
+     12 -0.299558D-04  0.270430D-04  0.255236D-04 -0.288778D-04 -0.123629D-03
+     13 -0.118703D+00  0.105178D+00  0.000000D+00 -0.183687D+00 -0.104841D+00
+     14  0.133828D+00 -0.176481D+00  0.000000D+00 -0.132626D+00 -0.112114D+00
+     15  0.000000D+00  0.000000D+00 -0.273180D-03  0.000000D+00  0.000000D+00
+     16  0.239474D-03  0.308220D-03  0.000000D+00  0.291368D-03 -0.289437D-03
+     17 -0.459053D-03 -0.829087D-03  0.000000D+00 -0.100231D-02 -0.770295D-03
+     18  0.000000D+00  0.000000D+00  0.249359D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.104362D-02
+      7 -0.339626D-03  0.985482D-01
+      8  0.312581D-03  0.651299D-01  0.436045D-01
+      9 -0.374566D-04  0.102709D+00  0.682350D-01  0.159564D+00
+     10  0.339626D-03  0.668907D-02  0.449050D-02 -0.119106D-01  0.985482D-01
+     11 -0.312582D-03  0.449050D-02  0.290031D-02 -0.780751D-02  0.651299D-01
+     12 -0.374562D-04  0.119106D-01  0.780751D-02 -0.162577D-01 -0.102709D+00
+     13  0.000000D+00  0.263728D-03 -0.155126D-03 -0.943408D-04  0.263728D-03
+     14  0.000000D+00  0.925709D-04 -0.104608D-03 -0.175533D-04  0.925717D-04
+     15 -0.979715D-04  0.000000D+00  0.814392D-04 -0.746998D-04  0.000000D+00
+     16  0.000000D+00 -0.105107D+00 -0.696641D-01 -0.907643D-01 -0.105107D+00
+     17  0.000000D+00 -0.696018D-01 -0.465974D-01 -0.605076D-01 -0.696018D-01
+     18 -0.418603D-03 -0.114413D+00 -0.762238D-01 -0.143219D+00  0.114413D+00
+               11            12            13            14            15 
+     11  0.436045D-01
+     12 -0.682350D-01  0.159564D+00
+     13 -0.155127D-03  0.943419D-04  0.302258D+00
+     14 -0.104606D-03  0.175525D-04 -0.164543D-02  0.289658D+00
+     15 -0.814401D-04 -0.746998D-04  0.000000D+00  0.000000D+00  0.508314D-03
+     16 -0.696641D-01  0.907643D-01 -0.393590D-03  0.257055D-03  0.000000D+00
+     17 -0.465974D-01  0.605075D-01  0.161782D-02 -0.854393D-03  0.000000D+00
+     18  0.762238D-01 -0.143219D+00  0.000000D+00  0.000000D+00  0.148567D-04
+               16            17            18 
+     16  0.210074D+00
+     17  0.139050D+00  0.956460D-01
+     18  0.000000D+00  0.000000D+00  0.286592D+00
+ Leave Link  716 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  7 Step number   1 out of a maximum of  20
+ Point Number:   7          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.756108    2.999654    0.000000
+      2          1                   -1.009137    1.072020   -0.000000
+      3          1                    0.750556   -1.438641    0.966062
+      4          1                    0.750557   -1.438641   -0.966062
+      5         16                    0.031024    1.915713   -0.000000
+      6         16                   -0.021900   -1.953116   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12306
+   NET REACTION COORDINATE UP TO THIS POINT =    0.86141
+  # OF POINTS ALONG THE PATH =   7
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  8 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+   Warning:  LQA convergence difficult!  Criteria decreased to 1.d-3.
+   LQA: T_Est iteration completed in   51 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.728815    3.012742   -0.000000
+      2          1           0       -1.030515    1.092281   -0.000000
+      3          1           0        0.745182   -1.425162    0.966033
+      4          1           0        0.745182   -1.425162   -0.966033
+      5         16           0        0.030662    1.909248   -0.000000
+      6         16           0       -0.021311   -1.948532   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944014   0.000000
+     3  H    4.775026   3.228597   0.000000
+     4  H    4.775026   3.228597   1.932066   0.000000
+     5  S    1.339591   1.339228   3.544298   3.544298   0.000000
+     6  S    5.011466   3.203910   1.339644   1.339644   3.858129
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         109.1646439           1.9874727           1.9807159
+ Leave Link  202 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        70.6011940868 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920109873     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920110     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000148496   -0.000169496    0.000000000
+      2        1           0.000148415    0.000160546   -0.000000000
+      3        1          -0.000020195    0.000004024   -0.000013011
+      4        1          -0.000020195    0.000004024    0.000013011
+      5       16          -0.000302906   -0.000168155   -0.000000000
+      6       16           0.000048828    0.000169679    0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000302906 RMS     0.000118080
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.102982D+00
+      2 -0.113998D+00  0.198192D+00
+      3  0.000000D+00  0.000000D+00  0.446779D-03
+      4  0.962817D-02  0.104748D-01  0.000000D+00  0.180407D+00
+      5 -0.176363D-01 -0.149538D-01  0.000000D+00  0.120786D+00  0.121609D+00
+      6  0.000000D+00  0.000000D+00 -0.462732D-03  0.000000D+00  0.000000D+00
+      7 -0.724043D-04 -0.156958D-03  0.139006D-03 -0.316997D-03  0.534655D-04
+      8 -0.524324D-04  0.289401D-04 -0.216777D-03  0.227813D-03  0.162474D-03
+      9  0.365849D-04 -0.231760D-04  0.271610D-04  0.372460D-04  0.120094D-03
+     10 -0.724060D-04 -0.156959D-03 -0.139004D-03 -0.316998D-03  0.534669D-04
+     11 -0.524315D-04  0.289406D-04  0.216777D-03  0.227814D-03  0.162476D-03
+     12 -0.365853D-04  0.231771D-04  0.271610D-04 -0.372464D-04 -0.120094D-03
+     13 -0.112721D+00  0.103527D+00  0.000000D+00 -0.189704D+00 -0.102974D+00
+     14  0.132185D+00 -0.182490D+00  0.000000D+00 -0.130732D+00 -0.106247D+00
+     15  0.000000D+00  0.000000D+00 -0.296421D-03  0.000000D+00  0.000000D+00
+     16  0.254342D-03  0.312226D-03  0.000000D+00  0.301420D-03 -0.283586D-03
+     17 -0.445656D-03 -0.805397D-03  0.000000D+00 -0.984288D-03 -0.733495D-03
+     18  0.000000D+00  0.000000D+00  0.256775D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.101035D-02
+      7 -0.335951D-03  0.970374D-01
+      8  0.297463D-03  0.657518D-01  0.451114D-01
+      9 -0.375161D-04  0.101918D+00  0.694171D-01  0.159567D+00
+     10  0.335951D-03  0.657989D-02  0.452797D-02 -0.118190D-01  0.970374D-01
+     11 -0.297463D-03  0.452797D-02  0.300304D-02 -0.794381D-02  0.657518D-01
+     12 -0.375162D-04  0.118190D-01  0.794381D-02 -0.162615D-01 -0.101918D+00
+     13  0.000000D+00  0.261314D-03 -0.135775D-03 -0.110915D-03  0.261314D-03
+     14  0.000000D+00  0.883919D-04 -0.106940D-03 -0.216991D-04  0.883936D-04
+     15 -0.695207D-04 -0.784961D-05  0.954399D-04 -0.778589D-04  0.784938D-05
+     16  0.000000D+00 -0.103487D+00 -0.703204D-01 -0.900637D-01 -0.103487D+00
+     17  0.000000D+00 -0.702634D-01 -0.481973D-01 -0.615496D-01 -0.702634D-01
+     18 -0.404479D-03 -0.113532D+00 -0.775370D-01 -0.143217D+00  0.113532D+00
+               11            12            13            14            15 
+     11  0.451114D-01
+     12 -0.694171D-01  0.159567D+00
+     13 -0.135777D-03  0.110914D-03  0.302328D+00
+     14 -0.106938D-03  0.216986D-04 -0.187121D-02  0.289831D+00
+     15 -0.954390D-04 -0.778582D-04  0.000000D+00  0.000000D+00  0.527070D-03
+     16 -0.703204D-01  0.900638D-01 -0.423972D-03  0.239722D-03  0.000000D+00
+     17 -0.481973D-01  0.615495D-01  0.158911D-02 -0.879595D-03  0.000000D+00
+     18  0.775370D-01 -0.143217D+00  0.000000D+00  0.000000D+00 -0.279508D-05
+               16            17            18 
+     16  0.206840D+00
+     17  0.140370D+00  0.988103D-01
+     18  0.000000D+00  0.000000D+00  0.286584D+00
+ Leave Link  716 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Reaction path inflection point has been passed.
+   Previous lowest Hessian eigenvalue=   -0.0000077580
+   Current lowest Hessian eigenvalue =    0.0000034109
+ Pt  8 Step number   1 out of a maximum of  20
+ Point Number:   8          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.728815    3.012742   -0.000000
+      2          1                   -1.030515    1.092281   -0.000000
+      3          1                    0.745182   -1.425162    0.966033
+      4          1                    0.745182   -1.425162   -0.966033
+      5         16                    0.030662    1.909248   -0.000000
+      6         16                   -0.021311   -1.948532   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12313
+   NET REACTION COORDINATE UP TO THIS POINT =    0.98454
+  # OF POINTS ALONG THE PATH =   8
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  9 in FORWARD path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    5 iterations.
+ PES minimum detected within a second-order step.
+ Calculation of FORWARD path complete.
+ Beginning calculation of the REVERSE path.
+ 
+ Calculating another point on the path.
+ Point Number  1 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.965018    2.858133    0.000000
+      2          1           0       -0.806194    0.919778    0.000000
+      3          1           0        0.793063   -1.552081    0.966265
+      4          1           0        0.793063   -1.552081   -0.966264
+      5         16           0        0.033045    1.964651   -0.000000
+      6         16           0       -0.027211   -1.985889   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944851   0.000000
+     3  H    4.845049   3.098609   0.000000
+     4  H    4.845049   3.098609   1.932529   0.000000
+     5  S    1.339568   1.340180   3.725412   3.725412   0.000000
+     6  S    4.933966   3.008274   1.339667   1.339667   3.950999
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         105.6570498           1.9046533           1.8973645
+ Leave Link  202 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.7477543132 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920070671     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920071     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:35 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000192351   -0.000187179   -0.000000000
+      2        1           0.000164843    0.000208587   -0.000000000
+      3        1          -0.000020956   -0.000015050   -0.000017800
+      4        1          -0.000020955   -0.000015049    0.000017799
+      5       16          -0.000352617    0.000011451    0.000000000
+      6       16           0.000039152   -0.000002121    0.000000001
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000352617 RMS     0.000122631
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.160448D+00
+      2 -0.123309D+00  0.140532D+00
+      3  0.000000D+00  0.000000D+00  0.272373D-03
+      4  0.100000D-01  0.166151D-01  0.000000D+00  0.121827D+00
+      5 -0.115672D-01 -0.152366D-01  0.000000D+00  0.119887D+00  0.178797D+00
+      6  0.000000D+00  0.000000D+00 -0.359989D-03  0.000000D+00  0.000000D+00
+      7 -0.459147D-04 -0.167302D-03  0.861489D-04 -0.343964D-03  0.360342D-04
+      8  0.969894D-05  0.884570D-04 -0.171352D-03  0.366123D-03  0.174110D-03
+      9  0.000000D+00 -0.584924D-04  0.152172D-04 -0.387099D-04  0.149646D-03
+     10 -0.459161D-04 -0.167302D-03 -0.861469D-04 -0.343965D-03  0.360354D-04
+     11  0.969926D-05  0.884583D-04  0.171352D-03  0.366124D-03  0.174111D-03
+     12  0.000000D+00  0.584946D-04  0.152160D-04  0.387087D-04 -0.149646D-03
+     13 -0.170448D+00  0.106809D+00  0.000000D+00 -0.131314D+00 -0.108043D+00
+     14  0.135310D+00 -0.124467D+00  0.000000D+00 -0.136104D+00 -0.162924D+00
+     15  0.000000D+00  0.000000D+00 -0.127969D-03  0.000000D+00  0.000000D+00
+     16  0.897127D-04  0.221058D-03  0.000000D+00  0.173706D-03 -0.350923D-03
+     17 -0.452870D-03 -0.100540D-02  0.000000D+00 -0.113014D-02 -0.985638D-03
+     18  0.000000D+00  0.000000D+00  0.183873D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.136839D-02
+      7 -0.368499D-03  0.111062D+00
+      8  0.454802D-03  0.582286D-01  0.311639D-01
+      9 -0.392107D-04  0.109023D+00  0.575064D-01  0.159530D+00
+     10  0.368498D-03  0.759699D-02  0.404158D-02 -0.126445D-01  0.111062D+00
+     11 -0.454802D-03  0.404158D-02  0.202644D-02 -0.657172D-02  0.582286D-01
+     12 -0.392091D-04  0.126446D-01  0.657173D-02 -0.162529D-01 -0.109023D+00
+     13  0.000000D+00  0.242785D-03 -0.285980D-03  0.100939D-04  0.242783D-03
+     14  0.000000D+00  0.104731D-03 -0.122248D-03  0.134170D-04  0.104732D-03
+     15 -0.369679D-03  0.639585D-04 -0.353290D-04 -0.494656D-04 -0.639575D-04
+     16  0.000000D+00 -0.118510D+00 -0.623616D-01 -0.963498D-01 -0.118510D+00
+     17  0.000000D+00 -0.622419D-01 -0.333296D-01 -0.510403D-01 -0.622420D-01
+     18 -0.561707D-03 -0.121449D+00 -0.643262D-01 -0.143204D+00  0.121448D+00
+               11            12            13            14            15 
+     11  0.311639D-01
+     12 -0.575065D-01  0.159530D+00
+     13 -0.285981D-03 -0.100931D-04  0.301357D+00
+     14 -0.122249D-03 -0.134184D-04  0.169616D-03  0.288550D+00
+     15  0.353313D-04 -0.494659D-04  0.000000D+00  0.000000D+00  0.425274D-03
+     16 -0.623616D-01  0.963498D-01 -0.784602D-04  0.415884D-03  0.000000D+00
+     17 -0.333296D-01  0.510404D-01  0.163655D-02 -0.915733D-03  0.000000D+00
+     18  0.643263D-01 -0.143204D+00  0.000000D+00  0.000000D+00  0.173926D-03
+               16            17            18 
+     16  0.236834D+00
+     17  0.124434D+00  0.695648D-01
+     18  0.000000D+00  0.000000D+00  0.286611D+00
+ Leave Link  716 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  9 Step number   1 out of a maximum of  20
+ Point Number:   1          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.965018    2.858133    0.000000
+      2          1                   -0.806194    0.919778    0.000000
+      3          1                    0.793063   -1.552081    0.966265
+      4          1                    0.793063   -1.552081   -0.966264
+      5         16                    0.033045    1.964651   -0.000000
+      6         16                   -0.027211   -1.985889   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12380
+   NET REACTION COORDINATE UP TO THIS POINT =    0.12380
+  # OF POINTS ALONG THE PATH =   9
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  2 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    4 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -0.985265    2.840505   -0.000000
+      2          1           0       -0.780586    0.906684    0.000000
+      3          1           0        0.799074   -1.569686    0.966290
+      4          1           0        0.799074   -1.569686   -0.966290
+      5         16           0        0.033651    1.971113   -0.000000
+      6         16           0       -0.028106   -1.990182   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944622   0.000000
+     3  H    4.854623   3.092160   0.000000
+     4  H    4.854623   3.092159   1.932580   0.000000
+     5  S    1.339415   1.340145   3.749246   3.749246   0.000000
+     6  S    4.924600   2.993001   1.339687   1.339687   3.961776
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         105.1720343           1.8950582           1.8876883
+ Leave Link  202 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.6442203376 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920071912     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920072     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000135696   -0.000139328    0.000000000
+      2        1           0.000123442    0.000148409   -0.000000000
+      3        1          -0.000029030   -0.000020461   -0.000024451
+      4        1          -0.000029029   -0.000020461    0.000024450
+      5       16          -0.000250261    0.000037998    0.000000000
+      6       16           0.000050876   -0.000005528    0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000250261 RMS     0.000089908
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.166413D+00
+      2 -0.122828D+00  0.134743D+00
+      3  0.000000D+00  0.000000D+00  0.228989D-03
+      4  0.987201D-02  0.172276D-01  0.000000D+00  0.116226D+00
+      5 -0.109783D-01 -0.151184D-01  0.000000D+00  0.118381D+00  0.184412D+00
+      6  0.000000D+00  0.000000D+00 -0.347946D-03  0.000000D+00  0.000000D+00
+      7 -0.401429D-04 -0.164735D-03  0.807918D-04 -0.341811D-03  0.365560D-04
+      8  0.131159D-04  0.947208D-04 -0.165874D-03  0.379150D-03  0.175171D-03
+      9 -0.207679D-05 -0.607566D-04  0.142335D-04 -0.432531D-04  0.154756D-03
+     10 -0.401427D-04 -0.164734D-03 -0.807903D-04 -0.341812D-03  0.365575D-04
+     11  0.131169D-04  0.947203D-04  0.165874D-03  0.379149D-03  0.175172D-03
+     12  0.207663D-05  0.607568D-04  0.142325D-04  0.432544D-04 -0.154757D-03
+     13 -0.176277D+00  0.105728D+00  0.000000D+00 -0.125568D+00 -0.107118D+00
+     14  0.134217D+00 -0.118800D+00  0.000000D+00 -0.135226D+00 -0.168655D+00
+     15  0.000000D+00  0.000000D+00 -0.870621D-04  0.000000D+00  0.000000D+00
+     16  0.709686D-04  0.202963D-03  0.000000D+00  0.152060D-03 -0.360066D-03
+     17 -0.436921D-03 -0.101462D-02  0.000000D+00 -0.114119D-02 -0.989534D-03
+     18  0.000000D+00  0.000000D+00  0.176275D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.137671D-02
+      7 -0.368153D-03  0.112916D+00
+      8  0.471360D-03  0.568957D-01  0.293134D-01
+      9 -0.396644D-04  0.109921D+00  0.557305D-01  0.159514D+00
+     10  0.368153D-03  0.772788D-02  0.394918D-02 -0.127505D-01  0.112916D+00
+     11 -0.471359D-03  0.394918D-02  0.189554D-02 -0.636855D-02  0.568957D-01
+     12 -0.396648D-04  0.127505D-01  0.636856D-02 -0.162520D-01 -0.109921D+00
+     13  0.000000D+00  0.232783D-03 -0.295829D-03  0.158216D-04  0.232782D-03
+     14  0.000000D+00  0.102546D-03 -0.127171D-03  0.143371D-04  0.102546D-03
+     15 -0.371929D-03  0.695087D-04 -0.486930D-04 -0.462514D-04 -0.695090D-04
+     16  0.000000D+00 -0.120493D+00 -0.609429D-01 -0.971422D-01 -0.120493D+00
+     17  0.000000D+00 -0.608175D-01 -0.313507D-01 -0.494713D-01 -0.608175D-01
+     18 -0.578907D-03 -0.122453D+00 -0.623558D-01 -0.143190D+00  0.122453D+00
+               11            12            13            14            15 
+     11  0.293134D-01
+     12 -0.557305D-01  0.159514D+00
+     13 -0.295830D-03 -0.158209D-04  0.301418D+00
+     14 -0.127171D-03 -0.143367D-04  0.372805D-03  0.288643D+00
+     15  0.486904D-04 -0.462530D-04  0.000000D+00  0.000000D+00  0.364072D-03
+     16 -0.609429D-01  0.971422D-01 -0.360970D-04  0.431842D-03  0.000000D+00
+     17 -0.313507D-01  0.494713D-01  0.160899D-02 -0.934625D-03  0.000000D+00
+     18  0.623558D-01 -0.143190D+00  0.000000D+00  0.000000D+00  0.190044D-03
+               16            17            18 
+     16  0.240798D+00
+     17  0.121607D+00  0.656392D-01
+     18  0.000000D+00  0.000000D+00  0.286592D+00
+ Leave Link  716 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt 10 Step number   1 out of a maximum of  20
+ Point Number:   2          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -0.985265    2.840505   -0.000000
+      2          1                   -0.780586    0.906684    0.000000
+      3          1                    0.799074   -1.569686    0.966290
+      4          1                    0.799074   -1.569686   -0.966290
+      5         16                    0.033651    1.971113   -0.000000
+      6         16                   -0.028106   -1.990182   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12275
+   NET REACTION COORDINATE UP TO THIS POINT =    0.24655
+  # OF POINTS ALONG THE PATH =  10
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  3 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    6 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.008200    2.818297   -0.000000
+      2          1           0       -0.751160    0.890626    0.000000
+      3          1           0        0.804395   -1.585703    0.966315
+      4          1           0        0.804396   -1.585703   -0.966315
+      5         16           0        0.034099    1.976911   -0.000000
+      6         16           0       -0.028967   -1.993716   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944733   0.000000
+     3  H    4.859474   3.079890   0.000000
+     4  H    4.859473   3.079890   1.932630   0.000000
+     5  S    1.339522   1.340390   3.770854   3.770853   0.000000
+     6  S    4.910639   2.973381   1.339676   1.339676   3.971128
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         104.7078315           1.8870797           1.8796241
+ Leave Link  202 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.5609288597 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920074180     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920074     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000181139   -0.000179208    0.000000000
+      2        1           0.000157585    0.000197314   -0.000000000
+      3        1          -0.000023680   -0.000021506   -0.000020979
+      4        1          -0.000023680   -0.000021506    0.000020979
+      5       16          -0.000328084    0.000056891    0.000000000
+      6       16           0.000038288   -0.000031375   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000328084 RMS     0.000116654
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.172984D+00
+      2 -0.121714D+00  0.128003D+00
+      3  0.000000D+00  0.000000D+00  0.237199D-03
+      4  0.968438D-02  0.179091D-01  0.000000D+00  0.109814D+00
+      5 -0.103040D-01 -0.149375D-01  0.000000D+00  0.116116D+00  0.190476D+00
+      6  0.000000D+00  0.000000D+00 -0.333998D-03  0.000000D+00  0.000000D+00
+      7 -0.343134D-04 -0.162719D-03  0.753038D-04 -0.342570D-03  0.379247D-04
+      8  0.164073D-04  0.102269D-03 -0.159638D-03  0.395257D-03  0.174194D-03
+      9 -0.312920D-05 -0.632948D-04  0.133549D-04 -0.496976D-04  0.159003D-03
+     10 -0.343132D-04 -0.162719D-03 -0.753038D-04 -0.342573D-03  0.379241D-04
+     11  0.164072D-04  0.102268D-03  0.159639D-03  0.395256D-03  0.174194D-03
+     12  0.313047D-05  0.632950D-04  0.133559D-04  0.496983D-04 -0.159003D-03
+     13 -0.182653D+00  0.103949D+00  0.000000D+00 -0.118943D+00 -0.105522D+00
+     14  0.132403D+00 -0.112243D+00  0.000000D+00 -0.133662D+00 -0.174891D+00
+     15  0.000000D+00  0.000000D+00 -0.986198D-04  0.000000D+00  0.000000D+00
+     16  0.514693D-04  0.182564D-03  0.000000D+00  0.129374D-03 -0.367986D-03
+     17 -0.418516D-03 -0.102699D-02  0.000000D+00 -0.115341D-02 -0.996402D-03
+     18  0.000000D+00  0.000000D+00  0.167428D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.144614D-02
+      7 -0.369762D-03  0.114608D+00
+      8  0.491525D-03  0.556098D-01  0.276366D-01
+      9 -0.402249D-04  0.110748D+00  0.540772D-01  0.159524D+00
+     10  0.369762D-03  0.784984D-02  0.386076D-02 -0.128470D-01  0.114608D+00
+     11 -0.491525D-03  0.386075D-02  0.177483D-02 -0.617832D-02  0.556099D-01
+     12 -0.402248D-04  0.128470D-01  0.617832D-02 -0.162535D-01 -0.110748D+00
+     13  0.000000D+00  0.224309D-03 -0.306280D-03  0.232252D-04  0.224308D-03
+     14  0.000000D+00  0.100302D-03 -0.132601D-03  0.161341D-04  0.100302D-03
+     15 -0.432812D-03  0.759637D-04 -0.637989D-04 -0.432122D-04 -0.759633D-04
+     16  0.000000D+00 -0.122304D+00 -0.595776D-01 -0.978728D-01 -0.122304D+00
+     17  0.000000D+00 -0.594443D-01 -0.295545D-01 -0.480117D-01 -0.594444D-01
+     18 -0.600280D-03 -0.123376D+00 -0.605235D-01 -0.143200D+00  0.123376D+00
+               11            12            13            14            15 
+     11  0.276367D-01
+     12 -0.540772D-01  0.159523D+00
+     13 -0.306281D-03 -0.232249D-04  0.301141D+00
+     14 -0.132601D-03 -0.161328D-04  0.607869D-03  0.288379D+00
+     15  0.637986D-04 -0.432117D-04  0.000000D+00  0.000000D+00  0.409667D-03
+     16 -0.595777D-01  0.978728D-01  0.904918D-05  0.451132D-03  0.000000D+00
+     17 -0.295545D-01  0.480118D-01  0.157816D-02 -0.979249D-03  0.000000D+00
+     18  0.605236D-01 -0.143200D+00  0.000000D+00  0.000000D+00  0.210806D-03
+               16            17            18 
+     16  0.244417D+00
+     17  0.118886D+00  0.621109D-01
+     18  0.000000D+00  0.000000D+00  0.286621D+00
+ Leave Link  716 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt 11 Step number   1 out of a maximum of  20
+ Point Number:   3          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -1.008200    2.818297   -0.000000
+      2          1                   -0.751160    0.890626    0.000000
+      3          1                    0.804395   -1.585703    0.966315
+      4          1                    0.804396   -1.585703   -0.966315
+      5         16                    0.034099    1.976911   -0.000000
+      6         16                   -0.028967   -1.993716   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12302
+   NET REACTION COORDINATE UP TO THIS POINT =    0.36958
+  # OF POINTS ALONG THE PATH =  11
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  4 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    5 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.030008    2.795921   -0.000000
+      2          1           0       -0.721814    0.875883    0.000000
+      3          1           0        0.810087   -1.602806    0.966341
+      4          1           0        0.810087   -1.602806   -0.966341
+      5         16           0        0.034393    1.982721   -0.000000
+      6         16           0       -0.029775   -1.997246   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944615   0.000000
+     3  H    4.865035   3.069924   0.000000
+     4  H    4.865034   3.069924   1.932682   0.000000
+     5  S    1.339494   1.340499   3.793616   3.793615   0.000000
+     6  S    4.896418   2.955299   1.339689   1.339689   3.980484
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         104.2198838           1.8790635           1.8715158
+ Leave Link  202 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.4766042925 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920077853     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920078     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000174122   -0.000172550    0.000000000
+      2        1           0.000152350    0.000189931   -0.000000000
+      3        1          -0.000027374   -0.000026449   -0.000024544
+      4        1          -0.000027374   -0.000026449    0.000024544
+      5       16          -0.000313762    0.000082718    0.000000000
+      6       16           0.000043468   -0.000046611   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000313762 RMS     0.000113732
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.179474D+00
+      2 -0.120371D+00  0.121520D+00
+      3  0.000000D+00  0.000000D+00  0.219510D-03
+      4  0.946524D-02  0.185724D-01  0.000000D+00  0.103705D+00
+      5 -0.965751D-02 -0.147323D-01  0.000000D+00  0.113663D+00  0.196408D+00
+      6  0.000000D+00  0.000000D+00 -0.319511D-03  0.000000D+00  0.000000D+00
+      7 -0.280845D-04 -0.159829D-03  0.699558D-04 -0.341697D-03  0.396301D-04
+      8  0.188291D-04  0.109399D-03 -0.153407D-03  0.410541D-03  0.173424D-03
+      9 -0.373797D-05 -0.653361D-04  0.125535D-04 -0.549143D-04  0.164173D-03
+     10 -0.280849D-04 -0.159830D-03 -0.699546D-04 -0.341698D-03  0.396303D-04
+     11  0.188293D-04  0.109400D-03  0.153406D-03  0.410539D-03  0.173423D-03
+     12  0.373893D-05  0.653371D-04  0.125542D-04  0.549144D-04 -0.164174D-03
+     13 -0.188918D+00  0.101958D+00  0.000000D+00 -0.112593D+00 -0.103711D+00
+     14  0.130387D+00 -0.105971D+00  0.000000D+00 -0.131892D+00 -0.181024D+00
+     15  0.000000D+00  0.000000D+00 -0.852328D-04  0.000000D+00  0.000000D+00
+     16  0.325894D-04  0.160945D-03  0.000000D+00  0.104772D-03 -0.375650D-03
+     17 -0.397303D-03 -0.103556D-02  0.000000D+00 -0.116463D-02 -0.999237D-03
+     18  0.000000D+00  0.000000D+00  0.158849D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.148781D-02
+      7 -0.370082D-03  0.116383D+00
+      8  0.511280D-03  0.541592D-01  0.258694D-01
+      9 -0.408307D-04  0.111598D+00  0.522697D-01  0.159515D+00
+     10  0.370081D-03  0.797636D-02  0.375966D-02 -0.129475D-01  0.116383D+00
+     11 -0.511281D-03  0.375966D-02  0.164816D-02 -0.597115D-02  0.541593D-01
+     12 -0.408301D-04  0.129475D-01  0.597115D-02 -0.162548D-01 -0.111598D+00
+     13  0.000000D+00  0.214242D-03 -0.315132D-03  0.288601D-04  0.214240D-03
+     14  0.000000D+00  0.973304D-04 -0.138442D-03  0.168713D-04  0.973300D-04
+     15 -0.466700D-03  0.817110D-04 -0.786131D-04 -0.401788D-04 -0.817094D-04
+     16  0.000000D+00 -0.124204D+00 -0.580348D-01 -0.986221D-01 -0.124204D+00
+     17  0.000000D+00 -0.578942D-01 -0.276612D-01 -0.464153D-01 -0.578943D-01
+     18 -0.621343D-03 -0.124327D+00 -0.585200D-01 -0.143191D+00  0.124327D+00
+               11            12            13            14            15 
+     11  0.258694D-01
+     12 -0.522697D-01  0.159515D+00
+     13 -0.315133D-03 -0.288597D-04  0.301030D+00
+     14 -0.138443D-03 -0.168709D-04  0.841533D-03  0.288297D+00
+     15  0.786139D-04 -0.401786D-04  0.000000D+00  0.000000D+00  0.404401D-03
+     16 -0.580349D-01  0.986221D-01  0.540413D-04  0.469116D-03  0.000000D+00
+     17 -0.276612D-01  0.464153D-01  0.154242D-02 -0.102511D-02  0.000000D+00
+     18  0.585201D-01 -0.143191D+00  0.000000D+00  0.000000D+00  0.230504D-03
+               16            17            18 
+     16  0.248215D+00
+     17  0.115811D+00  0.583818D-01
+     18  0.000000D+00  0.000000D+00  0.286614D+00
+ Leave Link  716 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt 12 Step number   1 out of a maximum of  20
+ Point Number:   4          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -1.030008    2.795921   -0.000000
+      2          1                   -0.721814    0.875883    0.000000
+      3          1                    0.810087   -1.602806    0.966341
+      4          1                    0.810087   -1.602806   -0.966341
+      5         16                    0.034393    1.982721   -0.000000
+      6         16                   -0.029775   -1.997246   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12286
+   NET REACTION COORDINATE UP TO THIS POINT =    0.49244
+  # OF POINTS ALONG THE PATH =  12
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  5 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    5 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.051304    2.772697   -0.000000
+      2          1           0       -0.691862    0.861709    0.000000
+      3          1           0        0.815728   -1.620264    0.966367
+      4          1           0        0.815728   -1.620263   -0.966367
+      5         16           0        0.034606    1.988454   -0.000000
+      6         16           0       -0.030558   -2.000675   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944498   0.000000
+     3  H    4.870090   3.060536   0.000000
+     4  H    4.870090   3.060536   1.932734   0.000000
+     5  S    1.339492   1.340637   3.816655   3.816655   0.000000
+     6  S    4.881291   2.937783   1.339694   1.339694   3.989661
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         103.7267250           1.8712426           1.8636004
+ Leave Link  202 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.3939673568 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920082754     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920083     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000177483   -0.000173859   -0.000000000
+      2        1           0.000153603    0.000193428    0.000000000
+      3        1          -0.000028125   -0.000030244   -0.000025800
+      4        1          -0.000028124   -0.000030244    0.000025799
+      5       16          -0.000316772    0.000104981    0.000000000
+      6       16           0.000043217   -0.000063495    0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000316772 RMS     0.000116605
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.185905D+00
+      2 -0.118648D+00  0.115063D+00
+      3  0.000000D+00  0.000000D+00  0.207933D-03
+      4  0.920744D-02  0.192262D-01  0.000000D+00  0.976964D-01
+      5 -0.901976D-02 -0.144922D-01  0.000000D+00  0.110853D+00  0.202200D+00
+      6  0.000000D+00  0.000000D+00 -0.304541D-03  0.000000D+00  0.000000D+00
+      7 -0.217184D-04 -0.156373D-03  0.646956D-04 -0.340175D-03  0.418821D-04
+      8  0.205179D-04  0.116406D-03 -0.147025D-03  0.425688D-03  0.172036D-03
+      9 -0.401096D-05 -0.669995D-04  0.118198D-04 -0.595697D-04  0.169745D-03
+     10 -0.217177D-04 -0.156373D-03 -0.646955D-04 -0.340175D-03  0.418818D-04
+     11  0.205175D-04  0.116405D-03  0.147024D-03  0.425687D-03  0.172036D-03
+     12  0.400977D-05  0.670000D-04  0.118199D-04  0.595713D-04 -0.169745D-03
+     13 -0.195085D+00  0.995977D-01  0.000000D+00 -0.106303D+00 -0.101536D+00
+     14  0.128000D+00 -0.997623D-01  0.000000D+00 -0.129756D+00 -0.187054D+00
+     15  0.000000D+00  0.000000D+00 -0.784623D-04  0.000000D+00  0.000000D+00
+     16  0.144286D-04  0.138008D-03  0.000000D+00  0.785513D-04 -0.382650D-03
+     17 -0.373555D-03 -0.104110D-02  0.000000D+00 -0.117486D-02 -0.997748D-03
+     18  0.000000D+00  0.000000D+00  0.150150D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.153527D-02
+      7 -0.369702D-03  0.118156D+00
+      8  0.531238D-03  0.526154D-01  0.241066D-01
+      9 -0.414556D-04  0.112445D+00  0.504052D-01  0.159513D+00
+     10  0.369701D-03  0.810250D-02  0.365161D-02 -0.130475D-01  0.118156D+00
+     11 -0.531237D-03  0.365160D-02  0.152148D-02 -0.575733D-02  0.526155D-01
+     12 -0.414555D-04  0.130475D-01  0.575734D-02 -0.162560D-01 -0.112445D+00
+     13  0.000000D+00  0.203522D-03 -0.322733D-03  0.335269D-04  0.203522D-03
+     14  0.000000D+00  0.937895D-04 -0.144449D-03  0.170392D-04  0.937881D-04
+     15 -0.506412D-03  0.870399D-04 -0.934682D-04 -0.372280D-04 -0.870383D-04
+     16  0.000000D+00 -0.126100D+00 -0.563922D-01 -0.993685D-01 -0.126100D+00
+     17  0.000000D+00 -0.562445D-01 -0.257715D-01 -0.447687D-01 -0.562446D-01
+     18 -0.642800D-03 -0.125274D+00 -0.564532D-01 -0.143190D+00  0.125274D+00
+               11            12            13            14            15 
+     11  0.241067D-01
+     12 -0.504053D-01  0.159513D+00
+     13 -0.322734D-03 -0.335268D-04  0.300885D+00
+     14 -0.144448D-03 -0.170393D-04  0.108295D-02  0.288182D+00
+     15  0.934685D-04 -0.372264D-04  0.000000D+00  0.000000D+00  0.411745D-03
+     16 -0.563923D-01  0.993685D-01  0.987039D-04  0.486157D-03  0.000000D+00
+     17 -0.257715D-01  0.447687D-01  0.150186D-02 -0.107676D-02  0.000000D+00
+     18  0.564533D-01 -0.143190D+00  0.000000D+00  0.000000D+00  0.250194D-03
+               16            17            18 
+     16  0.252007D+00
+     17  0.112539D+00  0.546584D-01
+     18  0.000000D+00  0.000000D+00  0.286622D+00
+ Leave Link  716 at Fri Jan  3 11:26:36 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt 13 Step number   1 out of a maximum of  20
+ Point Number:   5          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -1.051304    2.772697   -0.000000
+      2          1                   -0.691862    0.861709    0.000000
+      3          1                    0.815728   -1.620264    0.966367
+      4          1                    0.815728   -1.620263   -0.966367
+      5         16                    0.034606    1.988454   -0.000000
+      6         16                   -0.030558   -2.000675   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12296
+   NET REACTION COORDINATE UP TO THIS POINT =    0.61540
+  # OF POINTS ALONG THE PATH =  13
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  6 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    5 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.071821    2.748942   -0.000000
+      2          1           0       -0.661589    0.848378    0.000000
+      3          1           0        0.821422   -1.638366    0.966394
+      4          1           0        0.821422   -1.638365   -0.966394
+      5         16           0        0.034744    1.994142    0.000000
+      6         16           0       -0.031321   -2.004035   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944334   0.000000
+     3  H    4.875116   3.052397   0.000000
+     4  H    4.875115   3.052397   1.932788   0.000000
+     5  S    1.339481   1.340767   3.840298   3.840298   0.000000
+     6  S    4.865535   2.921215   1.339702   1.339702   3.998723
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         103.2241576           1.8635291           1.8557894
+ Leave Link  202 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.3117407596 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920088857     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920089     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000177359   -0.000171874    0.000000000
+      2        1           0.000152063    0.000193156   -0.000000000
+      3        1          -0.000030312   -0.000034546   -0.000028099
+      4        1          -0.000030313   -0.000034546    0.000028100
+      5       16          -0.000313771    0.000125968    0.000000000
+      6       16           0.000046098   -0.000077616   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000313771 RMS     0.000117781
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.192223D+00
+      2 -0.116594D+00  0.108729D+00
+      3  0.000000D+00  0.000000D+00  0.195692D-03
+      4  0.891476D-02  0.198636D-01  0.000000D+00  0.918759D-01
+      5 -0.839979D-02 -0.142217D-01  0.000000D+00  0.107748D+00  0.207811D+00
+      6  0.000000D+00  0.000000D+00 -0.289233D-03  0.000000D+00  0.000000D+00
+      7 -0.152461D-04 -0.152261D-03  0.595475D-04 -0.337611D-03  0.444916D-04
+      8  0.214494D-04  0.123112D-03 -0.140568D-03  0.440329D-03  0.170318D-03
+      9 -0.396647D-05 -0.682320D-04  0.111528D-04 -0.634339D-04  0.175884D-03
+     10 -0.152448D-04 -0.152261D-03 -0.595459D-04 -0.337612D-03  0.444939D-04
+     11  0.214494D-04  0.123112D-03  0.140568D-03  0.440329D-03  0.170318D-03
+     12  0.396767D-05  0.682331D-04  0.111536D-04  0.634347D-04 -0.175884D-03
+     13 -0.201107D+00  0.969213D-01  0.000000D+00 -0.100167D+00 -0.990505D-01
+     14  0.125298D+00 -0.937109D-01  0.000000D+00 -0.127308D+00 -0.192938D+00
+     15  0.000000D+00  0.000000D+00 -0.715301D-04  0.000000D+00  0.000000D+00
+     16 -0.280400D-05  0.113990D-03  0.000000D+00  0.507171D-04 -0.388834D-03
+     17 -0.347625D-03 -0.104312D-02  0.000000D+00 -0.118405D-02 -0.992160D-03
+     18  0.000000D+00  0.000000D+00  0.141489D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.158085D-02
+      7 -0.368289D-03  0.119948D+00
+      8  0.551059D-03  0.509432D-01  0.223232D-01
+      9 -0.420898D-04  0.113293D+00  0.484449D-01  0.159510D+00
+     10  0.368289D-03  0.822938D-02  0.353394D-02 -0.131481D-01  0.119948D+00
+     11 -0.551057D-03  0.353393D-02  0.139343D-02 -0.553267D-02  0.509432D-01
+     12 -0.420904D-04  0.131481D-01  0.553267D-02 -0.162572D-01 -0.113293D+00
+     13  0.000000D+00  0.192016D-03 -0.328959D-03  0.370494D-04  0.192014D-03
+     14  0.000000D+00  0.897143D-04 -0.150617D-03  0.164834D-04  0.897142D-04
+     15 -0.544553D-03  0.917983D-04 -0.108202D-03 -0.343534D-04 -0.917975D-04
+     16  0.000000D+00 -0.128017D+00 -0.546117D-01 -0.100116D+00 -0.128017D+00
+     17  0.000000D+00 -0.544573D-01 -0.238590D-01 -0.430374D-01 -0.544573D-01
+     18 -0.664279D-03 -0.126224D+00 -0.542798D-01 -0.143187D+00  0.126224D+00
+               11            12            13            14            15 
+     11  0.223232D-01
+     12 -0.484450D-01  0.159510D+00
+     13 -0.328958D-03 -0.370503D-04  0.300749D+00
+     14 -0.150618D-03 -0.164839D-04  0.133069D-02  0.288082D+00
+     15  0.108202D-03 -0.343525D-04  0.000000D+00  0.000000D+00  0.417960D-03
+     16 -0.546117D-01  0.100116D+00  0.142637D-03  0.501818D-03  0.000000D+00
+     17 -0.238590D-01  0.430374D-01  0.145718D-02 -0.113190D-02  0.000000D+00
+     18  0.542799D-01 -0.143187D+00  0.000000D+00  0.000000D+00  0.269439D-03
+               16            17            18 
+     16  0.255842D+00
+     17  0.108993D+00  0.508851D-01
+     18  0.000000D+00  0.000000D+00  0.286627D+00
+ Leave Link  716 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt 14 Step number   1 out of a maximum of  20
+ Point Number:   6          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -1.071821    2.748942   -0.000000
+      2          1                   -0.661589    0.848378    0.000000
+      3          1                    0.821422   -1.638366    0.966394
+      4          1                    0.821422   -1.638365   -0.966394
+      5         16                    0.034744    1.994142    0.000000
+      6         16                   -0.031321   -2.004035   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12299
+   NET REACTION COORDINATE UP TO THIS POINT =    0.73839
+  # OF POINTS ALONG THE PATH =  14
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  7 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    5 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.091533    2.724712   -0.000000
+      2          1           0       -0.631039    0.835902    0.000000
+      3          1           0        0.827121   -1.657111    0.966421
+      4          1           0        0.827121   -1.657110   -0.966421
+      5         16           0        0.034820    1.999790    0.000000
+      6         16           0       -0.032065   -2.007329   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.944135   0.000000
+     3  H    4.880121   3.045539   0.000000
+     4  H    4.880120   3.045539   1.932842   0.000000
+     5  S    1.339471   1.340897   3.864536   3.864535   0.000000
+     6  S    4.849195   2.905638   1.339710   1.339710   4.007678
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         102.7157072           1.8559109           1.8480718
+ Leave Link  202 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.2297233615 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920096074     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920096     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000177380   -0.000169431    0.000000000
+      2        1           0.000150033    0.000192923   -0.000000000
+      3        1          -0.000032681   -0.000038710   -0.000030432
+      4        1          -0.000032681   -0.000038710    0.000030432
+      5       16          -0.000310748    0.000144401    0.000000000
+      6       16           0.000049657   -0.000089958    0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000310748 RMS     0.000118991
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.198399D+00
+      2 -0.114210D+00  0.102538D+00
+      3  0.000000D+00  0.000000D+00  0.184574D-03
+      4  0.858860D-02  0.204821D-01  0.000000D+00  0.862586D-01
+      5 -0.779938D-02 -0.139219D-01  0.000000D+00  0.104358D+00  0.213217D+00
+      6  0.000000D+00  0.000000D+00 -0.273663D-03  0.000000D+00  0.000000D+00
+      7 -0.875788D-05 -0.147539D-03  0.545140D-04 -0.333983D-03  0.474147D-04
+      8  0.216581D-04  0.129458D-03 -0.134060D-03  0.454368D-03  0.168257D-03
+      9 -0.363880D-05 -0.690474D-04  0.105513D-04 -0.665225D-04  0.182570D-03
+     10 -0.875796D-05 -0.147541D-03 -0.545137D-04 -0.333983D-03  0.474134D-04
+     11  0.216577D-04  0.129460D-03  0.134060D-03  0.454368D-03  0.168257D-03
+     12  0.363873D-05  0.690478D-04  0.105504D-04  0.665232D-04 -0.182570D-03
+     13 -0.206953D+00  0.939346D-01  0.000000D+00 -0.942013D-01 -0.962611D-01
+     14  0.122286D+00 -0.878339D-01  0.000000D+00 -0.124556D+00 -0.198649D+00
+     15  0.000000D+00  0.000000D+00 -0.661609D-04  0.000000D+00  0.000000D+00
+     16 -0.189530D-04  0.891089D-04  0.000000D+00  0.213749D-04 -0.394027D-03
+     17 -0.319869D-03 -0.104151D-02  0.000000D+00 -0.119214D-02 -0.982545D-03
+     18  0.000000D+00  0.000000D+00  0.132871D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.162606D-02
+      7 -0.365765D-03  0.121750D+00
+      8  0.570627D-03  0.491399D-01  0.205301D-01
+      9 -0.427096D-04  0.114140D+00  0.463911D-01  0.159507D+00
+     10  0.365766D-03  0.835632D-02  0.340658D-02 -0.132487D-01  0.121750D+00
+     11 -0.570627D-03  0.340657D-02  0.126481D-02 -0.529732D-02  0.491399D-01
+     12 -0.427082D-04  0.132487D-01  0.529733D-02 -0.162582D-01 -0.114140D+00
+     13  0.000000D+00  0.179867D-03 -0.333828D-03  0.395047D-04  0.179867D-03
+     14  0.000000D+00  0.851686D-04 -0.156886D-03  0.152328D-04  0.851695D-04
+     15 -0.582700D-03  0.959555D-04 -0.122776D-03 -0.315752D-04 -0.959574D-04
+     16  0.000000D+00 -0.129943D+00 -0.526904D-01 -0.100862D+00 -0.129943D+00
+     17  0.000000D+00 -0.525297D-01 -0.219353D-01 -0.412235D-01 -0.525297D-01
+     18 -0.685666D-03 -0.127173D+00 -0.520022D-01 -0.143185D+00  0.127173D+00
+               11            12            13            14            15 
+     11  0.205301D-01
+     12 -0.463911D-01  0.159507D+00
+     13 -0.333827D-03 -0.395045D-04  0.300611D+00
+     14 -0.156886D-03 -0.152325D-04  0.158603D-02  0.287986D+00
+     15  0.122776D-03 -0.315757D-04  0.000000D+00  0.000000D+00  0.426437D-03
+     16 -0.526904D-01  0.100862D+00  0.185505D-03  0.515880D-03  0.000000D+00
+     17 -0.219354D-01  0.412236D-01  0.140895D-02 -0.118982D-02  0.000000D+00
+     18  0.520022D-01 -0.143185D+00  0.000000D+00  0.000000D+00  0.288179D-03
+               16            17            18 
+     16  0.259697D+00
+     17  0.105166D+00  0.470849D-01
+     18  0.000000D+00  0.000000D+00  0.286634D+00
+ Leave Link  716 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt 15 Step number   1 out of a maximum of  20
+ Point Number:   7          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -1.091533    2.724712   -0.000000
+      2          1                   -0.631039    0.835902    0.000000
+      3          1                    0.827121   -1.657111    0.966421
+      4          1                    0.827121   -1.657110   -0.966421
+      5         16                    0.034820    1.999790    0.000000
+      6         16                   -0.032065   -2.007329   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12304
+   NET REACTION COORDINATE UP TO THIS POINT =    0.86143
+  # OF POINTS ALONG THE PATH =  15
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  8 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    5 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.110402    2.700087   -0.000000
+      2          1           0       -0.600283    0.824314    0.000000
+      3          1           0        0.832799   -1.676529    0.966449
+      4          1           0        0.832799   -1.676529   -0.966449
+      5         16           0        0.034836    2.005403    0.000000
+      6         16           0       -0.032790   -2.010563   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.943900   0.000000
+     3  H    4.885164   3.040060   0.000000
+     4  H    4.885164   3.040059   1.932897   0.000000
+     5  S    1.339461   1.341025   3.889395   3.889395   0.000000
+     6  S    4.832337   2.891120   1.339719   1.339719   4.016536
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         102.2042186           1.8483730           1.8404338
+ Leave Link  202 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.1476859327 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920104302     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920104     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000177179   -0.000166221   -0.000000000
+      2        1           0.000147257    0.000192347   -0.000000000
+      3        1          -0.000035446   -0.000042705   -0.000032934
+      4        1          -0.000035446   -0.000042706    0.000032934
+      5       16          -0.000307095    0.000160023    0.000000000
+      6       16           0.000054339   -0.000100254   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000307095 RMS     0.000119942
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.204407D+00
+      2 -0.111514D+00  0.965156D-01
+      3  0.000000D+00  0.000000D+00  0.174392D-03
+      4  0.823101D-02  0.210791D-01  0.000000D+00  0.808659D-01
+      5 -0.722092D-02 -0.135948D-01  0.000000D+00  0.100703D+00  0.218398D+00
+      6  0.000000D+00  0.000000D+00 -0.257889D-03  0.000000D+00  0.000000D+00
+      7 -0.233466D-05 -0.142254D-03  0.496063D-04 -0.329238D-03  0.505702D-04
+      8  0.211834D-04  0.135384D-03 -0.127522D-03  0.467676D-03  0.165909D-03
+      9 -0.305422D-05 -0.694647D-04  0.100073D-04 -0.688355D-04  0.189782D-03
+     10 -0.233387D-05 -0.142255D-03 -0.496062D-04 -0.329238D-03  0.505695D-04
+     11  0.211829D-04  0.135385D-03  0.127522D-03  0.467675D-03  0.165910D-03
+     12  0.305502D-05  0.694636D-04  0.100085D-04  0.688358D-04 -0.189781D-03
+     13 -0.212602D+00  0.906557D-01  0.000000D+00 -0.884297D-01 -0.931875D-01
+     14  0.118982D+00 -0.821555D-01  0.000000D+00 -0.121519D+00 -0.204167D+00
+     15  0.000000D+00  0.000000D+00 -0.621214D-04  0.000000D+00  0.000000D+00
+     16 -0.338903D-04  0.636041D-04  0.000000D+00 -0.934111D-05 -0.398083D-03
+     17 -0.290675D-03 -0.103618D-02  0.000000D+00 -0.119911D-02 -0.969167D-03
+     18  0.000000D+00  0.000000D+00  0.124329D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.167038D-02
+      7 -0.362033D-03  0.123552D+00
+      8  0.589796D-03  0.471982D-01  0.187351D-01
+      9 -0.432909D-04  0.114982D+00  0.442402D-01  0.159505D+00
+     10  0.362032D-03  0.848273D-02  0.326907D-02 -0.133488D-01  0.123552D+00
+     11 -0.589797D-03  0.326907D-02  0.113630D-02 -0.505087D-02  0.471983D-01
+     12 -0.432913D-04  0.133488D-01  0.505087D-02 -0.162589D-01 -0.114981D+00
+     13  0.000000D+00  0.167191D-03 -0.337368D-03  0.409504D-04  0.167190D-03
+     14  0.000000D+00  0.802164D-04 -0.163222D-03  0.133093D-04  0.802158D-04
+     15 -0.620477D-03  0.994726D-04 -0.137130D-03 -0.289093D-04 -0.994744D-04
+     16  0.000000D+00 -0.131870D+00 -0.506205D-01 -0.101603D+00 -0.131870D+00
+     17  0.000000D+00 -0.504540D-01 -0.200092D-01 -0.393239D-01 -0.504541D-01
+     18 -0.706810D-03 -0.128117D+00 -0.496161D-01 -0.143184D+00  0.128117D+00
+               11            12            13            14            15 
+     11  0.187351D-01
+     12 -0.442402D-01  0.159505D+00
+     13 -0.337369D-03 -0.409525D-04  0.300472D+00
+     14 -0.163223D-03 -0.133101D-04  0.184956D-02  0.287898D+00
+     15  0.137129D-03 -0.289100D-04  0.000000D+00  0.000000D+00  0.436696D-03
+     16 -0.506206D-01  0.101603D+00  0.226997D-03  0.528145D-03  0.000000D+00
+     17 -0.200092D-01  0.393240D-01  0.135782D-02 -0.124956D-02  0.000000D+00
+     18  0.496162D-01 -0.143184D+00  0.000000D+00  0.000000D+00  0.306320D-03
+               16            17            18 
+     16  0.263556D+00
+     17  0.101044D+00  0.432739D-01
+     18  0.000000D+00  0.000000D+00  0.286643D+00
+ Leave Link  716 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt 16 Step number   1 out of a maximum of  20
+ Point Number:   8          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -1.110402    2.700087   -0.000000
+      2          1                   -0.600283    0.824314    0.000000
+      3          1                    0.832799   -1.676529    0.966449
+      4          1                    0.832799   -1.676529   -0.966449
+      5         16                    0.034836    2.005403    0.000000
+      6         16                   -0.032790   -2.010563   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12308
+   NET REACTION COORDINATE UP TO THIS POINT =    0.98451
+  # OF POINTS ALONG THE PATH =  16
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number  9 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    7 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.128402    2.675135   -0.000000
+      2          1           0       -0.569381    0.813632    0.000000
+      3          1           0        0.838422   -1.696637    0.966477
+      4          1           0        0.838422   -1.696637   -0.966477
+      5         16           0        0.034797    2.010984    0.000000
+      6         16           0       -0.033494   -2.013742   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.943631   0.000000
+     3  H    4.890283   3.036023   0.000000
+     4  H    4.890282   3.036022   1.932953   0.000000
+     5  S    1.339451   1.341150   3.914887   3.914887   0.000000
+     6  S    4.815017   2.877710   1.339727   1.339727   4.025305
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         101.6930635           1.8409040           1.8328648
+ Leave Link  202 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        69.0654585889 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920113422     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920113     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000176911   -0.000162317    0.000000000
+      2        1           0.000143785    0.000191588   -0.000000000
+      3        1          -0.000038570   -0.000046400   -0.000035552
+      4        1          -0.000038570   -0.000046400    0.000035552
+      5       16          -0.000303023    0.000172489    0.000000000
+      6       16           0.000060078   -0.000108506    0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000303023 RMS     0.000120598
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.210227D+00
+      2 -0.108520D+00  0.906830D-01
+      3  0.000000D+00  0.000000D+00  0.165201D-03
+      4  0.784412D-02  0.216529D-01  0.000000D+00  0.757141D-01
+      5 -0.666627D-02 -0.132424D-01  0.000000D+00  0.968057D-01  0.223341D+00
+      6  0.000000D+00  0.000000D+00 -0.241982D-03  0.000000D+00  0.000000D+00
+      7  0.395254D-05 -0.136461D-03  0.448297D-04 -0.323357D-03  0.538844D-04
+      8  0.200792D-04  0.140840D-03 -0.120980D-03  0.480135D-03  0.163325D-03
+      9 -0.223533D-05 -0.695051D-04  0.951955D-05 -0.703931D-04  0.197473D-03
+     10  0.395254D-05 -0.136461D-03 -0.448295D-04 -0.323357D-03  0.538861D-04
+     11  0.200787D-04  0.140839D-03  0.120980D-03  0.480136D-03  0.163325D-03
+     12  0.223486D-05  0.695055D-04  0.952130D-05  0.703942D-04 -0.197473D-03
+     13 -0.218033D+00  0.871025D-01  0.000000D+00 -0.828708D-01 -0.898486D-01
+     14  0.115406D+00 -0.766953D-01  0.000000D+00 -0.118214D+00 -0.209473D+00
+     15  0.000000D+00  0.000000D+00 -0.594151D-04  0.000000D+00  0.000000D+00
+     16 -0.475100D-04  0.377293D-04  0.000000D+00 -0.412664D-04 -0.400870D-03
+     17 -0.260445D-03 -0.102711D-02  0.000000D+00 -0.120491D-02 -0.952361D-03
+     18  0.000000D+00  0.000000D+00  0.115882D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.171356D-02
+      7 -0.357020D-03  0.125345D+00
+      8  0.608426D-03  0.451131D-01  0.169486D-01
+      9 -0.438176D-04  0.115813D+00  0.419909D-01  0.159503D+00
+     10  0.357020D-03  0.860787D-02  0.312113D-02 -0.134478D-01  0.125345D+00
+     11 -0.608427D-03  0.312112D-02  0.100872D-02 -0.479312D-02  0.451131D-01
+     12 -0.438159D-04  0.134478D-01  0.479313D-02 -0.162593D-01 -0.115813D+00
+     13  0.000000D+00  0.154111D-03 -0.339617D-03  0.414681D-04  0.154109D-03
+     14  0.000000D+00  0.749184D-04 -0.169597D-03  0.107624D-04  0.749172D-04
+     15 -0.657760D-03  0.102324D-03 -0.151207D-03 -0.263664D-04 -0.102323D-03
+     16  0.000000D+00 -0.133787D+00 -0.483965D-01 -0.102336D+00 -0.133787D+00
+     17  0.000000D+00 -0.482248D-01 -0.180918D-01 -0.373374D-01 -0.482248D-01
+     18 -0.727568D-03 -0.129051D+00 -0.471202D-01 -0.143183D+00  0.129051D+00
+               11            12            13            14            15 
+     11  0.169487D-01
+     12 -0.419909D-01  0.159503D+00
+     13 -0.339616D-03 -0.414684D-04  0.300331D+00
+     14 -0.169597D-03 -0.107624D-04  0.212177D-02  0.287818D+00
+     15  0.151208D-03 -0.263672D-04  0.000000D+00  0.000000D+00  0.448729D-03
+     16 -0.483966D-01  0.102336D+00  0.266838D-03  0.538455D-03  0.000000D+00
+     17 -0.180918D-01  0.373375D-01  0.130444D-02 -0.131012D-02  0.000000D+00
+     18  0.471202D-01 -0.143183D+00  0.000000D+00  0.000000D+00  0.323775D-03
+               16            17            18 
+     16  0.267397D+00
+     17  0.966140D-01  0.394741D-01
+     18  0.000000D+00  0.000000D+00  0.286654D+00
+ Leave Link  716 at Fri Jan  3 11:26:37 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt 17 Step number   1 out of a maximum of  20
+ Point Number:   9          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -1.128402    2.675135   -0.000000
+      2          1                   -0.569381    0.813632    0.000000
+      3          1                    0.838422   -1.696637    0.966477
+      4          1                    0.838422   -1.696637   -0.966477
+      5         16                    0.034797    2.010984    0.000000
+      6         16                   -0.033494   -2.013742   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12312
+   NET REACTION COORDINATE UP TO THIS POINT =    1.10763
+  # OF POINTS ALONG THE PATH =  17
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number 10 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    6 iterations.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.145515    2.649923   -0.000000
+      2          1           0       -0.538393    0.803865    0.000000
+      3          1           0        0.843950   -1.717443    0.966505
+      4          1           0        0.843950   -1.717443   -0.966505
+      5         16           0        0.034705    2.016535    0.000000
+      6         16           0       -0.034175   -2.016869   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.943328   0.000000
+     3  H    4.895507   3.033480   0.000000
+     4  H    4.895507   3.033480   1.933010   0.000000
+     5  S    1.339441   1.341271   3.941015   3.941015   0.000000
+     6  S    4.797293   2.865445   1.339736   1.339736   4.033991
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         101.1858419           1.8334930           1.8253556
+ Leave Link  202 at Fri Jan  3 11:26:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        68.9828950420 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:26:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-116389.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-116389.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-116389.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-116389.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-116389.EUF"
+ initialization done
+ Recovered energy= -797.920123297     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920123     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:26:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000176590   -0.000157711    0.000000000
+      2        1           0.000139602    0.000190662   -0.000000000
+      3        1          -0.000042052   -0.000049679   -0.000038265
+      4        1          -0.000042052   -0.000049679    0.000038265
+      5       16          -0.000298531    0.000181550    0.000000000
+      6       16           0.000066870   -0.000114723   -0.000000000
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000298531 RMS     0.000120879
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.215837D+00
+      2 -0.105247D+00  0.850598D-01
+      3  0.000000D+00  0.000000D+00  0.156975D-03
+      4  0.743025D-02  0.222015D-01  0.000000D+00  0.708168D-01
+      5 -0.613702D-02 -0.128668D-01  0.000000D+00  0.926874D-01  0.228033D+00
+      6  0.000000D+00  0.000000D+00 -0.225997D-03  0.000000D+00  0.000000D+00
+      7  0.100358D-04 -0.130222D-03  0.401956D-04 -0.316342D-03  0.572942D-04
+      8  0.184021D-04  0.145784D-03 -0.114455D-03  0.491638D-03  0.160568D-03
+      9 -0.119797D-05 -0.692049D-04  0.908483D-05 -0.712310D-04  0.205583D-03
+     10  0.100350D-04 -0.130224D-03 -0.401948D-04 -0.316340D-03  0.572941D-04
+     11  0.184018D-04  0.145784D-03  0.114456D-03  0.491639D-03  0.160568D-03
+     12  0.119694D-05  0.692037D-04  0.908483D-05  0.712325D-04 -0.205583D-03
+     13 -0.223229D+00  0.832948D-01  0.000000D+00 -0.775407D-01 -0.862648D-01
+     14  0.111577D+00 -0.714703D-01  0.000000D+00 -0.114663D+00 -0.214555D+00
+     15  0.000000D+00  0.000000D+00 -0.579768D-04  0.000000D+00  0.000000D+00
+     16 -0.597338D-04  0.117433D-04  0.000000D+00 -0.742118D-04 -0.402297D-03
+     17 -0.229572D-03 -0.101438D-02  0.000000D+00 -0.120950D-02 -0.932533D-03
+     18  0.000000D+00  0.000000D+00  0.107556D-03  0.000000D+00  0.000000D+00
+                6             7             8             9            10 
+      6  0.175532D-02
+      7 -0.350667D-03  0.127116D+00
+      8  0.626376D-03  0.428802D-01  0.151826D-01
+      9 -0.442634D-04  0.116630D+00  0.396426D-01  0.159503D+00
+     10  0.350667D-03  0.873092D-02  0.296254D-02 -0.135450D-01  0.127116D+00
+     11 -0.626374D-03  0.296253D-02  0.882976D-03 -0.452399D-02  0.428802D-01
+     12 -0.442630D-04  0.135450D-01  0.452399D-02 -0.162595D-01 -0.116630D+00
+     13  0.000000D+00  0.140747D-03 -0.340624D-03  0.411317D-04  0.140747D-03
+     14  0.000000D+00  0.693342D-04 -0.176000D-03  0.764666D-05  0.693334D-04
+     15 -0.694373D-03  0.104482D-03 -0.164955D-03 -0.239594D-04 -0.104481D-03
+     16  0.000000D+00 -0.135682D+00 -0.460139D-01 -0.103055D+00 -0.135682D+00
+     17  0.000000D+00 -0.458374D-01 -0.161959D-01 -0.352635D-01 -0.458374D-01
+     18 -0.747795D-03 -0.129969D+00 -0.445135D-01 -0.143184D+00  0.129969D+00
+               11            12            13            14            15 
+     11  0.151826D-01
+     12 -0.396426D-01  0.159503D+00
+     13 -0.340625D-03 -0.411332D-04  0.300186D+00
+     14 -0.176001D-03 -0.764611D-05  0.240283D-02  0.287748D+00
+     15  0.164956D-03 -0.239586D-04  0.000000D+00  0.000000D+00  0.462387D-03
+     16 -0.460139D-01  0.103055D+00  0.304774D-03  0.546709D-03  0.000000D+00
+     17 -0.161959D-01  0.352635D-01  0.124948D-02 -0.137048D-02  0.000000D+00
+     18  0.445135D-01 -0.143184D+00  0.000000D+00  0.000000D+00  0.340471D-03
+               16            17            18 
+     16  0.271194D+00
+     17  0.918679D-01  0.357104D-01
+     18  0.000000D+00  0.000000D+00  0.286667D+00
+ Leave Link  716 at Fri Jan  3 11:26:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Reaction path inflection point has been passed.
+   Previous lowest Hessian eigenvalue=   -0.0000114961
+   Current lowest Hessian eigenvalue =    0.0000002072
+ Pt 18 Step number   1 out of a maximum of  20
+ Point Number:  10          Path Number:   2
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -1.145515    2.649923   -0.000000
+      2          1                   -0.538393    0.803865    0.000000
+      3          1                    0.843950   -1.717443    0.966505
+      4          1                    0.843950   -1.717443   -0.966505
+      5         16                    0.034705    2.016535    0.000000
+      6         16                   -0.034175   -2.016869   -0.000000
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.12315
+   NET REACTION COORDINATE UP TO THIS POINT =    1.23078
+  # OF POINTS ALONG THE PATH =  18
+  # OF STEPS =   1
+
+ Calculating another point on the path.
+ Point Number 11 in REVERSE path direction.
+ Using LQA Reaction Path Following.
+   LQA: T_Est iteration completed in    5 iterations.
+ PES minimum detected within a second-order step.
+ Calculation of REVERSE path complete.
+ Reaction path calculation complete.
+ 
+ Energies reported relative to the TS energy of        -797.920071
+ --------------------------------------------------------------------------
+    Summary of reaction path following
+ --------------------------------------------------------------------------
+                        Energy    RxCoord
+   1                   -0.00005  -1.23078
+   2                   -0.00004  -1.10763
+   3                   -0.00003  -0.98451
+   4                   -0.00002  -0.86143
+   5                   -0.00002  -0.73839
+   6                   -0.00001  -0.61540
+   7                   -0.00001  -0.49244
+   8                   -0.00000  -0.36958
+   9                   -0.00000  -0.24655
+  10                    0.00000  -0.12380
+  11                    0.00000   0.00000
+  12                   -0.00000   0.12380
+  13                   -0.00000   0.24657
+  14                   -0.00001   0.36948
+  15                   -0.00001   0.49235
+  16                   -0.00002   0.61531
+  17                   -0.00002   0.73835
+  18                   -0.00003   0.86141
+  19                   -0.00004   0.98454
+ --------------------------------------------------------------------------
+ 
+ Total number of points:                   18
+ Total number of gradient calculations:    19
+ Total number of Hessian calculations:     19
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:26:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -1.145515    2.649923   -0.000000
+      2          1           0       -0.538393    0.803865    0.000000
+      3          1           0        0.843950   -1.717443    0.966505
+      4          1           0        0.843950   -1.717443   -0.966505
+      5         16           0        0.034705    2.016535    0.000000
+      6         16           0       -0.034175   -2.016869   -0.000000
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    1.943328   0.000000
+     3  H    4.895507   3.033480   0.000000
+     4  H    4.895507   3.033480   1.933010   0.000000
+     5  S    1.339441   1.341271   3.941015   3.941015   0.000000
+     6  S    4.797293   2.865445   1.339736   1.339736   4.033991
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):         101.1858419           1.8334930           1.8253556
+ Leave Link  202 at Fri Jan  3 11:26:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Fri Jan  3 11:26:38 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l9999.exe)
+
+ This type of calculation cannot be archived.
+
+
+ CONFIDENCE: THAT QUIET ASSURED FEELING YOU HAVE
+ JUST BEFORE YOU FALL FLAT ON YOUR FACE.
+ Job cpu time:       0 days  0 hours  0 minutes  1.5 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  4.8 seconds.
+ File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      2 Scr=      1
+ Normal termination of Gaussian 16 at Fri Jan  3 11:26:38 2025.

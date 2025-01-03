@@ -155,3 +155,16 @@ $ pip install .
 
 (1) Li, J.; Liu, Y.; Guo, H.; Li, J. An Accurate Full-Dimensional H<sub>4</sub>O Potential Energy Surface and Dynamics of an Exchange Reaction. _Phys. Chem. Chem. Phys._ **2022**, _24_ (44), 27548–27557. https://doi.org/10.1039/d2cp04521d.
 
+### [`H4S2-CC-2024`](https://github.com/CQPES/Model-Zoo/tree/main/H4S2-CC-2024)
+
+#### Species
+
+- H<sub>2</sub>S
+
+#### Channels
+
+- H<sub>2</sub>S + H′<sub>2</sub>S′ → HH′S + HH′S′
+
+#### Reference
+
+(1) Deng, F.; Liu, Y.; Li, J.; Li, J. An Accurate Full-Dimensional Potential Energy Surface of the Hydrogen Sulfide Dimer System and Its Kinetics for the Hydrogen Exchange Channel. _Mol. Phys._ **2024**. https://doi.org/10.1080/00268976.2024.2438329.

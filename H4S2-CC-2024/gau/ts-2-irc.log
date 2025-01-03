@@ -1,0 +1,2333 @@
+ Entering Gaussian System, Link 0=g16
+ Initial command:
+ /opt/g16/l1.exe "/home/jhli/scratch/g16/Gau-120111.inp" -scrdir="/home/jhli/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=    120120.
+  
+ Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision C.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2019.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
+                 3-Jan-2025 
+ ******************************************
+ %nproc=1
+ Will use up to    1 processors via shared memory.
+ %oldchk=ts-2-opt-freq.chk
+ Copying data from "ts-2-opt-freq.chk" to current chk file "/home/jhli/scratch/g16/Gau-120120.chk"
+ IOpt=  2 FromEx=T IUOpen= 4 IOptOp= 5 NList=   0 IFRang= 0 IUIn= 4 IUOut= 2.
+ ----------------------------------------------------------------------
+ #p external="python3 -u ../pes/h4s2_pes.py" irc=(calcall,stepsize=10,m
+ axpoint=100,eulerpc) geom=allcheck
+ ----------------------------------------------------------------------
+ 1/6=10,10=4,18=10,26=1,29=7,38=1,39=10,42=100,44=3,45=6,71=1,172=1/1,23;
+ 2/12=2,29=1,40=1/2;
+ 3/11=9,14=-4,25=1,30=1,41=9900000,43=2,71=2,140=1/1;
+ 4/20=17,22=1002,24=3,113=1,114=1/2;
+ 6/7=2,8=2,9=2,10=2,18=1/1;
+ 7/25=1,44=-1/16;
+ 1/6=10,10=4,18=10,26=1,39=10,42=100,44=3,45=6,71=1/23(2);
+ 2/29=1/2;
+ 99/5=20/99;
+ 2/29=1/2;
+ 3/11=9,14=-2,25=1,30=1,41=9900000,43=2,71=2,140=1/1;
+ 4/16=2,20=17,22=1002,24=3,113=1,114=1/2;
+ 7/25=1,44=-1/16;
+ 1/6=10,10=4,18=10,26=1,39=10,42=100,44=3,45=6,71=1/23(-4);
+ 2/29=1/2;
+ 6/7=2,8=2,9=2,10=2,18=1/1;
+ 99/5=20/99;
+ Leave Link    1 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l101.exe)
+ Structure from the checkpoint file:  "/home/jhli/scratch/g16/Gau-120120.chk"
+ ----
+ ts-2
+ ----
+ Charge =  0 Multiplicity = 1
+ Redundant internal coordinates found in file.  (old form).
+ H,0,-2.2442490182,1.2908663953,0.0397998122
+ H,0,2.137547938,1.1750256637,0.5591715854
+ H,0,1.9049507153,-0.6619161636,1.1091396041
+ H,0,-0.7732812572,0.0524914977,-0.1884880272
+ S,0,-2.0960240242,-0.0398198893,0.0179334111
+ S,0,2.0742516464,-0.0152604937,-0.0517973757
+ Recover connectivity data from disk.
+ ITRead=  0  0  0  0  0  0
+ MicOpt= -1 -1 -1 -1 -1 -1
+ NAtoms=      6 NQM=        6 NQMF=       0 NMMI=      0 NMMIF=      0
+                NMic=       0 NMicF=      0.
+                    Isotopes and Nuclear Properties:
+ (Nuclear quadrupole moments (NQMom) in fm**2, nuclear magnetic moments (NMagM)
+  in nuclear magnetons)
+
+  Atom         1           2           3           4           5           6
+ IAtWgt=           1           1           1           1          32          32
+ AtmWgt=   1.0078250   1.0078250   1.0078250   1.0078250  31.9720718  31.9720718
+ NucSpn=           1           1           1           1           0           0
+ AtZEff=   1.0000000   1.0000000   1.0000000   1.0000000  13.6000000  13.6000000
+ NQMom=    0.0000000   0.0000000   0.0000000   0.0000000   0.0000000   0.0000000
+ NMagM=    2.7928460   2.7928460   2.7928460   2.7928460   0.0000000   0.0000000
+ AtZNuc=   1.0000000   1.0000000   1.0000000   1.0000000  16.0000000  16.0000000
+ Leave Link  101 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ ------------------------------------------------------------------------
+ INPUT DATA FOR L123
+ ------------------------------------------------------------------------
+ GENERAL PARAMETERS:
+ Follow reaction path in both directions.
+ Maximum points per path      = 100
+ Step size                    =   0.100 bohr
+ Integration scheme           = Euler-PC                            
+    Redo corrector integration= Yes                                 
+    DWI Weight Power          =  2
+    DWI will use Hessian update vectors when possible.
+    Max correction cycles     =  10
+ Initial Hessian              = CalcFC
+ Hessian evaluation           = Analytic at all predictor steps
+                              = Update at all corrector steps
+ Hessian updating method      = Bofill                              
+ ------------------------------------------------------------------------
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.244249    1.290866    0.039800
+      2          1           0        2.137548    1.175026    0.559172
+      3          1           0        1.904951   -0.661916    1.109140
+      4          1           0       -0.773281    0.052491   -0.188488
+      5         16           0       -2.096024   -0.039820    0.017933
+      6         16           0        2.074252   -0.015260   -0.051797
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.413990   0.000000
+     3  H    4.708790   1.931559   0.000000
+     4  H    1.936345   3.208115   3.060579   0.000000
+     5  S    1.339095   4.437558   4.193511   1.341931   0.000000
+     6  S    4.512627   1.339429   1.339627   2.851617   4.170931
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.2034843           1.7210376           1.7100062
+ Leave Link  202 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6429559645 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100145     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201001 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100145     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920100     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.3
+ (Enter /opt/g16/l601.exe)
+ Leave Link  601 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000000837    0.000001804   -0.000011545
+      2        1           0.000000832    0.000002326   -0.000009283
+      3        1          -0.000000930    0.000002831    0.000009188
+      4        1          -0.000001316   -0.000003275    0.000003175
+      5       16          -0.000001443    0.000000351    0.000007551
+      6       16           0.000001730   -0.000005694   -0.000002489
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000011545 RMS     0.000004979
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.297983D-01
+      2 -0.310525D-01  0.270836D+00
+      3 -0.465138D-02  0.457120D-02  0.740268D-03
+      4 -0.167207D-03  0.316643D-04 -0.211344D-04  0.163932D-02
+      5  0.800741D-04 -0.179489D-03 -0.261776D-05  0.135933D-01  0.225525D+00
+      6 -0.580797D-04 -0.589204D-04  0.650527D-04  0.324021D-02  0.983071D-01
+      7  0.138326D-03  0.224082D-04  0.156170D-04 -0.241681D-03 -0.763381D-03
+      8 -0.923550D-04  0.875339D-04  0.265312D-04 -0.321634D-02 -0.139031D-01
+      9  0.851620D-04 -0.122466D-03  0.111725D-04 -0.135246D-02 -0.714170D-02
+     10 -0.504766D-02 -0.159066D-02  0.786142D-03  0.423200D-04 -0.323526D-03
+     11  0.267649D-01 -0.102942D-02 -0.421780D-02 -0.640891D-03  0.280034D-04
+     12  0.773433D-03  0.272485D-03 -0.163960D-03 -0.306970D-03 -0.158807D-04
+     13 -0.245382D-01  0.325665D-01  0.383703D-02  0.154810D-03  0.160436D-03
+     14  0.456592D-02 -0.269825D+00 -0.379413D-03  0.296457D-03  0.136593D-03
+     15  0.386139D-02 -0.484156D-02 -0.592178D-03  0.168328D-03  0.118747D-05
+     16 -0.183221D-03  0.217023D-04  0.338504D-04 -0.142867D-02 -0.127467D-01
+     17 -0.267253D-03  0.110062D-03  0.228571D-05 -0.100643D-01 -0.211606D+00
+     18 -0.112451D-04  0.178832D-03 -0.614334D-04 -0.172776D-02 -0.911503D-01
+                6             7             8             9            10 
+      6  0.751943D-01
+      7  0.151872D-02  0.507815D-02
+      8  0.212706D-01  0.181581D-01  0.876896D-01
+      9  0.747158D-02 -0.290376D-01 -0.105182D+00  0.209373D+00
+     10 -0.489517D-04  0.689825D-04  0.215093D-03 -0.197582D-03  0.262062D+00
+     11 -0.190767D-03  0.444159D-03 -0.991977D-04  0.179760D-03  0.129906D-01
+     12 -0.160372D-03 -0.762474D-03  0.829074D-04 -0.309038D-03 -0.409803D-01
+     13  0.543934D-04 -0.103131D-03 -0.718445D-04 -0.120087D-04 -0.256743D+00
+     14  0.148632D-03 -0.266063D-03 -0.359790D-04  0.245631D-04 -0.114256D-01
+     15 -0.183225D-04  0.333906D-03 -0.676974D-04  0.878087D-04  0.401381D-01
+     16 -0.470660D-02 -0.494183D-02 -0.149929D-01  0.305142D-01 -0.383460D-03
+     17 -0.119477D+00 -0.175951D-01 -0.737388D-01  0.112241D+00  0.132450D-03
+     18 -0.825531D-01  0.279325D-01  0.838694D-01 -0.216637D+00  0.302231D-03
+               11            12            13            14            15 
+     11  0.294933D-01
+     12 -0.211267D-02  0.819679D-02
+     13 -0.396927D-01  0.403226D-01  0.283359D+00
+     14 -0.276522D-01  0.178665D-02  0.684208D-02  0.296976D+00
+     15  0.627047D-02 -0.720277D-02 -0.441091D-01 -0.138245D-02  0.738754D-02
+     16  0.132806D-03  0.954192D-03 -0.213109D-02 -0.108077D-04 -0.393275D-03
+     17 -0.740263D-03 -0.132590D-04  0.198313D-03  0.401705D-03  0.196387D-04
+     18  0.702613D-04 -0.361786D-03 -0.918417D-04 -0.196765D-03  0.340079D-03
+               16            17            18 
+     16  0.907166D-02
+     17  0.275960D-01  0.285573D+00
+     18 -0.264033D-01  0.722945D-02  0.299276D+00
+ Leave Link  716 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+          ******** Start new reaction path calculation ********
+ Current Structure is TS -> form Hessian eigenvectors.
+                            Diagonalizing Hessian.
+ Supplied step size of   0.1000 bohr.
+    Integration on MW PES will use step size of   0.1019 sqrt(amu)*bohr.
+ Point Number:   0          Path Number:   1
+ Calculating another point on the path.
+ Point Number  1 in FORWARD path direction.
+ Using Euler Reaction Path Following.
+ Gradient is small - USING TRANSITION VECTOR.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.253196    1.289700   -0.008782
+      2          1           0        2.122889    1.164846    0.571391
+      3          1           0        1.903305   -0.682564    1.091656
+      4          1           0       -0.778152    0.048437   -0.195269
+      5         16           0       -2.100830   -0.041236    0.012744
+      6         16           0        2.069470   -0.016148   -0.058735
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.416143   0.000000
+     3  H    4.730464   1.931791   0.000000
+     4  H    1.936819   3.201590   3.062801   0.000000
+     5  S    1.339802   4.427925   4.196242   1.341934   0.000000
+     6  S    4.515881   1.339648   1.339821   2.851625   4.170988
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.1331069           1.7211126           1.7100021
+ Leave Link  202 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6382288927 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:42 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920101300     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201013 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920101300     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920101     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.3
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000043203   -0.000362455   -0.000007406
+      2        1          -0.000004680   -0.000095082   -0.000054681
+      3        1           0.000012113    0.000053679   -0.000075948
+      4        1          -0.000000739   -0.000002201    0.000003067
+      5       16          -0.000043949    0.000364143    0.000003485
+      6       16          -0.000006241    0.000040286    0.000127942
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000364143 RMS     0.000130540
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.300913D-01
+      2 -0.317873D-01  0.269643D+00
+      3 -0.359714D-02 -0.422801D-02  0.864449D-03
+      4 -0.163076D-03  0.319725D-04 -0.211330D-04  0.148792D-02
+      5  0.804168D-04 -0.178726D-03  0.569196D-05  0.117058D-01  0.222284D+00
+      6 -0.573659D-04 -0.590962D-04  0.620583D-04  0.257253D-02  0.100558D+00
+      7  0.147353D-03  0.204701D-04  0.174898D-04 -0.211315D-03 -0.670947D-03
+      8 -0.970985D-04  0.923142D-04  0.187330D-04 -0.312281D-02 -0.141462D-01
+      9  0.855935D-04 -0.121102D-03  0.110580D-04 -0.135923D-02 -0.749384D-02
+     10 -0.511901D-02 -0.157260D-02  0.844058D-03  0.383766D-04 -0.323120D-03
+     11  0.267474D-01 -0.107875D-02 -0.415469D-02 -0.639902D-03  0.262107D-04
+     12 -0.102812D-03  0.301622D-03 -0.355441D-04 -0.327245D-03 -0.188566D-04
+     13 -0.247568D-01  0.332827D-01  0.272993D-02  0.157512D-03  0.161896D-03
+     14  0.531972D-02 -0.268583D+00  0.835747D-02  0.294262D-03  0.135851D-03
+     15  0.367500D-02  0.392843D-02 -0.844247D-03  0.175505D-03 -0.465046D-05
+     16 -0.199457D-03  0.238508D-04  0.269584D-04 -0.131053D-02 -0.109539D-01
+     17 -0.264252D-03  0.105012D-03  0.114250D-05 -0.826938D-02 -0.208120D+00
+     18 -0.414220D-05  0.177608D-03 -0.587782D-04 -0.104018D-02 -0.930485D-01
+                6             7             8             9            10 
+      6  0.783441D-01
+      7  0.133722D-02  0.492529D-02
+      8  0.209210D-01  0.181250D-01  0.912875D-01
+      9  0.768646D-02 -0.282277D-01 -0.107120D+00  0.205691D+00
+     10 -0.547685D-04  0.712442D-04  0.220244D-03 -0.195891D-03  0.262053D+00
+     11 -0.191708D-03  0.449839D-03 -0.103035D-03  0.180390D-03  0.123981D-01
+     12 -0.162925D-03 -0.751382D-03  0.851010D-04 -0.303551D-03 -0.411214D-01
+     13  0.551675D-04 -0.114845D-03 -0.693571D-04 -0.157846D-04 -0.256662D+00
+     14  0.149948D-03 -0.268958D-03 -0.356823D-04  0.237114D-04 -0.108468D-01
+     15 -0.158592D-04  0.328195D-03 -0.628350D-04  0.862766D-04  0.402205D-01
+     16 -0.385312D-02 -0.481892D-02 -0.150562D-01  0.297127D-01 -0.382015D-03
+     17 -0.121378D+00 -0.176553D-01 -0.770950D-01  0.114530D+00  0.122547D-03
+     18 -0.859149D-01  0.272969D-01  0.861579D-01 -0.213173D+00  0.307060D-03
+               11            12            13            14            15 
+     11  0.294116D-01
+     12 -0.291245D-02  0.827046D-02
+     13 -0.390789D-01  0.413365D-01  0.283495D+00
+     14 -0.275184D-01  0.256229D-02  0.550674D-02  0.295598D+00
+     15  0.701185D-02 -0.740573D-02 -0.440068D-01 -0.108928D-01  0.784198D-02
+     16  0.122432D-03  0.966867D-03 -0.211957D-02 -0.305208D-05 -0.393045D-03
+     17 -0.737423D-03 -0.174185D-04  0.199597D-03  0.403487D-03  0.193855D-04
+     18  0.656962D-04 -0.363780D-03 -0.976128D-04 -0.199126D-03  0.339591D-03
+               16            17            18 
+     16  0.883386D-02
+     17  0.258669D-01  0.285443D+00
+     18 -0.264614D-01  0.684727D-02  0.299174D+00
+ Leave Link  716 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  1 Step number   1 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  6.94D-03
+    Cycle     2 NS=    64 Truncation Error =  0.006944211
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  1.01D-02
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  8.14D-03
+    Cycle     3 NS=    96 Truncation Error =  0.008143579
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  1.47D-02
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  9.58D-03
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  6.61D-03
+    Cycle     4 NS=   128 Truncation Error =  0.006605288
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  1.73D-02
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  1.13D-02
+      PEZero:  N= 5 I= 2 D=  5.31D-04 Err=  6.51D-03
+      PEZero:  N= 5 I= 1 D=  7.96D-04 Err=  4.30D-03
+    Cycle     5 NS=   192 Truncation Error =  0.004303798
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  2.12D-02
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  1.09D-02
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  6.30D-03
+      PEZero:  N= 6 I= 2 D=  5.97D-04 Err=  3.43D-03
+      PEZero:  N= 6 I= 1 D=  8.62D-04 Err=  2.17D-03
+    Cycle     6 NS=   256 Truncation Error =  0.002174904
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  1.52D-02
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  1.66D-03
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  3.79D-03
+    Cycle     7 NS=   384 Truncation Error =  0.001662147
+      PEZero:  N= 8 I= 7 D=  3.32D-05 Err=  7.79D-03
+      PEZero:  N= 8 I= 6 D=  9.95D-05 Err=  4.84D-03
+      PEZero:  N= 8 I= 5 D=  1.66D-04 Err=  6.81D-03
+    Cycle     8 NS=   512 Truncation Error =  0.004844995
+      PEZero:  N= 9 I= 8 D=  3.32D-05 Err=  1.79D-03
+      PEZero:  N= 9 I= 7 D=  6.63D-05 Err=  5.10D-03
+    Cycle     9 NS=   768 Truncation Error =  0.001790445
+      PEZero:  N=10 I= 9 D=  1.66D-05 Err=  4.86D-05
+      PEZero:  N=10 I= 8 D=  4.97D-05 Err=  1.73D-03
+    Cycle    10 NS=  1024 Truncation Error =  0.000048642
+ BS completed in   10 cycles and    3472 integration steps.
+ Maximum DWI energy   std dev =  0.000000444 at pt    47
+ Maximum DWI gradient std dev =  1.284656824 at pt   285
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920101
+   Old End Point Energy       =  -797.920101
+   Corrected End Point Energy =  -797.920102
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.101886
+   New End-Start Dist.        =     0.098489
+   New End-Old End Dist.      =     0.025458
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.252349    1.289122   -0.013455
+      2          1           0        2.124037    1.168399    0.563570
+      3          1           0        1.904039   -0.675229    1.096085
+      4          1           0       -0.778026    0.046856   -0.194459
+      5         16           0       -2.100927   -0.041189    0.012804
+      6         16           0        2.069469   -0.016516   -0.058664
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.415913   0.000000
+     3  H    4.729198   1.931563   0.000000
+     4  H    1.936393   3.202255   3.062740   0.000000
+     5  S    1.339158   4.429082   4.197053   1.341930   0.000000
+     6  S    4.514958   1.339469   1.339670   2.851435   4.171081
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.1816354           1.7210173           1.7099200
+ Leave Link  202 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6419051804 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920101509     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201015 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920101509     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920102     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000004436   -0.000032110   -0.000011984
+      2        1          -0.000001020   -0.000012382   -0.000013195
+      3        1           0.000003345    0.000013395   -0.000010142
+      4        1          -0.000000494   -0.000001775    0.000000840
+      5       16          -0.000005884    0.000033987    0.000009351
+      6       16          -0.000000677   -0.000002746    0.000021595
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000033987 RMS     0.000014087
+ Leave Link  716 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000002883
+ Magnitude of corrector gradient =     0.0000126863
+ Magnitude of analytic gradient =      0.0000597648
+ Magnitude of difference =             0.0000570440
+ Angle between gradients (degrees)=   71.5960
+ Pt  1 Step number   2 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  5.45D-03
+    Cycle     2 NS=    64 Truncation Error =  0.005445739
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  8.16D-03
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  6.79D-03
+    Cycle     3 NS=    96 Truncation Error =  0.006786767
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  1.27D-02
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  8.83D-03
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  6.52D-03
+    Cycle     4 NS=   128 Truncation Error =  0.006522531
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  1.50D-02
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  9.75D-03
+      PEZero:  N= 5 I= 2 D=  5.31D-04 Err=  5.34D-03
+      PEZero:  N= 5 I= 1 D=  7.96D-04 Err=  3.17D-03
+    Cycle     5 NS=   192 Truncation Error =  0.003165689
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  2.29D-02
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  1.56D-02
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  1.29D-02
+      PEZero:  N= 6 I= 2 D=  5.97D-04 Err=  9.65D-03
+      PEZero:  N= 6 I= 1 D=  8.62D-04 Err=  8.18D-03
+    Cycle     6 NS=   256 Truncation Error =  0.008175461
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  2.67D-02
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  1.71D-02
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  9.35D-03
+      PEZero:  N= 7 I= 3 D=  3.98D-04 Err=  5.07D-03
+      PEZero:  N= 7 I= 2 D=  6.63D-04 Err=  2.12D-03
+      PEZero:  N= 7 I= 1 D=  9.29D-04 Err=  8.78D-04
+    Cycle     7 NS=   384 Truncation Error =  0.000878095
+      PEZero:  N= 8 I= 7 D=  3.32D-05 Err=  1.05D-02
+      PEZero:  N= 8 I= 6 D=  9.95D-05 Err=  1.28D-02
+    Cycle     8 NS=   512 Truncation Error =  0.010478864
+      PEZero:  N= 9 I= 8 D=  3.32D-05 Err=  8.87D-05
+      PEZero:  N= 9 I= 7 D=  6.63D-05 Err=  1.03D-02
+    Cycle     9 NS=   768 Truncation Error =  0.000088671
+ BS completed in    9 cycles and    2448 integration steps.
+ Maximum DWI energy   std dev =  0.000000437 at pt     2
+ Maximum DWI gradient std dev =  2.012209139 at pt    19
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920101
+   Old End Point Energy       =  -797.920102
+   Corrected End Point Energy =  -797.920102
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.098489
+   New End-Start Dist.        =     0.094160
+   New End-Old End Dist.      =     0.011359
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.251887    1.289169   -0.013035
+      2          1           0        2.124852    1.170076    0.559861
+      3          1           0        1.904241   -0.671702    1.098185
+      4          1           0       -0.778015    0.046438   -0.194297
+      5         16           0       -2.100976   -0.041183    0.012761
+      6         16           0        2.069469   -0.016689   -0.058624
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.415681   0.000000
+     3  H    4.727920   1.931478   0.000000
+     4  H    1.936372   3.202804   3.062798   0.000000
+     5  S    1.339132   4.429909   4.197317   1.341931   0.000000
+     6  S    4.514583   1.339404   1.339608   2.851413   4.171128
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.1887675           1.7209646           1.7098726
+ Leave Link  202 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6419740969 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920101386     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201014 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920101386     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920101     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000002839   -0.000018928   -0.000011996
+      2        1           0.000000400    0.000017586    0.000001224
+      3        1          -0.000000707   -0.000003000    0.000017347
+      4        1          -0.000000831   -0.000001608    0.000000668
+      5       16          -0.000003985    0.000020712    0.000009474
+      6       16           0.000001990   -0.000016394   -0.000020244
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000020712 RMS     0.000011432
+ Leave Link  716 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000001927
+ Magnitude of corrector gradient =     0.0000184973
+ Magnitude of analytic gradient =      0.0000485018
+ Magnitude of difference =             0.0000426128
+ Angle between gradients (degrees)=   60.6770
+ Pt  1 Step number   3 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  4.24D-03
+    Cycle     2 NS=    64 Truncation Error =  0.004238512
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  6.71D-03
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  5.82D-03
+    Cycle     3 NS=    96 Truncation Error =  0.005818998
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  1.06D-02
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  7.38D-03
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  5.36D-03
+    Cycle     4 NS=   128 Truncation Error =  0.005361726
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  1.27D-02
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  8.43D-03
+      PEZero:  N= 5 I= 2 D=  5.31D-04 Err=  4.74D-03
+      PEZero:  N= 5 I= 1 D=  7.96D-04 Err=  2.95D-03
+    Cycle     5 NS=   192 Truncation Error =  0.002954318
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  2.12D-02
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  1.55D-02
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  1.36D-02
+      PEZero:  N= 6 I= 2 D=  5.97D-04 Err=  1.05D-02
+      PEZero:  N= 6 I= 1 D=  8.62D-04 Err=  9.01D-03
+    Cycle     6 NS=   256 Truncation Error =  0.009014237
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  2.62D-02
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  1.82D-02
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  1.04D-02
+      PEZero:  N= 7 I= 3 D=  3.98D-04 Err=  5.91D-03
+      PEZero:  N= 7 I= 2 D=  6.63D-04 Err=  2.63D-03
+      PEZero:  N= 7 I= 1 D=  9.29D-04 Err=  1.27D-03
+    Cycle     7 NS=   384 Truncation Error =  0.001273682
+      PEZero:  N= 8 I= 7 D=  3.32D-05 Err=  2.08D-02
+      PEZero:  N= 8 I= 6 D=  9.95D-05 Err=  1.54D-03
+      PEZero:  N= 8 I= 5 D=  1.66D-04 Err=  9.09D-03
+    Cycle     8 NS=   512 Truncation Error =  0.001535960
+      PEZero:  N= 9 I= 8 D=  3.32D-05 Err=  2.85D-04
+      PEZero:  N= 9 I= 7 D=  6.63D-05 Err=  2.04D-02
+    Cycle     9 NS=   768 Truncation Error =  0.000285207
+      PEZero:  N=10 I= 9 D=  1.66D-05 Err=  6.13D-05
+      PEZero:  N=10 I= 8 D=  4.97D-05 Err=  2.03D-04
+    Cycle    10 NS=  1024 Truncation Error =  0.000061302
+ BS completed in   10 cycles and    3472 integration steps.
+ Maximum DWI energy   std dev =  0.000000352 at pt    48
+ Maximum DWI gradient std dev =  2.052132053 at pt    17
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920101
+   Old End Point Energy       =  -797.920101
+   Corrected End Point Energy =  -797.920101
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.094160
+   New End-Start Dist.        =     0.091175
+   New End-Old End Dist.      =     0.007323
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence Met
+ Point Number:   1          Path Number:   1
+                    CURRENT STRUCTURE
+                Cartesian Coordinates (Ang):                
+ ---------------------------------------------------------------------
+ Center     Atomic                     Coordinates (Angstroms)
+ Number     Number                        X           Y           Z
+ ---------------------------------------------------------------------
+      1          1                   -2.251590    1.289195   -0.012288
+      2          1                    2.125380    1.171191    0.557524
+      3          1                    1.904301   -0.669473    1.099551
+      4          1                   -0.778017    0.046246   -0.194211
+      5         16                   -2.101006   -0.041179    0.012751
+      6         16                    2.069473   -0.016793   -0.058604
+ ---------------------------------------------------------------------
+   CHANGE IN THE REACTION COORDINATE =    0.09117
+   NET REACTION COORDINATE UP TO THIS POINT =    0.09117
+  # OF POINTS ALONG THE PATH =   1
+  # OF STEPS =   3
+
+ PES minimum detected on this side of the pathway.
+    Magnitude of the gradient =      0.0000148
+ Calculation of FORWARD path complete.
+ Beginning calculation of the REVERSE path.
+ 
+ Calculating another point on the path.
+ Point Number  1 in REVERSE path direction.
+ Using Euler Reaction Path Following.
+ Gradient is small - USING TRANSITION VECTOR.
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.245213    1.288798    0.075176
+      2          1           0        2.142295    1.181970    0.533747
+      3          1           0        1.896684   -0.644504    1.113418
+      4          1           0       -0.778323    0.053311   -0.194912
+      5         16           0       -2.101130   -0.041639    0.009918
+      6         16           0        2.069121   -0.017609   -0.058065
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.412701   0.000000
+     3  H    4.687315   1.931929   0.000000
+     4  H    1.936787   3.214782   3.058486   0.000000
+     5  S    1.339807   4.447277   4.190904   1.341935   0.000000
+     6  S    4.509760   1.339621   1.339816   2.851612   4.170875
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.1721857           1.7209514           1.7099861
+ Leave Link  202 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6367166544 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy, first and second derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920098740     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9200987 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920098740     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920099     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.3
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000041535   -0.000362515   -0.000028053
+      2        1          -0.000004633   -0.000092006   -0.000054220
+      3        1           0.000011638    0.000053168   -0.000072837
+      4        1          -0.000000719   -0.000002321    0.000003061
+      5       16          -0.000042405    0.000363207    0.000024083
+      6       16          -0.000005702    0.000038798    0.000124711
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000363207 RMS     0.000130177
+ Force constants in Cartesian coordinates: 
+                1             2             3             4             5 
+      1  0.296936D-01
+      2 -0.300018D-01  0.269448D+00
+      3 -0.563478D-02  0.133209D-01  0.147569D-02
+      4 -0.170795D-03  0.316651D-04 -0.209144D-04  0.190174D-02
+      5  0.788208D-04 -0.178609D-03 -0.106507D-04  0.154678D-01  0.228203D+00
+      6 -0.588757D-04 -0.586954D-04  0.675188D-04  0.383490D-02  0.956891D-01
+      7  0.128730D-03  0.241977D-04  0.137576D-04 -0.275994D-03 -0.847780D-03
+      8 -0.869654D-04  0.811852D-04  0.338738D-04 -0.330557D-02 -0.136312D-01
+      9  0.839997D-04 -0.122049D-03  0.112908D-04 -0.134178D-02 -0.679197D-02
+     10 -0.495999D-02 -0.160492D-02  0.725015D-03  0.466672D-04 -0.323306D-03
+     11  0.267104D-01 -0.984356D-03 -0.427002D-02 -0.642106D-03  0.291687D-04
+     12  0.164650D-02  0.245512D-03 -0.296588D-03 -0.286519D-03 -0.129288D-04
+     13 -0.245244D-01  0.315299D-01  0.487661D-02  0.150902D-03  0.159089D-03
+     14  0.356763D-02 -0.268481D+00 -0.907770D-02  0.298360D-03  0.136239D-03
+     15  0.398020D-02 -0.135644D-01 -0.119554D-02  0.160965D-03  0.666000D-05
+     16 -0.166722D-03  0.199608D-04  0.404204D-04 -0.165363D-02 -0.145345D-01
+     17 -0.269296D-03  0.115088D-03  0.362671D-05 -0.118503D-01 -0.214557D+00
+     18 -0.176012D-04  0.178457D-03 -0.634907D-04 -0.234646D-02 -0.888824D-01
+                6             7             8             9            10 
+      6  0.720457D-01
+      7  0.170130D-02  0.530131D-02
+      8  0.215916D-01  0.181236D-01  0.840667D-01
+      9  0.723957D-02 -0.297793D-01 -0.102869D+00  0.212592D+00
+     10 -0.429216D-04  0.667975D-04  0.209821D-03 -0.198689D-03  0.262059D+00
+     11 -0.189985D-03  0.438356D-03 -0.950854D-04  0.178997D-03  0.136007D-01
+     12 -0.157701D-03 -0.772824D-03  0.806415D-04 -0.314299D-03 -0.408319D-01
+     13  0.539679D-04 -0.911759D-04 -0.742708D-04 -0.776438D-05 -0.256828D+00
+     14  0.147411D-03 -0.262748D-03 -0.349834D-04  0.238808D-04 -0.120257D-01
+     15 -0.202856D-04  0.339522D-03 -0.720206D-04  0.892254D-04  0.400516D-01
+     16 -0.548865D-02 -0.513087D-02 -0.148668D-01  0.312433D-01 -0.385387D-03
+     17 -0.117180D+00 -0.174755D-01 -0.703866D-01  0.109580D+00  0.141712D-03
+     18 -0.791757D-01  0.284982D-01  0.812348D-01 -0.219620D+00  0.296591D-03
+               11            12            13            14            15 
+     11  0.295051D-01
+     12 -0.131500D-02  0.817974D-02
+     13 -0.402522D-01  0.393046D-01  0.283433D+00
+     14 -0.277117D-01  0.101104D-02  0.844391D-02  0.295693D+00
+     15  0.552043D-02 -0.705211D-02 -0.441395D-01  0.808943D-02  0.784067D-02
+     16  0.143759D-03  0.940545D-03 -0.214135D-02 -0.195146D-04 -0.393276D-03
+     17 -0.742939D-03 -0.908937D-05  0.196280D-03  0.399385D-03  0.197166D-04
+     18  0.749969D-04 -0.360233D-03 -0.869958D-04 -0.193158D-03  0.340299D-03
+               16            17            18 
+     16  0.948134D-02
+     17  0.292571D-01  0.285172D+00
+     18 -0.263432D-01  0.758823D-02  0.298882D+00
+ Leave Link  716 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Pt  2 Step number   1 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  4.94D-03
+    Cycle     2 NS=    64 Truncation Error =  0.004938106
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  6.66D-03
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  5.05D-03
+    Cycle     3 NS=    96 Truncation Error =  0.005049716
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  8.68D-03
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  4.91D-03
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  2.86D-03
+    Cycle     4 NS=   128 Truncation Error =  0.002863293
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  8.93D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  4.72D-03
+      PEZero:  N= 5 I= 2 D=  5.31D-04 Err=  2.27D-03
+      PEZero:  N= 5 I= 1 D=  7.96D-04 Err=  1.31D-03
+    Cycle     5 NS=   192 Truncation Error =  0.001314432
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  9.46D-03
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  3.67D-03
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  1.58D-03
+      PEZero:  N= 6 I= 2 D=  5.97D-04 Err=  7.58D-04
+      PEZero:  N= 6 I= 1 D=  8.62D-04 Err=  4.95D-04
+    Cycle     6 NS=   256 Truncation Error =  0.000494973
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  7.70D-03
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  2.10D-03
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  9.07D-04
+      PEZero:  N= 7 I= 3 D=  3.98D-04 Err=  4.60D-04
+      PEZero:  N= 7 I= 2 D=  6.63D-04 Err=  3.41D-04
+      PEZero:  N= 7 I= 1 D=  9.29D-04 Err=  3.34D-04
+    Cycle     7 NS=   384 Truncation Error =  0.000333827
+      PEZero:  N= 8 I= 7 D=  3.32D-05 Err=  4.84D-03
+      PEZero:  N= 8 I= 6 D=  9.95D-05 Err=  1.25D-03
+      PEZero:  N= 8 I= 5 D=  1.66D-04 Err=  2.76D-03
+    Cycle     8 NS=   512 Truncation Error =  0.001254757
+      PEZero:  N= 9 I= 8 D=  3.32D-05 Err=  3.29D-03
+      PEZero:  N= 9 I= 7 D=  6.63D-05 Err=  6.50D-04
+      PEZero:  N= 9 I= 6 D=  1.33D-04 Err=  7.28D-04
+    Cycle     9 NS=   768 Truncation Error =  0.000650036
+      PEZero:  N=10 I= 9 D=  1.66D-05 Err=  2.39D-03
+      PEZero:  N=10 I= 8 D=  4.97D-05 Err=  4.14D-04
+      PEZero:  N=10 I= 7 D=  8.29D-05 Err=  1.85D-04
+      PEZero:  N=10 I= 6 D=  1.49D-04 Err=  2.51D-04
+    Cycle    10 NS=  1024 Truncation Error =  0.000184699
+      PEZero:  N=11 I=10 D=  1.66D-05 Err=  1.52D-03
+      PEZero:  N=11 I= 9 D=  3.32D-05 Err=  2.29D-04
+      PEZero:  N=11 I= 8 D=  6.63D-05 Err=  1.97D-04
+      PEZero:  N=11 I= 7 D=  9.95D-05 Err=  2.11D-04
+    Cycle    11 NS=  1536 Truncation Error =  0.000196666
+ Maximum DWI energy   std dev =  0.000000738 at pt     1
+ Maximum DWI gradient std dev =  1.943790353 at pt     2
+ WARNING: Bulirsch-Stoer Method is not Converging
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920099
+   Corrected End Point Energy =  -797.920100
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.101886
+   New End-Start Dist.        =     0.011018
+   New End-Old End Dist.      =     0.091080
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.248638    1.289231    0.037095
+      2          1           0        2.133630    1.174554    0.550070
+      3          1           0        1.899637   -0.661028    1.103976
+      4          1           0       -0.778207    0.050945   -0.195151
+      5         16           0       -2.100956   -0.041456    0.011198
+      6         16           0        2.069231   -0.016979   -0.058360
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.413680   0.000000
+     3  H    4.706372   1.931560   0.000000
+     4  H    1.936352   3.208840   3.060309   0.000000
+     5  S    1.339108   4.438557   4.193182   1.341932   0.000000
+     6  S    4.512127   1.339435   1.339622   2.851532   4.170839
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.2040254           1.7210998           1.7100754
+ Leave Link  202 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6436737858 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:43 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100010     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201000 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100010     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920100     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000001659   -0.000004902   -0.000011497
+      2        1           0.000000629   -0.000000262   -0.000011540
+      3        1          -0.000001453    0.000001083    0.000011705
+      4        1          -0.000001772   -0.000002993    0.000003482
+      5       16          -0.000002251    0.000006839    0.000007323
+      6       16           0.000002898   -0.000001422   -0.000002860
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000011705 RMS     0.000005682
+ Leave Link  716 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000001525
+ Magnitude of corrector gradient =     0.0000070083
+ Magnitude of analytic gradient =      0.0000241079
+ Magnitude of difference =             0.0000232927
+ Angle between gradients (degrees)=   74.9480
+ Pt  2 Step number   2 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  9.89D-03
+    Cycle     2 NS=    64 Truncation Error =  0.009889833
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  1.55D-02
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  1.34D-02
+    Cycle     3 NS=    96 Truncation Error =  0.013380360
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  2.07D-02
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  1.21D-02
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  6.52D-03
+    Cycle     4 NS=   128 Truncation Error =  0.006521397
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  3.40D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  1.56D-02
+    Cycle     5 NS=   192 Truncation Error =  0.003399131
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  1.60D-04
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  3.19D-03
+    Cycle     6 NS=   256 Truncation Error =  0.000160414
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  9.52D-05
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  1.76D-05
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  6.08D-03
+    Cycle     7 NS=   384 Truncation Error =  0.000017605
+ BS completed in    7 cycles and    1168 integration steps.
+ Maximum DWI energy   std dev =  0.000002160 at pt    -1
+ Maximum DWI gradient std dev =  0.998327891 at pt     3
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920100
+   Corrected End Point Energy =  -797.920103
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.011018
+   New End-Start Dist.        =     0.080225
+   New End-Old End Dist.      =     0.070650
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.244951    1.289471    0.044977
+      2          1           0        2.140336    1.184779    0.527848
+      3          1           0        1.898709   -0.639449    1.116623
+      4          1           0       -0.777853    0.048424   -0.193076
+      5         16           0       -2.101143   -0.041489    0.010879
+      6         16           0        2.069130   -0.017850   -0.058128
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.413034   0.000000
+     3  H    4.694579   1.932059   0.000000
+     4  H    1.936296   3.213544   3.058180   0.000000
+     5  S    1.339141   4.445349   4.192737   1.341930   0.000000
+     6  S    4.508993   1.339685   1.339950   2.850950   4.170911
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.1977099           1.7209657           1.7099767
+ Leave Link  202 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6395662415 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920099257     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9200993 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920099257     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920099     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000001039   -0.000021150   -0.000009863
+      2        1          -0.000008901   -0.000120975   -0.000064489
+      3        1           0.000024154    0.000086414   -0.000131510
+      4        1           0.000000953   -0.000000238   -0.000003644
+      5       16          -0.000005248    0.000022776    0.000009808
+      6       16          -0.000012286    0.000031507    0.000196389
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000196389 RMS     0.000068772
+ Leave Link  716 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000037040
+ Magnitude of corrector gradient =     0.0000951362
+ Magnitude of analytic gradient =      0.0002917764
+ Magnitude of difference =             0.0003020060
+ Angle between gradients (degrees)=   86.9264
+ Pt  2 Step number   3 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  3.20D-03
+    Cycle     2 NS=    64 Truncation Error =  0.003203095
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  4.63D-03
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  3.87D-03
+    Cycle     3 NS=    96 Truncation Error =  0.003873561
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  7.05D-03
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  4.78D-03
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  3.41D-03
+    Cycle     4 NS=   128 Truncation Error =  0.003411642
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  8.69D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  5.98D-03
+      PEZero:  N= 5 I= 2 D=  5.31D-04 Err=  3.59D-03
+      PEZero:  N= 5 I= 1 D=  7.96D-04 Err=  2.45D-03
+    Cycle     5 NS=   192 Truncation Error =  0.002447915
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  1.08D-02
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  5.74D-03
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  3.31D-03
+      PEZero:  N= 6 I= 2 D=  5.97D-04 Err=  1.74D-03
+      PEZero:  N= 6 I= 1 D=  8.62D-04 Err=  1.04D-03
+    Cycle     6 NS=   256 Truncation Error =  0.001044751
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  1.05D-02
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  4.94D-03
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  2.07D-03
+      PEZero:  N= 7 I= 3 D=  3.98D-04 Err=  1.43D-03
+      PEZero:  N= 7 I= 2 D=  6.63D-04 Err=  1.20D-03
+      PEZero:  N= 7 I= 1 D=  9.29D-04 Err=  1.05D-03
+    Cycle     7 NS=   384 Truncation Error =  0.001049340
+      PEZero:  N= 8 I= 7 D=  3.32D-05 Err=  7.53D-03
+      PEZero:  N= 8 I= 6 D=  9.95D-05 Err=  1.45D-03
+      PEZero:  N= 8 I= 5 D=  1.66D-04 Err=  3.52D-03
+    Cycle     8 NS=   512 Truncation Error =  0.001450883
+      PEZero:  N= 9 I= 8 D=  3.32D-05 Err=  5.31D-03
+      PEZero:  N= 9 I= 7 D=  6.63D-05 Err=  6.46D-04
+      PEZero:  N= 9 I= 6 D=  1.33D-04 Err=  6.68D-04
+    Cycle     9 NS=   768 Truncation Error =  0.000646182
+      PEZero:  N=10 I= 9 D=  1.66D-05 Err=  4.40D-03
+      PEZero:  N=10 I= 8 D=  4.97D-05 Err=  5.51D-04
+      PEZero:  N=10 I= 7 D=  8.29D-05 Err=  4.00D-04
+      PEZero:  N=10 I= 6 D=  1.49D-04 Err=  3.39D-04
+      PEZero:  N=10 I= 5 D=  2.16D-04 Err=  6.43D-04
+    Cycle    10 NS=  1024 Truncation Error =  0.000338899
+      PEZero:  N=11 I=10 D=  1.66D-05 Err=  3.10D-03
+      PEZero:  N=11 I= 9 D=  3.32D-05 Err=  3.70D-04
+      PEZero:  N=11 I= 8 D=  6.63D-05 Err=  1.65D-04
+      PEZero:  N=11 I= 7 D=  9.95D-05 Err=  1.60D-04
+      PEZero:  N=11 I= 6 D=  1.66D-04 Err=  9.97D-05
+      PEZero:  N=11 I= 5 D=  2.32D-04 Err=  1.35D-04
+    Cycle    11 NS=  1536 Truncation Error =  0.000099663
+ BS completed in   11 cycles and    5008 integration steps.
+ Maximum DWI energy   std dev =  0.000000747 at pt     5
+ Maximum DWI gradient std dev =  2.559328926 at pt  1122
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920099
+   Corrected End Point Energy =  -797.920100
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.080225
+   New End-Start Dist.        =     0.008621
+   New End-Old End Dist.      =     0.073077
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.248771    1.289227    0.036460
+      2          1           0        2.133426    1.174346    0.550842
+      3          1           0        1.899674   -0.661656    1.103461
+      4          1           0       -0.778208    0.050986   -0.195171
+      5         16           0       -2.100943   -0.041455    0.011224
+      6         16           0        2.069229   -0.016951   -0.058367
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.413779   0.000000
+     3  H    4.706807   1.931562   0.000000
+     4  H    1.936349   3.208752   3.060288   0.000000
+     5  S    1.339105   4.438383   4.193158   1.341928   0.000000
+     6  S    4.512230   1.339569   1.339492   2.851531   4.170825
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.2036840           1.7211142           1.7100860
+ Leave Link  202 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6438300499 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100018     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201000 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100018     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920100     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000001550   -0.000003451   -0.000011528
+      2        1          -0.000002784   -0.000062619   -0.000043333
+      3        1          -0.000009946   -0.000031433    0.000070237
+      4        1           0.000000091   -0.000002828    0.000003214
+      5       16          -0.000004057    0.000005245    0.000007626
+      6       16           0.000014856    0.000093428   -0.000029606
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000093428 RMS     0.000034897
+ Leave Link  716 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000001263
+ Magnitude of corrector gradient =     0.0001460270
+ Magnitude of analytic gradient =      0.0001480557
+ Magnitude of difference =             0.0000230491
+ Angle between gradients (degrees)=    8.9557
+ Pt  2 Step number   4 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  1.38D-02
+    Cycle     2 NS=    64 Truncation Error =  0.013801442
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  1.97D-02
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  1.57D-02
+    Cycle     3 NS=    96 Truncation Error =  0.015696475
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  8.26D-03
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  8.69D-03
+    Cycle     4 NS=   128 Truncation Error =  0.008261752
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  2.64D-04
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  7.87D-03
+    Cycle     5 NS=   192 Truncation Error =  0.000264473
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  1.42D-04
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  7.52D-05
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  9.51D-03
+    Cycle     6 NS=   256 Truncation Error =  0.000075178
+ BS completed in    6 cycles and     784 integration steps.
+ Maximum DWI energy   std dev =  0.000003024 at pt    -1
+ Maximum DWI gradient std dev =  1.032846702 at pt     5
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920100
+   Corrected End Point Energy =  -797.920104
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.008621
+   New End-Start Dist.        =     0.082409
+   New End-Old End Dist.      =     0.075074
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.244721    1.289468    0.046864
+      2          1           0        2.140723    1.184939    0.527534
+      3          1           0        1.898332   -0.639059    1.116776
+      4          1           0       -0.777833    0.048499   -0.192957
+      5         16           0       -2.101136   -0.041491    0.010869
+      6         16           0        2.069128   -0.017827   -0.058134
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.412946   0.000000
+     3  H    4.693487   1.932079   0.000000
+     4  H    1.936305   3.213810   3.057777   0.000000
+     5  S    1.339165   4.445722   4.192357   1.341929   0.000000
+     6  S    4.508806   1.339693   1.339968   2.850923   4.170902
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.1982312           1.7209766           1.7099896
+ Leave Link  202 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6395678984 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920099208     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9200992 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920099208     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920099     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000002233   -0.000033571   -0.000010148
+      2        1          -0.000009285   -0.000125018   -0.000066332
+      3        1           0.000025867    0.000090732   -0.000139258
+      4        1           0.000001835    0.000000060   -0.000004443
+      5       16          -0.000007345    0.000035112    0.000010551
+      6       16          -0.000013595    0.000031019    0.000206328
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000206328 RMS     0.000072566
+ Leave Link  716 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000046369
+ Magnitude of corrector gradient =     0.0001175648
+ Magnitude of analytic gradient =      0.0003078708
+ Magnitude of difference =             0.0003235852
+ Angle between gradients (degrees)=   86.9128
+ Pt  2 Step number   5 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  3.38D-03
+    Cycle     2 NS=    64 Truncation Error =  0.003380313
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  4.97D-03
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  4.07D-03
+    Cycle     3 NS=    96 Truncation Error =  0.004074789
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  7.39D-03
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  4.88D-03
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  3.41D-03
+    Cycle     4 NS=   128 Truncation Error =  0.003414030
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  8.84D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  5.88D-03
+      PEZero:  N= 5 I= 2 D=  5.31D-04 Err=  3.44D-03
+      PEZero:  N= 5 I= 1 D=  7.96D-04 Err=  2.30D-03
+    Cycle     5 NS=   192 Truncation Error =  0.002297876
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  1.06D-02
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  5.32D-03
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  2.85D-03
+      PEZero:  N= 6 I= 2 D=  5.97D-04 Err=  1.39D-03
+      PEZero:  N= 6 I= 1 D=  8.62D-04 Err=  7.53D-04
+    Cycle     6 NS=   256 Truncation Error =  0.000753168
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  9.90D-03
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  4.24D-03
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  1.58D-03
+      PEZero:  N= 7 I= 3 D=  3.98D-04 Err=  1.38D-03
+      PEZero:  N= 7 I= 2 D=  6.63D-04 Err=  1.15D-03
+      PEZero:  N= 7 I= 1 D=  9.29D-04 Err=  1.01D-03
+    Cycle     7 NS=   384 Truncation Error =  0.001006867
+      PEZero:  N= 8 I= 7 D=  3.32D-05 Err=  6.98D-03
+      PEZero:  N= 8 I= 6 D=  9.95D-05 Err=  1.43D-03
+      PEZero:  N= 8 I= 5 D=  1.66D-04 Err=  3.26D-03
+    Cycle     8 NS=   512 Truncation Error =  0.001428497
+      PEZero:  N= 9 I= 8 D=  3.32D-05 Err=  5.11D-03
+      PEZero:  N= 9 I= 7 D=  6.63D-05 Err=  7.19D-04
+      PEZero:  N= 9 I= 6 D=  1.33D-04 Err=  9.81D-04
+    Cycle     9 NS=   768 Truncation Error =  0.000719463
+      PEZero:  N=10 I= 9 D=  1.66D-05 Err=  4.13D-03
+      PEZero:  N=10 I= 8 D=  4.97D-05 Err=  4.44D-04
+      PEZero:  N=10 I= 7 D=  8.29D-05 Err=  4.63D-04
+    Cycle    10 NS=  1024 Truncation Error =  0.000443507
+      PEZero:  N=11 I=10 D=  1.66D-05 Err=  2.93D-03
+      PEZero:  N=11 I= 9 D=  3.32D-05 Err=  3.44D-04
+      PEZero:  N=11 I= 8 D=  6.63D-05 Err=  1.28D-04
+      PEZero:  N=11 I= 7 D=  9.95D-05 Err=  4.67D-04
+    Cycle    11 NS=  1536 Truncation Error =  0.000128355
+ Maximum DWI energy   std dev =  0.000000755 at pt     5
+ Maximum DWI gradient std dev =  2.572947325 at pt   469
+ WARNING: Bulirsch-Stoer Method is not Converging
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920099
+   Corrected End Point Energy =  -797.920100
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.082409
+   New End-Start Dist.        =     0.010753
+   New End-Old End Dist.      =     0.075247
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.248717    1.289188    0.038094
+      2          1           0        2.133619    1.174034    0.551160
+      3          1           0        1.899526   -0.662040    1.103366
+      4          1           0       -0.778217    0.051179   -0.195171
+      5         16           0       -2.100951   -0.041465    0.011162
+      6         16           0        2.069229   -0.016935   -0.058363
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.413771   0.000000
+     3  H    4.706380   1.931553   0.000000
+     4  H    1.936350   3.208832   3.060259   0.000000
+     5  S    1.339103   4.438538   4.193071   1.341932   0.000000
+     6  S    4.512197   1.339430   1.339617   2.851544   4.170832
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.2051918           1.7211060           1.7100815
+ Leave Link  202 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6438174241 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100017     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201000 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100017     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920100     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000001406   -0.000002370   -0.000011508
+      2        1           0.000000753    0.000001849   -0.000010513
+      3        1          -0.000001750   -0.000000141    0.000013695
+      4        1          -0.000001793   -0.000003049    0.000003545
+      5       16          -0.000001956    0.000004340    0.000007291
+      6       16           0.000003050   -0.000002287   -0.000005898
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000013695 RMS     0.000005751
+ Leave Link  716 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000001456
+ Magnitude of corrector gradient =     0.0000066232
+ Magnitude of analytic gradient =      0.0000244008
+ Magnitude of difference =             0.0000225842
+ Angle between gradients (degrees)=   66.4353
+ Pt  2 Step number   6 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  9.94D-03
+    Cycle     2 NS=    64 Truncation Error =  0.009938450
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  1.48D-02
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  1.22D-02
+    Cycle     3 NS=    96 Truncation Error =  0.012238876
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  2.22D-02
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  1.48D-02
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  1.04D-02
+    Cycle     4 NS=   128 Truncation Error =  0.010366256
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  4.54D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  1.54D-02
+    Cycle     5 NS=   192 Truncation Error =  0.004536752
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  1.44D-04
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  4.34D-03
+    Cycle     6 NS=   256 Truncation Error =  0.000144186
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  8.81D-05
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  1.20D-05
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  7.39D-03
+    Cycle     7 NS=   384 Truncation Error =  0.000012026
+ BS completed in    7 cycles and    1168 integration steps.
+ Maximum DWI energy   std dev =  0.000002369 at pt    -1
+ Maximum DWI gradient std dev =  0.955806698 at pt     2
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920100
+   Corrected End Point Energy =  -797.920103
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.010753
+   New End-Start Dist.        =     0.089496
+   New End-Old End Dist.      =     0.081269
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.244397    1.289369    0.053841
+      2          1           0        2.141791    1.185179    0.526960
+      3          1           0        1.897914   -0.638371    1.117114
+      4          1           0       -0.777920    0.049264   -0.193239
+      5         16           0       -2.101131   -0.041496    0.010850
+      6         16           0        2.069124   -0.017843   -0.058123
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.412861   0.000000
+     3  H    4.690999   1.932121   0.000000
+     4  H    1.936353   3.214607   3.057769   0.000000
+     5  S    1.339244   4.446738   4.191949   1.341930   0.000000
+     6  S    4.508636   1.339725   1.339981   2.851038   4.170892
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.1922150           1.7209678           1.7099898
+ Leave Link  202 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6387761804 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:44 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920099082     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9200991 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920099082     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920099     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000006408   -0.000073898   -0.000011560
+      2        1          -0.000010254   -0.000140638   -0.000073833
+      3        1           0.000026067    0.000094220   -0.000145165
+      4        1           0.000001472   -0.000000692   -0.000002914
+      5       16          -0.000010890    0.000075852    0.000011098
+      6       16          -0.000013091    0.000043489    0.000219088
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000219088 RMS     0.000080853
+ Leave Link  716 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000041326
+ Magnitude of corrector gradient =     0.0000862929
+ Magnitude of analytic gradient =      0.0003430295
+ Magnitude of difference =             0.0003508607
+ Angle between gradients (degrees)=   88.0519
+ Pt  2 Step number   7 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  4.32D-03
+    Cycle     2 NS=    64 Truncation Error =  0.004318410
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  5.88D-03
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  4.50D-03
+    Cycle     3 NS=    96 Truncation Error =  0.004498515
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  8.09D-03
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  4.91D-03
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  3.20D-03
+    Cycle     4 NS=   128 Truncation Error =  0.003195701
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  8.98D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  5.38D-03
+      PEZero:  N= 5 I= 2 D=  5.31D-04 Err=  2.92D-03
+      PEZero:  N= 5 I= 1 D=  7.96D-04 Err=  1.85D-03
+    Cycle     5 NS=   192 Truncation Error =  0.001854273
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  9.64D-03
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  3.87D-03
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  1.42D-03
+      PEZero:  N= 6 I= 2 D=  5.97D-04 Err=  6.89D-04
+      PEZero:  N= 6 I= 1 D=  8.62D-04 Err=  7.08D-04
+    Cycle     6 NS=   256 Truncation Error =  0.000688786
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  8.26D-03
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  2.75D-03
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  8.21D-04
+      PEZero:  N= 7 I= 3 D=  3.98D-04 Err=  8.58D-04
+    Cycle     7 NS=   384 Truncation Error =  0.000820785
+      PEZero:  N= 8 I= 7 D=  3.32D-05 Err=  5.81D-03
+      PEZero:  N= 8 I= 6 D=  9.95D-05 Err=  9.43D-04
+      PEZero:  N= 8 I= 5 D=  1.66D-04 Err=  2.28D-03
+    Cycle     8 NS=   512 Truncation Error =  0.000942766
+      PEZero:  N= 9 I= 8 D=  3.32D-05 Err=  4.22D-03
+      PEZero:  N= 9 I= 7 D=  6.63D-05 Err=  5.30D-04
+      PEZero:  N= 9 I= 6 D=  1.33D-04 Err=  7.90D-04
+    Cycle     9 NS=   768 Truncation Error =  0.000530140
+      PEZero:  N=10 I= 9 D=  1.66D-05 Err=  3.53D-03
+      PEZero:  N=10 I= 8 D=  4.97D-05 Err=  4.79D-04
+      PEZero:  N=10 I= 7 D=  8.29D-05 Err=  3.94D-04
+      PEZero:  N=10 I= 6 D=  1.49D-04 Err=  2.55D-04
+      PEZero:  N=10 I= 5 D=  2.16D-04 Err=  2.98D-04
+    Cycle    10 NS=  1024 Truncation Error =  0.000255452
+      PEZero:  N=11 I=10 D=  1.66D-05 Err=  2.43D-03
+      PEZero:  N=11 I= 9 D=  3.32D-05 Err=  2.91D-04
+      PEZero:  N=11 I= 8 D=  6.63D-05 Err=  1.33D-04
+      PEZero:  N=11 I= 7 D=  9.95D-05 Err=  2.03D-04
+    Cycle    11 NS=  1536 Truncation Error =  0.000132678
+ Maximum DWI energy   std dev =  0.000000769 at pt     5
+ Maximum DWI gradient std dev =  2.638694780 at pt   654
+ WARNING: Bulirsch-Stoer Method is not Converging
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920099
+   Corrected End Point Energy =  -797.920100
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.089496
+   New End-Start Dist.        =     0.011420
+   New End-Old End Dist.      =     0.080190
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.248678    1.289189    0.038165
+      2          1           0        2.133690    1.174194    0.550792
+      3          1           0        1.899511   -0.661693    1.103582
+      4          1           0       -0.778214    0.051152   -0.195177
+      5         16           0       -2.100951   -0.041467    0.011147
+      6         16           0        2.069225   -0.016948   -0.058358
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.413747   0.000000
+     3  H    4.706223   1.931554   0.000000
+     4  H    1.936350   3.208875   3.060251   0.000000
+     5  S    1.339104   4.438607   4.193065   1.341932   0.000000
+     6  S    4.512161   1.339417   1.339629   2.851537   4.170827
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.2052953           1.7211088           1.7100850
+ Leave Link  202 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6438544143 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100008     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201000 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100008     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920100     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000001432   -0.000002633   -0.000011489
+      2        1           0.000001075    0.000007728   -0.000007537
+      3        1          -0.000000966    0.000002893    0.000008265
+      4        1          -0.000001815   -0.000003045    0.000003543
+      5       16          -0.000001989    0.000004598    0.000007275
+      6       16           0.000001972   -0.000011198   -0.000003443
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000011489 RMS     0.000005679
+ Leave Link  716 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000001579
+ Magnitude of corrector gradient =     0.0000066247
+ Magnitude of analytic gradient =      0.0000240947
+ Magnitude of difference =             0.0000226531
+ Angle between gradients (degrees)=   69.5997
+ Pt  2 Step number   8 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  9.86D-03
+    Cycle     2 NS=    64 Truncation Error =  0.009861991
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  1.48D-02
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  1.23D-02
+    Cycle     3 NS=    96 Truncation Error =  0.012275430
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  2.25D-02
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  1.52D-02
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  1.09D-02
+    Cycle     4 NS=   128 Truncation Error =  0.010892201
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  4.71D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  1.54D-02
+    Cycle     5 NS=   192 Truncation Error =  0.004711215
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  1.50D-04
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  4.51D-03
+    Cycle     6 NS=   256 Truncation Error =  0.000149742
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  9.09D-05
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  1.34D-05
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  7.62D-03
+    Cycle     7 NS=   384 Truncation Error =  0.000013360
+ BS completed in    7 cycles and    1168 integration steps.
+ Maximum DWI energy   std dev =  0.000002245 at pt    -1
+ Maximum DWI gradient std dev =  0.956538059 at pt     2
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920100
+   Corrected End Point Energy =  -797.920103
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.011420
+   New End-Start Dist.        =     0.087376
+   New End-Old End Dist.      =     0.078385
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.244560    1.289388    0.051536
+      2          1           0        2.141425    1.185182    0.526990
+      3          1           0        1.898122   -0.638449    1.117097
+      4          1           0       -0.777909    0.049064   -0.193246
+      5         16           0       -2.101132   -0.041495    0.010852
+      6         16           0        2.069125   -0.017842   -0.058123
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.412911   0.000000
+     3  H    4.691885   1.932112   0.000000
+     4  H    1.936333   3.214346   3.057911   0.000000
+     5  S    1.339207   4.446395   4.192156   1.341930   0.000000
+     6  S    4.508742   1.339721   1.339977   2.851024   4.170895
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.1933726           1.7209673           1.7099869
+ Leave Link  202 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6389655117 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920099124     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9200991 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920099124     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920099     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000004485   -0.000055329   -0.000010895
+      2        1          -0.000010040   -0.000138256   -0.000072681
+      3        1           0.000025757    0.000093231   -0.000143571
+      4        1           0.000001256   -0.000000680   -0.000002939
+      5       16          -0.000008801    0.000057253    0.000010444
+      6       16          -0.000012945    0.000042113    0.000216349
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000216349 RMS     0.000078134
+ Leave Link  716 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000039627
+ Magnitude of corrector gradient =     0.0000857786
+ Magnitude of analytic gradient =      0.0003314953
+ Magnitude of difference =             0.0003393582
+ Angle between gradients (degrees)=   87.9009
+ Pt  2 Step number   9 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  4.03D-03
+    Cycle     2 NS=    64 Truncation Error =  0.004033332
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  5.62D-03
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  4.39D-03
+    Cycle     3 NS=    96 Truncation Error =  0.004393887
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  7.92D-03
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  4.94D-03
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  3.29D-03
+    Cycle     4 NS=   128 Truncation Error =  0.003288148
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  8.97D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  5.53D-03
+      PEZero:  N= 5 I= 2 D=  5.31D-04 Err=  3.06D-03
+      PEZero:  N= 5 I= 1 D=  7.96D-04 Err=  1.97D-03
+    Cycle     5 NS=   192 Truncation Error =  0.001968094
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  9.98D-03
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  4.34D-03
+      PEZero:  N= 6 I= 3 D=  3.32D-04 Err=  1.89D-03
+      PEZero:  N= 6 I= 2 D=  5.97D-04 Err=  6.80D-04
+      PEZero:  N= 6 I= 1 D=  8.62D-04 Err=  6.67D-04
+    Cycle     6 NS=   256 Truncation Error =  0.000667449
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  8.72D-03
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  3.10D-03
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  9.32D-04
+      PEZero:  N= 7 I= 3 D=  3.98D-04 Err=  9.74D-04
+    Cycle     7 NS=   384 Truncation Error =  0.000931782
+      PEZero:  N= 8 I= 7 D=  3.32D-05 Err=  6.08D-03
+      PEZero:  N= 8 I= 6 D=  9.95D-05 Err=  1.07D-03
+      PEZero:  N= 8 I= 5 D=  1.66D-04 Err=  2.61D-03
+    Cycle     8 NS=   512 Truncation Error =  0.001070961
+      PEZero:  N= 9 I= 8 D=  3.32D-05 Err=  4.53D-03
+      PEZero:  N= 9 I= 7 D=  6.63D-05 Err=  7.16D-04
+      PEZero:  N= 9 I= 6 D=  1.33D-04 Err=  1.03D-03
+    Cycle     9 NS=   768 Truncation Error =  0.000715618
+      PEZero:  N=10 I= 9 D=  1.66D-05 Err=  3.69D-03
+      PEZero:  N=10 I= 8 D=  4.97D-05 Err=  3.88D-04
+      PEZero:  N=10 I= 7 D=  8.29D-05 Err=  4.23D-04
+    Cycle    10 NS=  1024 Truncation Error =  0.000387657
+      PEZero:  N=11 I=10 D=  1.66D-05 Err=  2.61D-03
+      PEZero:  N=11 I= 9 D=  3.32D-05 Err=  3.14D-04
+      PEZero:  N=11 I= 8 D=  6.63D-05 Err=  1.25D-04
+      PEZero:  N=11 I= 7 D=  9.95D-05 Err=  2.75D-04
+    Cycle    11 NS=  1536 Truncation Error =  0.000124944
+ Maximum DWI energy   std dev =  0.000000766 at pt     5
+ Maximum DWI gradient std dev =  2.585408701 at pt  1073
+ WARNING: Bulirsch-Stoer Method is not Converging
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920099
+   Corrected End Point Energy =  -797.920100
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.087376
+   New End-Start Dist.        =     0.011190
+   New End-Old End Dist.      =     0.078747
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Leave Link  123 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ (Enter /opt/g16/l202.exe)
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          1           0       -2.248690    1.289189    0.038141
+      2          1           0        2.133667    1.174137    0.550912
+      3          1           0        1.899516   -0.661810    1.103514
+      4          1           0       -0.778214    0.051160   -0.195174
+      5         16           0       -2.100951   -0.041466    0.011152
+      6         16           0        2.069226   -0.016944   -0.058360
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  H    0.000000
+     2  H    4.413753   0.000000
+     3  H    4.706275   1.931553   0.000000
+     4  H    1.936350   3.208859   3.060254   0.000000
+     5  S    1.339104   4.438583   4.193068   1.341932   0.000000
+     6  S    4.512172   1.339417   1.339629   2.851539   4.170829
+                    6
+     6  S    0.000000
+ Symmetry turned off by external request.
+ Stoichiometry    H4S2
+ Framework group  C1[X(H4S2)]
+ Deg. of freedom    12
+ Full point group                 C1      NOp   1
+ Rotational constants (GHZ):          96.2052797           1.7211080           1.7100840
+ Leave Link  202 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l301.exe)
+ Standard basis: STO-3G (5D, 7F)
+ Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
+    22 basis functions,    66 primitive gaussians,    22 cartesian basis functions
+    18 alpha electrons       18 beta electrons
+       nuclear repulsion energy        67.6438458215 Hartrees.
+ IExCor=    0 DFT=F Ex=HF Corr=None ExCW=0 ScaHFX=  1.000000
+ ScaDFX=  1.000000  1.000000  1.000000  1.000000 ScalE2=  1.000000  1.000000
+ IRadAn=      5 IRanWt=     -1 IRanGd=            0 ICorTp=0 IEmpDi=  4
+ NAtoms=    6 NActive=    6 NUniq=    6 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned off.
+ Leave Link  301 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l402.exe)
+ External calculation of energy and first derivatives.
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100011     dipole=      0.000000000000      0.000000000000      0.000000000000
+ NRF= 0 NRA=   0 NVA=   0 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.00000000 0.00000000 0.00000000 0.00000000 -797.9201000 ====
+ Running external command "python3 -u ../pes/h4s2_pes.py R"
+         input file       "/home/jhli/scratch/g16/Gau-120120.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-120120.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-120120.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-120120.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-120120.EUF"
+ initialization done
+ Recovered energy= -797.920100011     dipole=      0.000000000000      0.000000000000      0.000000000000
+ Energy=    -797.920100     NIter=   0.
+ Dipole moment=       0.000000       0.000000       0.000000
+ Leave Link  402 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.1
+ (Enter /opt/g16/l716.exe)
+ Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        1           0.000001431   -0.000002621   -0.000011497
+      2        1           0.000001078    0.000007793   -0.000007498
+      3        1          -0.000000975    0.000002841    0.000008339
+      4        1          -0.000001816   -0.000003047    0.000003544
+      5       16          -0.000001978    0.000004588    0.000007281
+      6       16           0.000001970   -0.000011212   -0.000003556
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000011497 RMS     0.000005692
+ Leave Link  716 at Fri Jan  3 11:35:45 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ (Enter /opt/g16/l123.exe)
+ IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC-IRC
+ Error in corrector energy =          -0.0000001538
+ Magnitude of corrector gradient =     0.0000066344
+ Magnitude of analytic gradient =      0.0000241472
+ Magnitude of difference =             0.0000226474
+ Angle between gradients (degrees)=   69.1199
+ Pt  2 Step number  10 out of a maximum of  10
+ Using modified Bulirsch-Stoer corrector integration.
+   Using distance weighted interpolants to fit PES.
+ PreDWI: IReCr0= 2 IReCr1= 1 IReCr2= 1 IReCr3= 1
+ Modified Bulirsch-Stoer Extrapolation Cycles:
+    EPS =    0.000100000000000
+    Cycle     1 NS=    48
+      PEZero:  N= 2 I= 1 D=  2.65D-04 Err=  9.93D-03
+    Cycle     2 NS=    64 Truncation Error =  0.009926949
+      PEZero:  N= 3 I= 2 D=  2.65D-04 Err=  1.48D-02
+      PEZero:  N= 3 I= 1 D=  5.31D-04 Err=  1.23D-02
+    Cycle     3 NS=    96 Truncation Error =  0.012316709
+      PEZero:  N= 4 I= 3 D=  1.33D-04 Err=  2.24D-02
+      PEZero:  N= 4 I= 2 D=  3.98D-04 Err=  1.50D-02
+      PEZero:  N= 4 I= 1 D=  6.63D-04 Err=  1.06D-02
+    Cycle     4 NS=   128 Truncation Error =  0.010615448
+      PEZero:  N= 5 I= 4 D=  1.33D-04 Err=  4.54D-03
+      PEZero:  N= 5 I= 3 D=  2.65D-04 Err=  1.56D-02
+    Cycle     5 NS=   192 Truncation Error =  0.004544325
+      PEZero:  N= 6 I= 5 D=  6.63D-05 Err=  1.48D-04
+      PEZero:  N= 6 I= 4 D=  1.99D-04 Err=  4.35D-03
+    Cycle     6 NS=   256 Truncation Error =  0.000147711
+      PEZero:  N= 7 I= 6 D=  6.63D-05 Err=  9.00D-05
+      PEZero:  N= 7 I= 5 D=  1.33D-04 Err=  1.26D-05
+      PEZero:  N= 7 I= 4 D=  2.65D-04 Err=  7.51D-03
+    Cycle     7 NS=   384 Truncation Error =  0.000012636
+ BS completed in    7 cycles and    1168 integration steps.
+ Maximum DWI energy   std dev =  0.000002291 at pt    -1
+ Maximum DWI gradient std dev =  0.957003132 at pt     2
+ SUMMARY OF CORRECTOR INTEGRATION:
+   Predictor End Point Energy =  -797.920099
+   Old End Point Energy       =  -797.920100
+   Corrected End Point Energy =  -797.920103
+   Predictor End-Start Dist.  =     0.101886
+   Old End-Start Dist.        =     0.011190
+   New End-Start Dist.        =     0.088052
+   New End-Old End Dist.      =     0.079321
+ CORRECTOR INTEGRATION CONVERGENCE:
+   Recorrection delta-x convergence threshold:    0.010000
+   Delta-x Convergence NOT Met
+ Maximum number of corrector steps exceded.
+ Error termination via Lnk1e in /opt/g16/l123.exe at Fri Jan  3 11:35:45 2025.
+ Job cpu time:       0 days  0 hours  0 minutes  1.4 seconds.
+ Elapsed time:       0 days  0 hours  0 minutes  3.1 seconds.
+ File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      2 Scr=      1
