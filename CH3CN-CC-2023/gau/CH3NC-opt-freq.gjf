@@ -1,0 +1,20 @@
+%nproc=1
+%chk=CH3NC-opt-freq.chk
+#p external="python3 -u ../pes/ch3cn_pes.py" opt=nomicro
+
+CH3NC
+
+  0  1
+ H       0.00000000      1.02577500     -1.47998100
+ H      -0.88834700     -0.51288700     -1.47998100
+ H       0.88834700     -0.51288700     -1.47998100
+ C       0.00000000      0.00000000      1.47807200
+ C       0.00000000      0.00000000     -1.11884100
+ N       0.00000000      0.00000000      0.30585300
+
+
+--link1--
+%nproc=1
+%chk=CH3NC-opt-freq.chk
+#p external="python3 -u ../pes/ch3cn_pes.py" freq geom=allcheck
+
