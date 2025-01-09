@@ -1,7 +1,7 @@
  Entering Gaussian System, Link 0=g16
  Initial command:
- /opt/g16/l1.exe "/home/jhli/scratch/g16/Gau-989557.inp" -scrdir="/home/jhli/scratch/g16/"
- Entering Link 1 = /opt/g16/l1.exe PID=    989567.
+ /opt/g16/l1.exe "/home/jhli/scratch/g16/Gau-2426740.inp" -scrdir="/home/jhli/scratch/g16/"
+ Entering Link 1 = /opt/g16/l1.exe PID=   2426743.
   
  Copyright (c) 1988-2019, Gaussian, Inc.  All Rights Reserved.
   
@@ -74,7 +74,7 @@
  
  ******************************************
  Gaussian 16:  ES64L-G16RevC.01  3-Jul-2019
-                 7-Jan-2025 
+                 9-Jan-2025 
  ******************************************
  %nproc=1
  Will use up to    1 processors via shared memory.
@@ -102,7 +102,7 @@
  6/7=2,8=2,9=2,10=2,18=1/1;
  7/8=1,9=1,25=1,44=-1/16;
  99//99;
- Leave Link    1 at Tue Jan  7 19:26:28 2025, MaxMem=           0 cpu:               0.0 elap:               0.0
+ Leave Link    1 at Thu Jan  9 13:41:07 2025, MaxMem=           0 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l101.exe)
  --
  ts
@@ -132,7 +132,7 @@
  NQMom=    0.0000000   0.0000000   0.0000000   0.0000000   0.0000000   2.0440000
  NMagM=    2.7928460   2.7928460   2.7928460   0.0000000   0.0000000   0.4037610
  AtZNuc=   1.0000000   1.0000000   1.0000000   6.0000000   6.0000000   7.0000000
- Leave Link  101 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
+ Leave Link  101 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.1 elap:               0.1
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -165,7 +165,7 @@
  Search for a saddle point of order  1.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -208,7 +208,7 @@
       6          7           0        0.801385    0.522356   -0.000012
  ---------------------------------------------------------------------
  Rotational constants (GHZ):          40.7161981          15.7817824          12.2900995
- Leave Link  202 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l301.exe)
  Standard basis: STO-3G (5D, 7F)
  Ernie: Thresh=  0.10000D-02 Tol=  0.10000D-05 Strict=F.
@@ -224,21 +224,21 @@
  Integral buffers will be    131072 words long.
  Raffenetti 1 integral format.
  Two-electron integral symmetry is turned on.
- Leave Link  301 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  301 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l402.exe)
  External calculation of energy, first and second derivatives.
  Running external command "python3 -u ../pes/ch3cn_pes.py R"
-         input file       "/home/jhli/scratch/g16/Gau-989567.EIn"
-         output file      "/home/jhli/scratch/g16/Gau-989567.EOu"
-         message file     "/home/jhli/scratch/g16/Gau-989567.EMs"
-         fchk file        "/home/jhli/scratch/g16/Gau-989567.EFC"
-         mat. el file     "/home/jhli/scratch/g16/Gau-989567.EUF"
+         input file       "/home/jhli/scratch/g16/Gau-2426743.EIn"
+         output file      "/home/jhli/scratch/g16/Gau-2426743.EOu"
+         message file     "/home/jhli/scratch/g16/Gau-2426743.EMs"
+         fchk file        "/home/jhli/scratch/g16/Gau-2426743.EFC"
+         mat. el file     "/home/jhli/scratch/g16/Gau-2426743.EUF"
  Recovered energy= -132.478693758     dipole=      0.000000000000      0.000000000000      0.000000000000
  Energy=    -132.478694     NIter=   0.
  Dipole moment=       0.000000       0.000000       0.000000
- Leave Link  402 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
+ Leave Link  402 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.2
  (Enter /opt/g16/l601.exe)
- Leave Link  601 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  601 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l716.exe)
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
  ***** Axes restored to original set *****
@@ -336,7 +336,7 @@
      13 -0.948676D-02 -0.809774D-02  0.288458D-01
      14  0.950540D-02  0.795206D-02  0.210910D-02  0.288076D-01
      15  0.375874D-04  0.154332D-03 -0.118444D-01 -0.118366D-01  0.171577D-01
- Leave Link  716 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l103.exe)
 
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
@@ -446,7 +446,7 @@
  Largest change from initial coordinates is atom    3       0.000 Angstoms.
  GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
 
- Leave Link  103 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  103 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l202.exe)
                           Input orientation:                          
  ---------------------------------------------------------------------
@@ -490,7 +490,7 @@
       6          7           0        0.801385    0.522356   -0.000012
  ---------------------------------------------------------------------
  Rotational constants (GHZ):          40.7161981          15.7817824          12.2900995
- Leave Link  202 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  202 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l716.exe)
  Rotating derivatives to standard orientation.
  Dipole        = 0.00000000D+00 0.00000000D+00 0.00000000D+00
@@ -709,11 +709,11 @@
      13 -0.948676D-02 -0.809774D-02  0.288458D-01
      14  0.950540D-02  0.795206D-02  0.210910D-02  0.288076D-01
      15  0.375874D-04  0.154332D-03 -0.118444D-01 -0.118366D-01  0.171577D-01
- Leave Link  716 at Tue Jan  7 19:26:28 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
+ Leave Link  716 at Thu Jan  9 13:41:07 2025, MaxMem=   104857600 cpu:               0.0 elap:               0.0
  (Enter /opt/g16/l9999.exe)
  Unable to Open any file for archive entry.
  1\1\GINC-GPUNODE01\Freq\External='python3 -u ../pes/ch3cn_pes.py'\ZDO\
- C2H3N1\JHLI\07-Jan-2025\0\\#p external="python3 -u ../pes/ch3cn_pes.py
+ C2H3N1\JHLI\09-Jan-2025\0\\#p external="python3 -u ../pes/ch3cn_pes.py
  " opt=(ts,calcall,noeigen,nomicro)\\ts\\0,1\H,-1.80311,0.831572,0.3703
  92\H,-1.707612,-0.765739,1.223675\H,-1.353709,-0.649409,-0.525086\C,-1
  .32506,-0.137841,0.429224\C,0.188972,0.375534,1.222122\N,0.500713,-0.1
@@ -755,8 +755,13 @@
  The archive entry for this job was punched.
 
 
- OPTIMIST - A PESSIMIST WHO LACKS EXPERIENCE
+ IT IS BY EATING THE LIGHT OF A STAR THAT WE EXIST, 
+ IN THE FINAL ANALYSIS, 
+ JUST AS IT IS BY PERCEIVING THE LIGHT OF STARS
+ THAT WE DEFINE THE WORLD AROUND US.
+
+                                    -- GILBERT GROSVENOR
  Job cpu time:       0 days  0 hours  0 minutes  0.2 seconds.
  Elapsed time:       0 days  0 hours  0 minutes  0.4 seconds.
  File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1
- Normal termination of Gaussian 16 at Tue Jan  7 19:26:28 2025.
+ Normal termination of Gaussian 16 at Thu Jan  9 13:41:07 2025.

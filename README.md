@@ -169,7 +169,7 @@ $ pip install .
 
 (1) Deng, F.; Liu, Y.; Li, J.; Li, J. An Accurate Full-Dimensional Potential Energy Surface of the Hydrogen Sulfide Dimer System and Its Kinetics for the Hydrogen Exchange Channel. _Mol. Phys._ **2024**. https://doi.org/10.1080/00268976.2024.2438329.
 
-### [`CH3CN-CC-2023`](https://github.com/CQPES/Model-Zoo/tree/main/CH3CN-CC-2023)
+### [`CH3CN-CC-2025`](https://github.com/CQPES/Model-Zoo/tree/main/CH3CN-CC-2025)
 
 #### Species
 
@@ -178,4 +178,5 @@ $ pip install .
 
 #### Reference
 
-(1) Li, J.; Li, J.; Li, J. Full-Dimensional Accurate Potential Energy Surface and Dynamics for the Unimolecular Isomerization Reaction CH3NC ⇌ CH3CN. _ChemRxiv_, **2024**. https://doi.org/10.26434/chemrxiv-2024-gcb0d.
+(1) Li, J.; Li, J.; Li, J. Full-Dimensional Accurate Potential Energy Surface and Dynamics for the Unimolecular Isomerization Reaction CH3NC ⇌ CH3CN. _J. Chem. Phys._ **2025**, _162_ (1). https://doi.org/10.1063/5.0245188.
+
